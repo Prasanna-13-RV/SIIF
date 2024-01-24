@@ -1,5 +1,5 @@
 import React from "react"
 
-export const MakerSpace = () => {
-	return <h1>MakerSpace</h1>
+export const Makerspace = () => {
+	return <h1>Makerspace</h1>
 }
