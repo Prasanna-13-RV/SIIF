@@ -1,5 +1,5 @@
 import React from "react"
 
 export const HomePage = () => {
-	return <h1>Hello World</h1>
+	return <h1 className="text-xl font-bold underline">Hello world!</h1>
 }

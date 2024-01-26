@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import "./index.css";
 import { HomePage } from "./pages/home/HomePage"
 import { AdvisoryBoard } from "./pages/about/AdvisoryBoard"
 import { Startups } from "./pages/about/Startups"
