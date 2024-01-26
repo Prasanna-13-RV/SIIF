@@ -1,5 +1,6 @@
 import React from "react";
-import Teamcard from "../../components/Teamcard";
+import Teamcard from "../../components/About.jsx/Teamcard";
+
 
 export const AdvisoryBoard = () => {
   let message = `There are many variations of passages of Lorem Ipsum available but the \n majo`;
@@ -7,27 +8,22 @@ export const AdvisoryBoard = () => {
     {
       name: "John Doe",
       title: "CEO, ABC Inc.",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      image:"https://img.freepik.com/premium-photo/contemplative-expression-serene-contemplative-gaze_894855-4132.jpg"
     },
     {
       name: "Jane Smith",
       title: "CTO, XYZ Corp.",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      image:"https://img.freepik.com/premium-photo/contemplative-expression-serene-contemplative-gaze_894855-4132.jpg"
     },
     {
       name: "John Doe",
       title: "CEO, ABC Inc.",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      image:"https://img.freepik.com/premium-photo/contemplative-expression-serene-contemplative-gaze_894855-4132.jpg"
     },
     {
       name: "Jane Smith",
       title: "CTO, XYZ Corp.",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-    },
+      image:"https://img.freepik.com/premium-photo/contemplative-expression-serene-contemplative-gaze_894855-4132.jpg"    },
     {
       name: "John Doe",
       title: "CEO, ABC Inc.",
@@ -49,42 +45,7 @@ export const AdvisoryBoard = () => {
             <h2 className="section-title">The Advisors Behind SIIF</h2>
             <p className="section-subtitle">{message}</p>
           </div>
-          {/* <div className="col-sm-6 col-md-4">
-            <div className="team-item">
-              <img
-                src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team1a.jpg"
-                className="team-img"
-                alt="pic"
-              />
-              <h3>JOHNATHAN HAWKINS</h3>
-              <div className="team-info">
-                <p>Head of SEO</p>
-                <p>
-                  Johnathan is our co-founder and has developed search
-                  strategies for a variety of clients
-                </p>
-                <ul className="team-icon">
-                  <li>
-                    <a href="#" className="twitter">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                 
-                  <li>
-                    <a href="#" className="facebook">
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="linkedin">
-                      <i className="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
+          <div class="container m-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {advisors.map((advisor, index) => {
               return <Teamcard advisor={advisor} key={index} />;
             })}

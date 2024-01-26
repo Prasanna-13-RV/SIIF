@@ -26,7 +26,7 @@ import { Services } from "./pages/captialInfusion/Services"
 import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship"
 import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
 import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
-import { Makerspace } from "./pages/initiatives/Makerspace"
+import { MakerSpace } from "./pages/initiatives/MakerSpace"
 import { Contact } from "./pages/contact/Contact"
 
 function App() {
