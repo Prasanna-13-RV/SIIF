@@ -1,32 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/home/HomePage";
-import { AdvisoryBoard } from "./pages/about/AdvisoryBoard";
-import { Startups } from "./pages/about/Startups";
-import { Teams } from "./pages/about/Teams";
-import { Partners } from "./pages/about/Partners";
-import { Mentors } from "./pages/about/Mentors";
-import { VirtualTour } from "./pages/about/VirtualTour";
-import { IpSupport } from "./pages/initiatives/IpSupport";
-import { CoworkingSpace } from "./pages/initiatives/CoworkingSpace";
-import { MobilityTransportation } from "./pages/initiatives/centers/MobilityTransportation";
-import { RenewableEnergy } from "./pages/initiatives/centers/RenewableEnergy";
-import { IncubationAcceleration } from "./pages/initiatives/IncubationAcceleration";
-import { IncubationCollaboration } from "./pages/initiatives/IndustrialCollaboration";
-import { YoungMinds } from "./pages/initiatives/YoungMinds";
-import { UpcomingEvents } from "./pages/events/UpcomingEvents";
-import { PreviousEvents } from "./pages/events/PreviousEvents";
-import { Blog } from "./pages/media/Blog";
-import { AnnualReport } from "./pages/media/AnnualReport";
-import { MediaPresence } from "./pages/media/MediaPresence";
-import { Gallery } from "./pages/gallery/Gallery";
-import { SAINInvestors } from "./pages/captialInfusion/SAINInvestors";
-import { SAINStartups } from "./pages/captialInfusion/SAINStartups";
-import { Services } from "./pages/captialInfusion/Services";
-import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship";
-import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram";
-import { IncubationProgram } from "./pages/initiatives/IncubationProgram";
-import { MakerSpace } from "./pages/initiatives/MakerSpace";
-import { Contact } from "./pages/contact/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import "./index.css";
+import { HomePage } from "./pages/home/HomePage"
+import { AdvisoryBoard } from "./pages/about/AdvisoryBoard"
+import { Startups } from "./pages/about/Startups"
+import { Teams } from "./pages/about/Teams"
+import { Partners } from "./pages/about/Partners"
+import { Mentors } from "./pages/about/Mentors"
+import { VirtualTour } from "./pages/about/VirtualTour"
+import { IpSupport } from "./pages/initiatives/IpSupport"
+import { CoworkingSpace } from "./pages/initiatives/CoworkingSpace"
+import { MobilityTransportation } from "./pages/initiatives/centers/MobilityTransportation"
+import { RenewableEnergy } from "./pages/initiatives/centers/RenewableEnergy"
+import { IncubationAcceleration } from "./pages/initiatives/IncubationAcceleration"
+import { IncubationCollaboration } from "./pages/initiatives/IndustrialCollaboration"
+import { YoungMinds } from "./pages/initiatives/YoungMinds"
+import { UpcomingEvents } from "./pages/events/UpcomingEvents"
+import { PreviousEvents } from "./pages/events/PreviousEvents"
+import { Blog } from "./pages/media/Blog"
+import { AnnualReport } from "./pages/media/AnnualReport"
+import { MediaPresence } from "./pages/media/MediaPresence"
+import { Gallery } from "./pages/gallery/Gallery"
+import { SAINInvestors } from "./pages/captialInfusion/SAINInvestors"
+import { SAINStartups } from "./pages/captialInfusion/SAINStartups"
+import { Services } from "./pages/captialInfusion/Services"
+import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship"
+import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
+import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
+import { Makerspace } from "./pages/initiatives/Makerspace"
+import { Contact } from "./pages/contact/Contact"
 
 function App() {
   return (
