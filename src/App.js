@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import "./index.css";
+import "./index.css"
 import { HomePage } from "./pages/home/HomePage"
 import { AdvisoryBoard } from "./pages/about/AdvisoryBoard"
 import { Startups } from "./pages/about/Startups"
@@ -28,6 +28,16 @@ import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
 import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
 import { Makerspace } from "./pages/initiatives/Makerspace"
 import { Contact } from "./pages/contact/Contact"
+import Clinic from "./pages/benefits/capital/Clinic"
+import { Connect } from "./pages/benefits/capital/Connect"
+import { StateFunding } from "./pages/benefits/advisor/governmentFunding/StateFunding"
+import { CentralFunding } from "./pages/benefits/advisor/governmentFunding/CentralFunding"
+import { AngelInvestors } from "./pages/benefits/advisor/privateFunding/AngelInvestors"
+import { VentureCapitalist } from "./pages/benefits/advisor/privateFunding/VentureCapitalist"
+import { GlobalMarketConnect } from "./pages/benefits/trade/GlobalMarketConnect"
+import { DemoDay } from "./pages/benefits/trade/DemoDay"
+import { LaunchPad } from "./pages/benefits/trade/LaunchPad"
+import { StartupTools } from "./pages/benefits/trade/StartupTools"
 
 function App() {
 	return (
@@ -119,6 +129,43 @@ function App() {
 				<Route path="/infusion/investors" element={<SAINInvestors />} />
 				<Route path="/infusion/startups" element={<SAINStartups />} />
 				<Route path="/infusion/services" element={<Services />} />
+
+				{/* Benefits Captial */}
+				<Route path="/benefits/clinic" element={<Clinic />} />
+				<Route path="/benefits/connect" element={<Connect />} />
+
+				{/* Benefits Advisior */}
+				<Route
+					path="/benefits/governmentfunding/state"
+					element={<StateFunding />}
+				/>
+				<Route
+					path="/benefits/governmentfunding/central"
+					element={<CentralFunding />}
+				/>
+				<Route
+					path="/benefits/governmentfunding/angelinvestors"
+					element={<AngelInvestors />}
+				/>
+				<Route
+					path="/benefits/governmentfunding/venturecapitalist"
+					element={<VentureCapitalist />}
+				/>
+
+				{/* Benefits Global Market Connect */}
+				<Route
+					path="/benefits/trade/globalconnect"
+					element={<GlobalMarketConnect />}
+				/>
+				<Route path="/benefits/trade/demoday" element={<DemoDay />} />
+				<Route
+					path="/benefits/trade/launchpad"
+					element={<LaunchPad />}
+				/>
+				<Route
+					path="/benefits/trade/startuptools"
+					element={<StartupTools />}
+				/>
 			</Routes>
 		</Router>
 	)
