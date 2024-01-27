@@ -1,0 +1,8 @@
+.header-links li span {
+	position: relative;
+	z-index: 0;
+}
+
+.header-links li:hover {
+	color: rgb(29 78 216);
+}
