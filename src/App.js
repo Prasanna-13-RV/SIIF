@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import "./index.css";
+import "./index.css"
 import { HomePage } from "./pages/home/HomePage"
 import { AdvisoryBoard } from "./pages/about/AdvisoryBoard"
 import { Startups } from "./pages/about/Startups"
@@ -28,102 +28,128 @@ import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
 import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
 import { MakerSpace } from "./pages/initiatives/MakerSpace"
 import { Contact } from "./pages/contact/Contact"
+import Clinic from "./pages/benefits/capital/Clinic"
+import { Connect } from "./pages/benefits/capital/Connect"
+import { StateFunding } from "./pages/benefits/advisor/governmentFunding/StateFunding"
+import { CentralFunding } from "./pages/benefits/advisor/governmentFunding/CentralFunding"
+import { AngelInvestors } from "./pages/benefits/advisor/privateFunding/AngelInvestors"
+import { VentureCapitalist } from "./pages/benefits/advisor/privateFunding/VentureCapitalist"
+import { GlobalMarketConnect } from "./pages/benefits/trade/GlobalMarketConnect"
+import { DemoDay } from "./pages/benefits/trade/DemoDay"
+import { LaunchPad } from "./pages/benefits/trade/LaunchPad"
+import { StartupTools } from "./pages/benefits/trade/StartupTools"
 import Index from "./pages/captialInfusion/Index";
 
 function App() {
-	return (
-		<Router>
-			<Routes>
-				<Route path="/" element={<HomePage />} />
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
 
-				{/* about tab */}
-				<Route
-					path="/about/advisoryboard"
-					element={<AdvisoryBoard />}
-				/>
-				<Route path="/about/startups" element={<Startups />} />
-				<Route path="/about/teams" element={<Teams />} />
-				<Route path="/about/partners" element={<Partners />} />
-				<Route path="/about/mentors" element={<Mentors />} />
-				<Route path="/about/virtualtour" element={<VirtualTour />} />
+        {/* about tab */}
+        <Route path="/about/advisoryboard" element={<AdvisoryBoard />} />
+        <Route path="/about/startups" element={<Startups />} />
+        <Route path="/about/teams" element={<Teams />} />
+        <Route path="/about/partners" element={<Partners />} />
+        <Route path="/about/mentors" element={<Mentors />} />
+        <Route path="/about/virtualtour" element={<VirtualTour />} />
 
-				{/* initiatives */}
-				<Route path="/initiatives/ipsupport" element={<IpSupport />} />
-				<Route
-					path="/initiatives/entrepreneurship"
-					element={<Entrepreneurship />}
-				/>
-				<Route
-					path="/initiatives/youngminds"
-					element={<YoungMinds />}
-				/>
-				<Route
-					path="/initiatives/preincubationprogram"
-					element={<PreIncubationProgram />}
-				/>
-				<Route
-					path="/initiatives/makerspace"
-					element={<MakerSpace />}
-				/>
-				<Route
-					path="/initiatives/incubationprogram"
-					element={<IncubationProgram />}
-				/>
-				<Route
-					path="/initiatives/coworkingspace"
-					element={<CoworkingSpace />}
-				/>
-				<Route
-					path="/initiatives/incubationacceleration"
-					element={<IncubationAcceleration />}
-				/>
-				<Route
-					path="/initiatives/incubationcollaboration"
-					element={<IncubationCollaboration />}
-				/>
+        {/* initiatives */}
+        <Route path="/initiatives/ipsupport" element={<IpSupport />} />
+        <Route
+          path="/initiatives/entrepreneurship"
+          element={<Entrepreneurship />}
+        />
+        <Route path="/initiatives/youngminds" element={<YoungMinds />} />
+        <Route
+          path="/initiatives/preincubationprogram"
+          element={<PreIncubationProgram />}
+        />
+        <Route path="/initiatives/makerspace" element={<MakerSpace />} />
+        <Route
+          path="/initiatives/incubationprogram"
+          element={<IncubationProgram />}
+        />
+        <Route
+          path="/initiatives/coworkingspace"
+          element={<CoworkingSpace />}
+        />
+        <Route
+          path="/initiatives/incubationacceleration"
+          element={<IncubationAcceleration />}
+        />
+        <Route
+          path="/initiatives/incubationcollaboration"
+          element={<IncubationCollaboration />}
+        />
 
-				{/* Centers */}
-				<Route
-					path="/center/mobilitytransportation"
-					element={<MobilityTransportation />}
-				/>
-				<Route
-					path="/center/renewableenergy"
-					element={<RenewableEnergy />}
-				/>
+        {/* Centers */}
+        <Route
+          path="/center/mobilitytransportation"
+          element={<MobilityTransportation />}
+        />
+        <Route path="/center/renewableenergy" element={<RenewableEnergy />} />
 
-				{/* Events */}
-				<Route
-					path="/centers/upcomingevents"
-					element={<UpcomingEvents />}
-				/>
-				<Route
-					path="/centers/previousevents"
-					element={<PreviousEvents />}
-				/>
+        {/* Events */}
+        <Route path="/centers/upcomingevents" element={<UpcomingEvents />} />
+        <Route path="/centers/previousevents" element={<PreviousEvents />} />
 
-				{/* Media */}
-				<Route path="/media/blog" element={<Blog />} />
-				<Route path="/media/annualreport" element={<AnnualReport />} />
-				<Route
-					path="/media/mediapresence"
-					element={<MediaPresence />}
-				/>
+        {/* Media */}
+        <Route path="/media/blog" element={<Blog />} />
+        <Route path="/media/annualreport" element={<AnnualReport />} />
+        <Route path="/media/mediapresence" element={<MediaPresence />} />
 
-				{/* Gallery */}
-				<Route path="/gallery" element={<Gallery />} />
+        {/* Gallery */}
+        <Route path="/gallery" element={<Gallery />} />
 
-				{/* Contact */}
-				<Route path="/contact" element={<Contact />} />
+        {/* Contact */}
+        <Route path="/contact" element={<Contact />} />
 
-				{/* Captial Infusion */}
+     {/* Captial Infusion */}
 				<Route path="/infusion" element={<Index />} />
 				<Route path="/infusion/investors" element={<SAINInvestors />} />
 				<Route path="/infusion/startups" element={<SAINStartups />} />
 				<Route path="/infusion/services" element={<Services />} />
-			</Routes>
-		</Router>
-	)
+
+				{/* Benefits Captial */}
+				<Route path="/benefits/clinic" element={<Clinic />} />
+				<Route path="/benefits/connect" element={<Connect />} />
+
+				{/* Benefits Advisior */}
+				<Route
+					path="/benefits/governmentfunding/state"
+					element={<StateFunding />}
+				/>
+				<Route
+					path="/benefits/governmentfunding/central"
+					element={<CentralFunding />}
+				/>
+				<Route
+					path="/benefits/governmentfunding/angelinvestors"
+					element={<AngelInvestors />}
+				/>
+				<Route
+					path="/benefits/governmentfunding/venturecapitalist"
+					element={<VentureCapitalist />}
+				/>
+
+				{/* Benefits Global Market Connect */}
+				<Route
+					path="/benefits/trade/globalconnect"
+					element={<GlobalMarketConnect />}
+				/>
+				<Route path="/benefits/trade/demoday" element={<DemoDay />} />
+				<Route
+					path="/benefits/trade/launchpad"
+					element={<LaunchPad />}
+				/>
+				<Route
+					path="/benefits/trade/startuptools"
+					element={<StartupTools />}
+				/>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
