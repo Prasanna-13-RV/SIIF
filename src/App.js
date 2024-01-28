@@ -26,8 +26,9 @@ import { Services } from "./pages/captialInfusion/Services"
 import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship"
 import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
 import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
-import { Makerspace } from "./pages/initiatives/Makerspace"
+import { MakerSpace } from "./pages/initiatives/MakerSpace"
 import { Contact } from "./pages/contact/Contact"
+import Index from "./pages/captialInfusion/Index";
 
 function App() {
 	return (
@@ -62,7 +63,7 @@ function App() {
 				/>
 				<Route
 					path="/initiatives/makerspace"
-					element={<Makerspace />}
+					element={<MakerSpace />}
 				/>
 				<Route
 					path="/initiatives/incubationprogram"
@@ -116,6 +117,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 
 				{/* Captial Infusion */}
+				<Route path="/infusion" element={<Index />} />
 				<Route path="/infusion/investors" element={<SAINInvestors />} />
 				<Route path="/infusion/startups" element={<SAINStartups />} />
 				<Route path="/infusion/services" element={<Services />} />
