@@ -38,6 +38,7 @@ import { GlobalMarketConnect } from "./pages/benefits/trade/GlobalMarketConnect"
 import { DemoDay } from "./pages/benefits/trade/DemoDay"
 import { LaunchPad } from "./pages/benefits/trade/LaunchPad"
 import { StartupTools } from "./pages/benefits/trade/StartupTools"
+import Index from "./pages/captialInfusion/Index";
 
 function App() {
   return (
@@ -104,7 +105,8 @@ function App() {
         {/* Contact */}
         <Route path="/contact" element={<Contact />} />
 
-        	{/* Captial Infusion */}
+     {/* Captial Infusion */}
+				<Route path="/infusion" element={<Index />} />
 				<Route path="/infusion/investors" element={<SAINInvestors />} />
 				<Route path="/infusion/startups" element={<SAINStartups />} />
 				<Route path="/infusion/services" element={<Services />} />
