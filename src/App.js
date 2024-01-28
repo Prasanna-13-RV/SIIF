@@ -39,6 +39,10 @@ import { DemoDay } from "./pages/benefits/trade/DemoDay"
 import { LaunchPad } from "./pages/benefits/trade/LaunchPad"
 import { StartupTools } from "./pages/benefits/trade/StartupTools"
 import Index from "./pages/captialInfusion/Index";
+import Student from "./pages/apply/Student"
+import Faculty from "./pages/apply/Faculty"
+import Technopreneur from "./pages/apply/Technopreneur"
+import Mentor from "./pages/apply/Mentor"
 
 function App() {
   return (
@@ -146,6 +150,25 @@ function App() {
 				<Route
 					path="/benefits/trade/startuptools"
 					element={<StartupTools />}
+				/>
+
+
+        {/* apply */}
+        <Route
+					path="/apply/student"
+					element={<Student />}
+				/>
+             <Route
+					path="/apply/faculty"
+					element={<Faculty />}
+				/>
+               <Route
+					path="/apply/technopreneur"
+					element={<Technopreneur />}
+				/>
+           <Route
+					path="/apply/mentor"
+					element={<Mentor />}
 				/>
       </Routes>
     </Router>
