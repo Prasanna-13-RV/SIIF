@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div className='relative mt-16 bg-deep-purple-accent-400'>
+		<div className='relative mt-16 bg-deep-purple-accent-400 '>
 			<svg
 				className='absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400'
 				preserveAspectRatio='none'
@@ -11,8 +11,8 @@ const Footer = () => {
 					d='M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z'
 				/>
 			</svg>
-			<div className='px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
-				<div className='grid gap-16 row-gap-10 mb-8 lg:grid-cols-6'>
+			<div className='pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl px-10 lg:px-14 xl:px-16'>
+				<div className='flex'>
 					<div className='md:max-w-md lg:col-span-2'>
 						<a href='/' className='inline-flex items-center'>
 							<img src='../../../logo.png' className='w-28' alt='' />
@@ -29,100 +29,95 @@ const Footer = () => {
 							</p>
 						</div>
 					</div>
-					<div className='grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-6'>
-						<div className='space-y-2'>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              <a
+					<div className='flex justify-between w-full'>
+						<div className='flex flex-col space-y-3'>
+							<div className='space-y-2'>
+								<p className='font-semibold tracking-wide text-teal-accent-400'>
+									<a
 										href='/'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400 underline underline-offset-2'
 									>
 										Home
 									</a>
-							</p>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              <a
+								</p>
+								<p className='font-semibold tracking-wide text-teal-accent-400'>
+									<a
 										href='/gallery'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400 underline underline-offset-2'
 									>
 										Gallery
 									</a>
-							</p>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              <a
-										href='/events'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Events
-									</a>
-							</p>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              <a
-										href='/contact'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Contact
-									</a>
-							</p>
+								</p>
 						
+								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+									<a
+										href='/apply-now'
+										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400 underline underline-offset-2'
+									>
+										Apply Now
+									</a>
+								</p>
+							</div>
+							<div>
+								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+									About
+								</p>
+								<ul className='mt-2 space-y-2'>
+									<li>
+										<a
+											href='/about/advisoryboard'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Advisory Board
+										</a>
+									</li>
+									<li>
+										<a
+											href='/about/startups'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Startups
+										</a>
+									</li>
+									<li>
+										<a
+											href='/about/teams'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Teams
+										</a>
+									</li>
+									<li>
+										<a
+											href='/about/partners'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Partners
+										</a>
+									</li>
+									<li>
+										<a
+											href='/about/mentors'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Mentors
+										</a>
+									</li>
+									<li>
+										<a
+											href='/about/virtualtour'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Virtual Tour
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-								About
-							</p>
-							<ul className='mt-2 space-y-2'>
-								<li>
-									<a
-										href='/about/advisoryboard'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Advisory Board
-									</a>
-								</li>
-								<li>
-									<a
-										href='/about/startups'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Startups
-									</a>
-								</li>
-								<li>
-									<a
-										href='/about/teams'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Teams
-									</a>
-								</li>
-								<li>
-									<a
-										href='/about/partners'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Partners
-									</a>
-								</li>
-								<li>
-									<a
-										href='/about/mentors'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Mentors
-									</a>
-								</li>
-								<li>
-									<a
-										href='/about/virtualtour'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Virtual Tour
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-								Initiatives
+
+						<div className='max-w-28'>
+							<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+								Our Initiatives
 							</p>
 							<ul className='mt-2 space-y-2'>
 								<li>
@@ -175,101 +170,126 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              Capital Infusion
-							</p>
-							<ul className='mt-2 space-y-2'>
-								<li>
-									<a
-										href='/infusion/investors'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										SAIN Investors
-									</a>
-								</li>
-								<li>
-									<a
-										href='/infusion/startups'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										SAIN Startups
-									</a>
-								</li>
-								<li>
-									<a
-										href='/infusion/services'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Services
-									</a>
-								</li>
-						
-							</ul>
+						<div className='space-y-3'>
+							<div>
+								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+									Capital Infusion
+								</p>
+								<ul className='mt-2 space-y-2'>
+									<li>
+										<a
+											href='/infusion/investors'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											SAIN Investors
+										</a>
+									</li>
+									<li>
+										<a
+											href='/infusion/startups'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											SAIN Startups
+										</a>
+									</li>
+									<li>
+										<a
+											href='/infusion/services'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Services
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+									Benefits
+								</p>
+								<ul className='mt-2 space-y-2'>
+									<li>
+										<a
+											href='/benefits/capital'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Capital
+										</a>
+									</li>
+									<li>
+										<a
+											href='/benefits/advisor'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Advisor
+										</a>
+									</li>
+									<li>
+										<a
+											href='/benefits/trade'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Trade
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              Benefits
-							</p>
-							<ul className='mt-2 space-y-2'>
-								<li>
-									<a
-										href='/benefits/capital'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Capital
-									</a>
-								</li>
-								<li>
-									<a
-										href='/benefits/advisor'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Advisor
-									</a>
-								</li>
-								<li>
-									<a
-										href='/benefits/trade'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Trade
-									</a>
-								</li>
-					
-							</ul>
-						</div>
-						<div>
-							<p className='font-semibold tracking-wide text-teal-accent-400'>
-              Media
-							</p>
-							<ul className='mt-2 space-y-2'>
-								<li>
-									<a
-										href='/media/blog'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Blog
-									</a>
-								</li>
-								<li>
-									<a
-										href='/media/blog'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Annual Report
-									</a>
-								</li>
-								<li>
-									<a
-										href='/media/mediapresence'
-										className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
-									>
-										Media Presence
-									</a>
-								</li>
-							
-							</ul>
+						<div className='space-y-3'>
+							<div>
+								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+									Media
+								</p>
+								<ul className='mt-2 space-y-2'>
+									<li>
+										<a
+											href='/media/blog'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Blog
+										</a>
+									</li>
+									<li>
+										<a
+											href='/media/blog'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Annual Report
+										</a>
+									</li>
+									<li>
+										<a
+											href='/media/mediapresence'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Media Presence
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
+									Events
+								</p>
+								<ul className='mt-2 space-y-2'>
+									<li>
+										<a
+											href='/media/blog'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Upcoming Events
+										</a>
+									</li>
+									<li>
+										<a
+											href='/media/blog'
+											className='transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400'
+										>
+											Past Events
+										</a>
+									</li>
+								
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
