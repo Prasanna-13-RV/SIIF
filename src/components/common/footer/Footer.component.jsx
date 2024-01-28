@@ -11,8 +11,8 @@ const Footer = () => {
 					d='M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z'
 				/>
 			</svg> */}
-			<div className='pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl px-10 lg:px-14 xl:px-16'>
-				<div className='flex'>
+			<div className='pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl'>
+				<div className='flex gap-5'>
 					<div className='md:max-w-md lg:col-span-2'>
 						<a href='/' className='inline-flex items-center'>
 							<img src='../../../logo.png' className='w-28' alt='' />
@@ -115,7 +115,7 @@ const Footer = () => {
 							</div>
 						</div>
 
-						<div className='max-w-28'>
+						<div className='max-w-48'>
 							<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
 								Our Initiatives
 							</p>
