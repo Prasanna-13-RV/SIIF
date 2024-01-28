@@ -1,211 +1,118 @@
-<<<<<<< HEAD
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Navbar from './components/common/navbar/Navbar.component';
-import Footer from './components/common/footer/Footer.component';
-import "./index.css";
-import { AdvisoryBoard } from "./pages/about/AdvisoryBoard";
-import { Mentors } from "./pages/about/Mentors";
-import { Partners } from "./pages/about/Partners";
-import { Startups } from "./pages/about/Startups";
-import { Teams } from "./pages/about/Teams";
-import { VirtualTour } from "./pages/about/VirtualTour";
-import Advisor from "./pages/benefits/Advisor.page";
-import Capital from "./pages/benefits/Capital.page";
-import Trade from "./pages/benefits/Trade.page";
-import { SAINInvestors } from "./pages/captialInfusion/SAINInvestors";
-import { SAINStartups } from "./pages/captialInfusion/SAINStartups";
-import { Services } from "./pages/captialInfusion/Services";
-import { Contact } from "./pages/contact/Contact";
-import { PreviousEvents } from "./pages/events/PreviousEvents";
-import { UpcomingEvents } from "./pages/events/UpcomingEvents";
-import { Gallery } from "./pages/gallery/Gallery";
-import { HomePage } from "./pages/home/HomePage";
-import { CoworkingSpace } from "./pages/initiatives/CoworkingSpace";
-import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship";
-import { IncubationAcceleration } from "./pages/initiatives/IncubationAcceleration";
-import { IncubationProgram } from "./pages/initiatives/IncubationProgram";
-import { IncubationCollaboration } from "./pages/initiatives/IndustrialCollaboration";
-import { IpSupport } from "./pages/initiatives/IpSupport";
-import { Makerspace } from "./pages/initiatives/MakerSpace";
-import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram";
-import { YoungMinds } from "./pages/initiatives/YoungMinds";
-import { MobilityTransportation } from "./pages/initiatives/centers/MobilityTransportation";
-import { RenewableEnergy } from "./pages/initiatives/centers/RenewableEnergy";
-import { AnnualReport } from "./pages/media/AnnualReport";
-import { Blog } from "./pages/media/Blog";
-import { MediaPresence } from "./pages/media/MediaPresence";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import Footer from './components/common/footer/Footer.component'
+import Navbar from './components/common/navbar/Navbar.component'
+import "./index.css"
+import { AdvisoryBoard } from "./pages/about/AdvisoryBoard"
+import { Mentors } from "./pages/about/Mentors"
+import { Partners } from "./pages/about/Partners"
+import { Startups } from "./pages/about/Startups"
+import { Teams } from "./pages/about/Teams"
+import { VirtualTour } from "./pages/about/VirtualTour"
+import { CentralFunding } from "./pages/benefits/advisor/governmentFunding/CentralFunding"
+import { StateFunding } from "./pages/benefits/advisor/governmentFunding/StateFunding"
+import { AngelInvestors } from "./pages/benefits/advisor/privateFunding/AngelInvestors"
+import { VentureCapitalist } from "./pages/benefits/advisor/privateFunding/VentureCapitalist"
+import Clinic from "./pages/benefits/capital/Clinic"
+import { Connect } from "./pages/benefits/capital/Connect"
+import { DemoDay } from "./pages/benefits/trade/DemoDay"
+import { GlobalMarketConnect } from "./pages/benefits/trade/GlobalMarketConnect"
+import { LaunchPad } from "./pages/benefits/trade/LaunchPad"
+import { StartupTools } from "./pages/benefits/trade/StartupTools"
+import Index from "./pages/captialInfusion/Index"
+import { SAINInvestors } from "./pages/captialInfusion/SAINInvestors"
+import { SAINStartups } from "./pages/captialInfusion/SAINStartups"
+import { Services } from "./pages/captialInfusion/Services"
+import { Contact } from "./pages/contact/Contact"
+import { PreviousEvents } from "./pages/events/PreviousEvents"
+import { UpcomingEvents } from "./pages/events/UpcomingEvents"
+import { Gallery } from "./pages/gallery/Gallery"
+import { HomePage } from "./pages/home/HomePage"
+import { CoworkingSpace } from "./pages/initiatives/CoworkingSpace"
+import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship"
+import { IncubationAcceleration } from "./pages/initiatives/IncubationAcceleration"
+import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
+import { IncubationCollaboration } from "./pages/initiatives/IndustrialCollaboration"
+import { IpSupport } from "./pages/initiatives/IpSupport"
+import { MakerSpace } from "./pages/initiatives/MakerSpace"
+import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
+import { YoungMinds } from "./pages/initiatives/YoungMinds"
+import { MobilityTransportation } from "./pages/initiatives/centers/MobilityTransportation"
+import { RenewableEnergy } from "./pages/initiatives/centers/RenewableEnergy"
+import { AnnualReport } from "./pages/media/AnnualReport"
+import { Blog } from "./pages/media/Blog"
+import { MediaPresence } from "./pages/media/MediaPresence"
 
 function App() {
 	return (
 		<Router>
-			<Navbar/>
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
+
 				{/* about tab */}
-				<Route
-					path="/about/advisoryboard"
-					element={<AdvisoryBoard />}
-				/>
+				<Route path="/about/advisoryboard" element={<AdvisoryBoard />} />
 				<Route path="/about/startups" element={<Startups />} />
 				<Route path="/about/teams" element={<Teams />} />
 				<Route path="/about/partners" element={<Partners />} />
 				<Route path="/about/mentors" element={<Mentors />} />
 				<Route path="/about/virtualtour" element={<VirtualTour />} />
-=======
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import "./index.css"
-import { HomePage } from "./pages/home/HomePage"
-import { AdvisoryBoard } from "./pages/about/AdvisoryBoard"
-import { Startups } from "./pages/about/Startups"
-import { Teams } from "./pages/about/Teams"
-import { Partners } from "./pages/about/Partners"
-import { Mentors } from "./pages/about/Mentors"
-import { VirtualTour } from "./pages/about/VirtualTour"
-import { IpSupport } from "./pages/initiatives/IpSupport"
-import { CoworkingSpace } from "./pages/initiatives/CoworkingSpace"
-import { MobilityTransportation } from "./pages/initiatives/centers/MobilityTransportation"
-import { RenewableEnergy } from "./pages/initiatives/centers/RenewableEnergy"
-import { IncubationAcceleration } from "./pages/initiatives/IncubationAcceleration"
-import { IncubationCollaboration } from "./pages/initiatives/IndustrialCollaboration"
-import { YoungMinds } from "./pages/initiatives/YoungMinds"
-import { UpcomingEvents } from "./pages/events/UpcomingEvents"
-import { PreviousEvents } from "./pages/events/PreviousEvents"
-import { Blog } from "./pages/media/Blog"
-import { AnnualReport } from "./pages/media/AnnualReport"
-import { MediaPresence } from "./pages/media/MediaPresence"
-import { Gallery } from "./pages/gallery/Gallery"
-import { SAINInvestors } from "./pages/captialInfusion/SAINInvestors"
-import { SAINStartups } from "./pages/captialInfusion/SAINStartups"
-import { Services } from "./pages/captialInfusion/Services"
-import { Entrepreneurship } from "./pages/initiatives/Entrepreneurship"
-import { PreIncubationProgram } from "./pages/initiatives/PreIncubationProgram"
-import { IncubationProgram } from "./pages/initiatives/IncubationProgram"
-import { MakerSpace } from "./pages/initiatives/MakerSpace"
-import { Contact } from "./pages/contact/Contact"
-import Clinic from "./pages/benefits/capital/Clinic"
-import { Connect } from "./pages/benefits/capital/Connect"
-import { StateFunding } from "./pages/benefits/advisor/governmentFunding/StateFunding"
-import { CentralFunding } from "./pages/benefits/advisor/governmentFunding/CentralFunding"
-import { AngelInvestors } from "./pages/benefits/advisor/privateFunding/AngelInvestors"
-import { VentureCapitalist } from "./pages/benefits/advisor/privateFunding/VentureCapitalist"
-import { GlobalMarketConnect } from "./pages/benefits/trade/GlobalMarketConnect"
-import { DemoDay } from "./pages/benefits/trade/DemoDay"
-import { LaunchPad } from "./pages/benefits/trade/LaunchPad"
-import { StartupTools } from "./pages/benefits/trade/StartupTools"
-import Index from "./pages/captialInfusion/Index";
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
+				{/* initiatives */}
+				<Route path="/initiatives/ipsupport" element={<IpSupport />} />
+				<Route
+					path="/initiatives/entrepreneurship"
+					element={<Entrepreneurship />}
+				/>
+				<Route path="/initiatives/youngminds" element={<YoungMinds />} />
+				<Route
+					path="/initiatives/preincubationprogram"
+					element={<PreIncubationProgram />}
+				/>
+				<Route path="/initiatives/makerspace" element={<MakerSpace />} />
+				<Route
+					path="/initiatives/incubationprogram"
+					element={<IncubationProgram />}
+				/>
+				<Route
+					path="/initiatives/coworkingspace"
+					element={<CoworkingSpace />}
+				/>
+				<Route
+					path="/initiatives/incubationacceleration"
+					element={<IncubationAcceleration />}
+				/>
+				<Route
+					path="/initiatives/incubationcollaboration"
+					element={<IncubationCollaboration />}
+				/>
 
-        {/* about tab */}
-        <Route path="/about/advisoryboard" element={<AdvisoryBoard />} />
-        <Route path="/about/startups" element={<Startups />} />
-        <Route path="/about/teams" element={<Teams />} />
-        <Route path="/about/partners" element={<Partners />} />
-        <Route path="/about/mentors" element={<Mentors />} />
-        <Route path="/about/virtualtour" element={<VirtualTour />} />
->>>>>>> 01996113a03d67353b482a248b0d1d039a2b5538
+				{/* Centers */}
+				<Route
+					path="/center/mobilitytransportation"
+					element={<MobilityTransportation />}
+				/>
+				<Route path="/center/renewableenergy" element={<RenewableEnergy />} />
 
-        {/* initiatives */}
-        <Route path="/initiatives/ipsupport" element={<IpSupport />} />
-        <Route
-          path="/initiatives/entrepreneurship"
-          element={<Entrepreneurship />}
-        />
-        <Route path="/initiatives/youngminds" element={<YoungMinds />} />
-        <Route
-          path="/initiatives/preincubationprogram"
-          element={<PreIncubationProgram />}
-        />
-        <Route path="/initiatives/makerspace" element={<MakerSpace />} />
-        <Route
-          path="/initiatives/incubationprogram"
-          element={<IncubationProgram />}
-        />
-        <Route
-          path="/initiatives/coworkingspace"
-          element={<CoworkingSpace />}
-        />
-        <Route
-          path="/initiatives/incubationacceleration"
-          element={<IncubationAcceleration />}
-        />
-        <Route
-          path="/initiatives/incubationcollaboration"
-          element={<IncubationCollaboration />}
-        />
-
-        {/* Centers */}
-        <Route
-          path="/center/mobilitytransportation"
-          element={<MobilityTransportation />}
-        />
-        <Route path="/center/renewableenergy" element={<RenewableEnergy />} />
-
-<<<<<<< HEAD
 				{/* Events */}
-				<Route
-					path="/events/upcomingevents"
-					element={<UpcomingEvents />}
-				/>
-				<Route
-					path="/events/previousevents"
-					element={<PreviousEvents />}
-				/>
-
-				{/* Benefits */}
-				<Route
-					path="/benefits/capital"
-					element={<Capital />}
-				/>
-				<Route
-					path="/benefits/trade"
-					element={<Trade />}
-				/>
-				<Route
-					path="/benefits/advisor"
-					element={<Advisor />}
-				/>
-
+				<Route path="/centers/upcomingevents" element={<UpcomingEvents />} />
+				<Route path="/centers/previousevents" element={<PreviousEvents />} />
 
 				{/* Media */}
 				<Route path="/media/blog" element={<Blog />} />
-				<Route path="/media/blog" element={<AnnualReport />} />
-				<Route
-					path="/media/mediapresence"
-					element={<MediaPresence />}
-				/>
-=======
-        {/* Events */}
-        <Route path="/centers/upcomingevents" element={<UpcomingEvents />} />
-        <Route path="/centers/previousevents" element={<PreviousEvents />} />
+				<Route path="/media/annualreport" element={<AnnualReport />} />
+				<Route path="/media/mediapresence" element={<MediaPresence />} />
 
-        {/* Media */}
-        <Route path="/media/blog" element={<Blog />} />
-        <Route path="/media/annualreport" element={<AnnualReport />} />
-        <Route path="/media/mediapresence" element={<MediaPresence />} />
->>>>>>> 01996113a03d67353b482a248b0d1d039a2b5538
+				{/* Gallery */}
+				<Route path="/gallery" element={<Gallery />} />
 
-        {/* Gallery */}
-        <Route path="/gallery" element={<Gallery />} />
+				{/* Contact */}
+				<Route path="/contact" element={<Contact />} />
 
-        {/* Contact */}
-        <Route path="/contact" element={<Contact />} />
-
-     {/* Captial Infusion */}
+				{/* Captial Infusion */}
 				<Route path="/infusion" element={<Index />} />
 				<Route path="/infusion/investors" element={<SAINInvestors />} />
 				<Route path="/infusion/startups" element={<SAINStartups />} />
 				<Route path="/infusion/services" element={<Services />} />
-<<<<<<< HEAD
-			</Routes>
-			<Footer/>
-		</Router>
-	)
-=======
 
 				{/* Benefits Captial */}
 				<Route path="/benefits/clinic" element={<Clinic />} />
@@ -243,10 +150,10 @@ function App() {
 					path="/benefits/trade/startuptools"
 					element={<StartupTools />}
 				/>
-      </Routes>
-    </Router>
-  );
->>>>>>> 01996113a03d67353b482a248b0d1d039a2b5538
+			</Routes>
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;

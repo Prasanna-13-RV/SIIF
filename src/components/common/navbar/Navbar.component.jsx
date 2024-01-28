@@ -313,7 +313,7 @@ const Navbar = () => {
 					</svg>
 				</Link> */}
 				<button className='bg-black hover:bg-gray-700 text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded'>
-					Contact
+					Apply Now
 				</button>
 			</div>
 		</header>
