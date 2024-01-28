@@ -6,17 +6,17 @@ export const StartupToolsContent = () => {
 		{
 			toolImage:
 				"https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-			toolTitle: "Domain name 1",
+			toolTitle: "Domain name",
 		},
 		{
 			toolImage:
 				"https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-			toolTitle: "Domain name 1",
+			toolTitle: "Domain name",
 		},
 		{
 			toolImage:
 				"https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-			toolTitle: "Domain name 1",
+			toolTitle: "Domain name",
 		},
 	])
 

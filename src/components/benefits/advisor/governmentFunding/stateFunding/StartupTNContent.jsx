@@ -46,7 +46,7 @@ export const StartupTNContent = () => {
 				</div>
 			</section>
 			<section>
-				<div className="container flex flex-col justify-center p-2 mx-auto sm:py-3 lg:py-10 lg:flex-row lg:justify-between">
+				<div className="container pt-3 flex flex-col justify-center p-2 mx-auto sm:py-3 lg:py-10 lg:flex-row lg:justify-between">
 					<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 						<img
 							src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
@@ -86,7 +86,7 @@ export const StartupTNContent = () => {
 				</div>
 			</section>
 			<section>
-				<div className="container flex flex-col justify-center p-2 mx-auto sm:py-3 lg:py-10 lg:flex-row lg:justify-between">
+				<div className="container pt-3 flex flex-col justify-center p-2 mx-auto sm:py-3 lg:py-10 lg:flex-row lg:justify-between">
 					<div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 						<p className="mb-1 text-base sm:mb-1">
 							Awarness Program on DPIIT Registration was organised
@@ -110,7 +110,7 @@ export const StartupTNContent = () => {
 				</div>
 			</section>
 			<section>
-				<div className="container flex flex-col justify-center p-2 mx-auto sm:py-3 lg:py-10 lg:flex-row lg:justify-between">
+				<div className="container pt-3 flex flex-col justify-center p-2 mx-auto sm:py-3 lg:py-10 lg:flex-row lg:justify-between">
 					<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 						<img
 							src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"

@@ -16,22 +16,22 @@ export const BlogSingleCard = ({ image, title, description, link }) => {
 		// 		</div>
 		// 	</a>
 		// </div>
-		<article class="card">
+		<article className="card">
 			<img
-				class="card__background"
+				className="card__background"
 				src={image}
 				alt={title}
 				width="1920"
 				height="2193"
 			/>
-			<div class="card__content | flow">
-				<div class="card__content--container | flow">
-					<h2 class="card__title">{title}</h2>
-					<p class="card__description">
+			<div className="card__content | flow">
+				<div className="card__content--container | flow">
+					<h2 className="card__title">{title}</h2>
+					<p className="card__description">
 						{description}
 					</p>
 				</div>
-				<a href={link} class="card__button">Read more</a>
+				<a href={link} className="card__button">Read more</a>
 			</div>
 		</article>
 	)
