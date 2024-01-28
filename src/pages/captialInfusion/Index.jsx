@@ -30,6 +30,7 @@ const Index = () => {
     </div>
     
       {/* services */}
+      
     <Services/>
         </div>
 

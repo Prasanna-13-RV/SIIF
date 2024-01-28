@@ -38,22 +38,21 @@ export const SAINInvestors = () => {
 		img:"https://images.unsplash.com/photo-1512099053734-e6767b535838?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 	}]
-	return <div className=" w-[95%]  xl:w-[80%]   mx-auto ">
-		<h1 className="py-16 font-bold text-3xl text-center ">SAIN Investors</h1>
-		<div className=" grid   grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6 pb-16">
-			{data.map((i) => {
-				return (
-					<div className=" shadow-md  rounded-sm">
-						<img src={i.img}  className="h-[40%] lg:h-[50%] w-full object-cover" alt="" />
-					<div className="p-6">
+	return <div className="  mx-auto ">
+	<h1 className="py-16 font-bold text-3xl text-center ">SAIN Investors</h1>
+	<div className=" w-[90%]  lg:w-[85%] xl:w-[80%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 grid-flow-dense justify-items-center mx-auto  pb-16">
+		{data.map((i) => {
+			return (
+				<div className="h-[400px] shadow-md  rounded-sm">
+					<img src={i.img}  className="h-[40%]  w-full object-cover" alt="" />
+				<div className="p-3">
 
-					
-						<h1 className=" font-bold mb-2">
-						{i.title}</h1>
-						<p className="">{i.content}
-						</p></div></div>
-				)
-			})}
+				
+					<h1 className=" font-bold mb-2">
+					{i.title}</h1>
+					<p className="">{i.content}
+					</p></div></div>
+			)
+		})}
 
-		</div></div>
-}
+	</div></div>}
