@@ -2,13 +2,11 @@ import React from "react";
 import CarouselHero from "./CarouselHero";
 import ContactComponent from "./ContactComponent";
 import TextRevealOnScroll from "./TextAnimation";
-import Navbar from "../../components/common/navbar/Navbar.component";
-import Footer from "../../components/common/footer/Footer.component";
+
 export const HomePage = () => {
   return (
     <div>
-      <Navbar />
-      <CarouselHero />
+      {/* <CarouselHero /> */}
       <TextRevealOnScroll text="50+ Startups empowered by 2025" />
 
       {/* About us */}
@@ -97,7 +95,6 @@ export const HomePage = () => {
       </div>
 
       <ContactComponent />
-	  <Footer/>
     </div>
   );
 };
