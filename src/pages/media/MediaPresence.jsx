@@ -1,5 +1,12 @@
 import React from "react"
+import { MediaPresenceHero } from "../../components/media/mediaPresence/MediaPresenceHero"
+import { MediaPresenceContent } from "../../components/media/mediaPresence/MediaPresenceContent"
 
 export const MediaPresence = () => {
-	return <h1>MediaPresence</h1>
+	return (
+		<>
+			<MediaPresenceHero />
+			<MediaPresenceContent />
+		</>
+	)
 }

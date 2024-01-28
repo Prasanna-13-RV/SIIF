@@ -1,5 +1,12 @@
 import React from "react"
+import { PreviousEventCards } from "../../components/events/previousEvents/PreviousEventCards"
+import { PreviousEventHero } from "../../components/events/previousEvents/PreviousEventHero"
 
 export const PreviousEvents = () => {
-	return <h1>PreviousEvents</h1>
+	return (
+		<>
+			<PreviousEventHero />
+			<PreviousEventCards />
+		</>
+	)
 }
