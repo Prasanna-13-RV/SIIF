@@ -94,8 +94,8 @@ function App() {
 				<Route path="/center/renewableenergy" element={<RenewableEnergy />} />
 
 				{/* Events */}
-				<Route path="/centers/upcomingevents" element={<UpcomingEvents />} />
-				<Route path="/centers/previousevents" element={<PreviousEvents />} />
+				<Route path="/events/upcomingevents" element={<UpcomingEvents />} />
+				<Route path="/events/previousevents" element={<PreviousEvents />} />
 
 				{/* Media */}
 				<Route path="/media/blog" element={<Blog />} />
@@ -115,7 +115,16 @@ function App() {
 				<Route path="/infusion/services" element={<Services />} />
 
 				{/* Benefits Captial */}
-				<Route path="/benefits/clinic" element={<Clinic />} />
+				<Route path="/benefits/{
+				title: 'Upcoming Events',
+				link: '/events/upcomingevents',
+				subItems: []
+			},
+			{
+				title: 'Past Events',
+				link: '/events/previousevents',
+				subItems: []
+			}" element={<Clinic />} />
 				<Route path="/benefits/connect" element={<Connect />} />
 
 				{/* Benefits Advisior */}

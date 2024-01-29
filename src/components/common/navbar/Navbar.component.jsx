@@ -143,17 +143,74 @@ const navItems = [
 					{
 						title: 'Capital',
 						link: '/benefits/capital',
-						subItems: []
+						subItems: [
+							{
+								title: 'Clinic',
+								link: '/benefits/clinic',
+								subItems: []
+							},
+							{
+								title: 'Connect',
+								link: '/benefits/connect',
+								subItems: []
+							}
+						]
 					},
 					{
 						title: 'Advisor',
 						link: '/benefits/advisor',
-						subItems: []
+						subItems: [
+							{
+								title: 'State Funding',
+								link: '/benefits/governmentfunding/state',
+								subItems: []
+							},
+							{
+								title: 'Central Funding',
+								link: '/benefits/governmentfunding/central',
+								subItems: []
+							}
+							,
+							{
+								title: 'Angel Investors',
+								link: '/benefits/governmentfunding/angelinvestors',
+								subItems: []
+							}
+							,
+							{
+								title: 'Venture Capitalist',
+								link: '/benefits/governmentfunding/venturecapitalist',
+								subItems: []
+							}
+						]
 					},
 					{
 						title: 'Trade',
 						link: '/benefits/trade',
-						subItems: []
+						subItems: [
+							{
+								title: 'Global Market Connect',
+								link: '/benefits/trade/globalconnect',
+								subItems: []
+							},
+							{
+								title: 'Demo day',
+								link: '/benefits/trade/demoday',
+								subItems: []
+							}
+							,
+							{
+								title: 'Launchpad',
+								link: '/benefits/trade/launchpad',
+								subItems: []
+							}
+							,
+							{
+								title: 'StartUp Tools',
+								link: '/benefits/trade/startuptools',
+								subItems: []
+							}
+						]
 					}
 				]
 			},
@@ -180,7 +237,7 @@ const navItems = [
 			},
 			{
 				title: 'Capital Infusion',
-				link: '',
+				link: '/infusion',
 				subItems: [
 					{
 						title: 'SAIN Investors',

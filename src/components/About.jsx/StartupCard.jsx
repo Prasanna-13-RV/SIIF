@@ -6,26 +6,20 @@ import Button from "react-bootstrap/Button";
 const StartupCard = ({ startup, idx }) => {
   return (
     <Col key={idx}>
-      <Card className="flex relative justify-center items-center ">
-        <Card.Img
-          className="sm:h-[20vh] sm:w-[25vw] md:h-[20vh] md:w-[15vw] lg:h-[20vh] lg:w-[12vw]"
-          variant="top"
-          src={startup.logo}
-        />
-        <Card.Body>
-          <Card.Title className="text-center">{startup.name}</Card.Title>
-          <Card.Text className="py-3">{startup.desc}</Card.Text>
-          <Button
-            href="#"
-            variant="dark"
-            className="flex justify-center items-center"
-          >
-            Read More
-          </Button>
-        </Card.Body>
-      </Card>
+      <Card className="px-2 pt-2">
+      <Card.Img variant="top" src={startup.logo} className="sm:h-[20vh] sm:w-[25vw] md:h-[20vh] md:w-[15vw] lg:h-[20vh] lg:w-[12vw]"/>
+      <Card.Body>
+        <h1 className="text-center text-3xl">{startup.name}</h1>
+        <Card.Text className="text-black">
+        {startup.desc}
+        </Card.Text>
+        <Button variant="dark" className="w-full" >Read More</Button>
+      </Card.Body>
+    </Card>
     </Col>
+    
   );
 };
 
 export default StartupCard;
+// 
