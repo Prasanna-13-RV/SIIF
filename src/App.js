@@ -115,16 +115,7 @@ function App() {
 				<Route path="/infusion/services" element={<Services />} />
 
 				{/* Benefits Captial */}
-				<Route path="/benefits/{
-				title: 'Upcoming Events',
-				link: '/events/upcomingevents',
-				subItems: []
-			},
-			{
-				title: 'Past Events',
-				link: '/events/previousevents',
-				subItems: []
-			}" element={<Clinic />} />
+				<Route path="/benefits/clinic" element={<Clinic />} />
 				<Route path="/benefits/connect" element={<Connect />} />
 
 				{/* Benefits Advisior */}
