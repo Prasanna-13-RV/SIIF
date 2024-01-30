@@ -205,7 +205,7 @@ const navItems = [
 
 const Navbar = () => {
 	return (
-		<header className='bg-white shadow-lg h-24 hidden md:flex relative z-10'>
+		<header className='bg-white shadow-lg h-24 hidden md:flex fixed top-0 left-0 right-0 z-50'>
 			<Link
 				to=''
 				className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
