@@ -41,6 +41,10 @@ import { RenewableEnergy } from "./pages/initiatives/centers/RenewableEnergy"
 import { AnnualReport } from "./pages/media/AnnualReport"
 import { Blog } from "./pages/media/Blog"
 import { MediaPresence } from "./pages/media/MediaPresence"
+import Student from "./pages/apply/Student"
+import Faculty from "./pages/apply/Faculty"
+import Technopreneur from "./pages/apply/Technopreneur"
+import Mentor from "./pages/apply/Mentor"
 
 function App() {
 	return (
@@ -138,26 +142,47 @@ function App() {
 						element={<VentureCapitalist />}
 					/>
 
-					{/* Benefits Global Market Connect */}
-					<Route
-						path="/benefits/trade/globalconnect"
-						element={<GlobalMarketConnect />}
-					/>
-					<Route path="/benefits/trade/demoday" element={<DemoDay />} />
-					<Route
-						path="/benefits/trade/launchpad"
-						element={<LaunchPad />}
-					/>
-					<Route
-						path="/benefits/trade/startuptools"
-						element={<StartupTools />}
-					/>
+							{/* Benefits Global Market Connect */}
+				<Route
+					path="/benefits/trade/globalconnect"
+					element={<GlobalMarketConnect />}
+				/>
+				<Route path="/benefits/trade/demoday" element={<DemoDay />} />
+				<Route
+					path="/benefits/trade/launchpad"
+					element={<LaunchPad />}
+				/>
+				<Route
+					path="/benefits/trade/startuptools"
+					element={<StartupTools />}
+				/>
+
+
+        {/* apply */}
+        <Route
+					path="/apply/student"
+					element={<Student />}
+				/>
+             <Route
+					path="/apply/faculty"
+					element={<Faculty />}
+				/>
+               <Route
+					path="/apply/technopreneur"
+					element={<Technopreneur />}
+				/>
+           <Route
+					path="/apply/mentor"
+					element={<Mentor />}
+				/>
 				</Routes>
 				<Footer />
 			</Router>
 		</div>
 
-	);
+
+  );
+
 }
 
 export default App;

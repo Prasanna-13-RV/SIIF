@@ -1,5 +1,5 @@
 import React from "react";
-import TeamSlider from "../../components/About.jsx/TeamSlider";
+import TeamSlider from "../../components/About/TeamSlider";
 
 export const Teams = () => {
   const Teammembers = [
