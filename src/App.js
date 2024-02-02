@@ -44,115 +44,119 @@ import { MediaPresence } from "./pages/media/MediaPresence"
 
 function App() {
 	return (
-		<Router>
-			<Navbar />
-			<Routes>
-				<Route path="/" element={<HomePage />} />
+		<div className='mt-36'>
 
-				{/* about tab */}
-				<Route path="/about/advisoryboard" element={<AdvisoryBoard />} />
-				<Route path="/about/startups" element={<Startups />} />
-				<Route path="/about/teams" element={<Teams />} />
-				<Route path="/about/partners" element={<Partners />} />
-				<Route path="/about/mentors" element={<Mentors />} />
-				<Route path="/about/virtualtour" element={<VirtualTour />} />
+			<Router>
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<HomePage />} />
 
-				{/* initiatives */}
-				<Route path="/initiatives/ipsupport" element={<IpSupport />} />
-				<Route
-					path="/initiatives/entrepreneurship"
-					element={<Entrepreneurship />}
-				/>
-				<Route path="/initiatives/youngminds" element={<YoungMinds />} />
-				<Route
-					path="/initiatives/preincubationprogram"
-					element={<PreIncubationProgram />}
-				/>
-				<Route path="/initiatives/makerspace" element={<MakerSpace />} />
-				<Route
-					path="/initiatives/incubationprogram"
-					element={<IncubationProgram />}
-				/>
-				<Route
-					path="/initiatives/coworkingspace"
-					element={<CoworkingSpace />}
-				/>
-				<Route
-					path="/initiatives/incubationacceleration"
-					element={<IncubationAcceleration />}
-				/>
-				<Route
-					path="/initiatives/incubationcollaboration"
-					element={<IncubationCollaboration />}
-				/>
+					{/* about tab */}
+					<Route path="/about/advisoryboard" element={<AdvisoryBoard />} />
+					<Route path="/about/startups" element={<Startups />} />
+					<Route path="/about/teams" element={<Teams />} />
+					<Route path="/about/partners" element={<Partners />} />
+					<Route path="/about/mentors" element={<Mentors />} />
+					<Route path="/about/virtualtour" element={<VirtualTour />} />
 
-				{/* Centers */}
-				<Route
-					path="/center/mobilitytransportation"
-					element={<MobilityTransportation />}
-				/>
-				<Route path="/center/renewableenergy" element={<RenewableEnergy />} />
+					{/* initiatives */}
+					<Route path="/initiatives/ipsupport" element={<IpSupport />} />
+					<Route
+						path="/initiatives/entrepreneurship"
+						element={<Entrepreneurship />}
+					/>
+					<Route path="/initiatives/youngminds" element={<YoungMinds />} />
+					<Route
+						path="/initiatives/preincubationprogram"
+						element={<PreIncubationProgram />}
+					/>
+					<Route path="/initiatives/makerspace" element={<MakerSpace />} />
+					<Route
+						path="/initiatives/incubationprogram"
+						element={<IncubationProgram />}
+					/>
+					<Route
+						path="/initiatives/coworkingspace"
+						element={<CoworkingSpace />}
+					/>
+					<Route
+						path="/initiatives/incubationacceleration"
+						element={<IncubationAcceleration />}
+					/>
+					<Route
+						path="/initiatives/incubationcollaboration"
+						element={<IncubationCollaboration />}
+					/>
 
 				{/* Events */}
 				<Route path="/events/upcomingevents" element={<UpcomingEvents />} />
 				<Route path="/events/previousevents" element={<PreviousEvents />} />
+					{/* Centers */}
+					<Route
+						path="/center/mobilitytransportation"
+						element={<MobilityTransportation />}
+					/>
+					<Route path="/center/renewableenergy" element={<RenewableEnergy />} />
 
-				{/* Media */}
-				<Route path="/media/blog" element={<Blog />} />
-				<Route path="/media/annualreport" element={<AnnualReport />} />
-				<Route path="/media/mediapresence" element={<MediaPresence />} />
 
-				{/* Gallery */}
-				<Route path="/gallery" element={<Gallery />} />
+					{/* Media */}
+					<Route path="/media/blog" element={<Blog />} />
+					<Route path="/media/annualreport" element={<AnnualReport />} />
+					<Route path="/media/mediapresence" element={<MediaPresence />} />
 
-				{/* Contact */}
-				<Route path="/contact" element={<Contact />} />
+					{/* Gallery */}
+					<Route path="/gallery" element={<Gallery />} />
 
-				{/* Captial Infusion */}
-				<Route path="/infusion" element={<Index />} />
-				<Route path="/infusion/investors" element={<SAINInvestors />} />
-				<Route path="/infusion/startups" element={<SAINStartups />} />
-				<Route path="/infusion/services" element={<Services />} />
+					{/* Contact */}
+					<Route path="/contact" element={<Contact />} />
 
-				{/* Benefits Captial */}
-				<Route path="/benefits/clinic" element={<Clinic />} />
-				<Route path="/benefits/connect" element={<Connect />} />
+					{/* Captial Infusion */}
+					<Route path="/infusion" element={<Index />} />
+					<Route path="/infusion/investors" element={<SAINInvestors />} />
+					<Route path="/infusion/startups" element={<SAINStartups />} />
+					<Route path="/infusion/services" element={<Services />} />
 
-				{/* Benefits Advisior */}
-				<Route
-					path="/benefits/governmentfunding/state"
-					element={<StateFunding />}
-				/>
-				<Route
-					path="/benefits/governmentfunding/central"
-					element={<CentralFunding />}
-				/>
-				<Route
-					path="/benefits/governmentfunding/angelinvestors"
-					element={<AngelInvestors />}
-				/>
-				<Route
-					path="/benefits/governmentfunding/venturecapitalist"
-					element={<VentureCapitalist />}
-				/>
+					{/* Benefits Captial */}
+					<Route path="/benefits/clinic" element={<Clinic />} />
+					<Route path="/benefits/connect" element={<Connect />} />
 
-				{/* Benefits Global Market Connect */}
-				<Route
-					path="/benefits/trade/globalconnect"
-					element={<GlobalMarketConnect />}
-				/>
-				<Route path="/benefits/trade/demoday" element={<DemoDay />} />
-				<Route
-					path="/benefits/trade/launchpad"
-					element={<LaunchPad />}
-				/>
-				<Route
-					path="/benefits/trade/startuptools"
-					element={<StartupTools />}
-				/>
-			</Routes>
-			<Footer />
-		</Router>
+					{/* Benefits Advisior */}
+					<Route
+						path="/benefits/governmentfunding/state"
+						element={<StateFunding />}
+					/>
+					<Route
+						path="/benefits/governmentfunding/central"
+						element={<CentralFunding />}
+					/>
+					<Route
+						path="/benefits/governmentfunding/angelinvestors"
+						element={<AngelInvestors />}
+					/>
+					<Route
+						path="/benefits/governmentfunding/venturecapitalist"
+						element={<VentureCapitalist />}
+					/>
+
+					{/* Benefits Global Market Connect */}
+					<Route
+						path="/benefits/trade/globalconnect"
+						element={<GlobalMarketConnect />}
+					/>
+					<Route path="/benefits/trade/demoday" element={<DemoDay />} />
+					<Route
+						path="/benefits/trade/launchpad"
+						element={<LaunchPad />}
+					/>
+					<Route
+						path="/benefits/trade/startuptools"
+						element={<StartupTools />}
+					/>
+				</Routes>
+				<Footer />
+			</Router>
+		</div>
+
 	);
 }
 
