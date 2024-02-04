@@ -1,5 +1,98 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+const faq = [
+	{
+		title: 'Week 1: Orientation and Idea Validation',
+		content: [
+			'Day 1: Program Welcome and Introduction',
+			'Day 2: Team Formation and Icebreaking',
+			'Day 3: Ideation Workshops',
+			'Day 4: Pitching Practice',
+			'Day 5: Mentorship Sessions'
+		]
+	},
+	{
+		title: 'Week 2: Market Research and Customer Validation',
+		content: [
+			'Day 1: Research Planning',
+			'Day 2: Data Collection',
+			'Day 3: Analysis and Insights',
+			'Day 4: Customer Interviews',
+			'Day 5: Validation and Feedback'
+		]
+	},
+	{
+		title: 'Week 3: Product Development',
+		content: [
+			'Day 1: Planning and Design',
+			'Day 2: Prototyping',
+			'Day 3: Testing and Iteration',
+			'Day 4: Refinement',
+			'Day 5: Documentation and Handoff'
+		]
+	},
+	{
+		title: 'Week 4: Prototype and MVP Development',
+		content: [
+			'Day 1: Prototyping and MVP Workshop',
+			'Day 2: Building Prototypes',
+			'Day 3: User Testing and Feedback',
+			'Day 4: Pivot and Adaptation',
+			'Day 5: Pitch Practice'
+		]
+	},
+	{
+		title: 'Week 5: Legal and Compliance',
+		content: [
+			'Day 1: Intellectual Property Rights',
+			'Day 2: Business Structure and Legal Requirements',
+			'Day 3: Regulatory Compliance',
+			'Day 4: Mentorship on Legal Matters',
+			'Day 5: Pitch to Legal Experts'
+		]
+	},
+	{
+		title: 'Week 6: Marketing and Customer Acquisition',
+		content: [
+			'Day 1: Marketing Strategies and Campaign Planning',
+			'Day 2: Digital Marketing Techniques',
+			'Day 3: Sales and Customer Acquisition',
+			'Day 4: Networking Opportunities',
+			'Day 5: Pitch and Feedback'
+		]
+	},
+	{
+		title: 'Week 7: Financial Planning and Funding',
+		content: [
+			'Day 1: Financial Management and Budgeting',
+			'Day 2: Funding Options and Strategies',
+			'Day 3: Investor Relations',
+			'Day 4: Pitch to Potential Investors',
+			'Day 5: Pitch and Feedback'
+		]
+	},
+	{
+		title: 'Week 8: Scaling and Growth Strategies',
+		content: [
+			'Day 1: Scaling Your Business',
+			'Day 2: Expansion Strategies',
+			'Day 3: Operations and Logistics',
+			'Day 4: Networking Opportunities',
+			'Day 5: Pitch and Feedback'
+		]
+	},
+	{
+		title: 'Week 9: Conclusion and Graduation',
+		content: [
+			'Day 1: Program Recap and Achievements',
+			'Day 2: Future Plans and Incubation Opportunities',
+			'Day 3: Graduation Ceremony and Awards',
+			'Day 4: Networking and Celebrations',
+			'Day 5: Closing Remarks and Farewell'
+		]
+	}
+];
 
 export const PreIncubationProgram = () => {
 	return (
@@ -233,81 +326,83 @@ export const PreIncubationProgram = () => {
 				<div class=' py-8'>
 					<div class='container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24'>
 						<div class='flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8'>
-							<p class='ml-2 text-yellow-300 uppercase tracking-loose'>
+							{/* <p class='ml-2 text-yellow-300 uppercase tracking-loose'>
 								Working Process
-							</p>
+							</p> */}
 							<p class='text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2'>
-								Working Process of Fest
+								How the Program Helps You
 							</p>
-							<p class='text-sm md:text-base  mb-4'>
+							{/* <p class='text-sm md:text-base  mb-4'>
 								Here’s your guide to the tech fest 2021 process. Go through all
 								the steps to know the exact process of the fest.
-							</p>
-							<Link
+							</p> */}
+							{/* <Link
 								to='#'
 								class='bg-transparent mr-auto hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent'
 							>
 								Explore Now
-							</Link>
+							</Link> */}
 						</div>
 						<div class='ml-0 md:ml-12 lg:w-2/3 sticky'>
 							<div class='container mx-auto w-full h-full'>
 								<div class='relative wrap overflow-hidden p-10 h-full'>
 									<div
 										class='border-2-2 border-yellow-555 absolute h-full border'
-										style={{right: '50%',border: '2px solid #FFC100', borderRadius: '1%;'}}
+										style={{
+											right: '50%',
+											border: '2px solid #FFC100',
+											borderRadius: '1%;'
+										}}
 									></div>
 									<div
 										class='border-2-2 border-yellow-555 absolute h-full border'
-										style={{left: '50%',border: '2px solid #FFC100', borderRadius: '1%;'}}
+										style={{
+											left: '50%',
+											border: '2px solid #FFC100',
+											borderRadius: '1%;'
+										}}
 									></div>
 									<div class='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
 										<div class='order-1 w-5/12'></div>
 										<div class='order-1 w-5/12 px-1 py-4 text-right'>
-											<p class='mb-3 text-base text-yellow-300'>
+											{/* <p class='mb-3 text-base text-yellow-300'>
 												1-6 May, 2021
-											</p>
+											</p> */}
 											<h4 class='mb-3 font-bold text-lg md:text-2xl'>
-												Registration
+												9-Week Intensive Learning
 											</h4>
 											<p class='text-sm md:text-base leading-snug  text-opacity-100'>
-												Pick your favourite event(s) and register in that event
-												by filling the form corresponding to that event. Its
-												that easy :)
+												Dive deep into the essentials of starting a tech-based
+												business.
 											</p>
 										</div>
 									</div>
 									<div class='mb-8 flex justify-between items-center w-full right-timeline'>
 										<div class='order-1 w-5/12'></div>
 										<div class='order-1  w-5/12 px-1 py-4 text-left'>
-											<p class='mb-3 text-base text-yellow-300'>
+											{/* <p class='mb-3 text-base text-yellow-300'>
 												6-9 May, 2021
-											</p>
+											</p> */}
 											<h4 class='mb-3 font-bold text-lg md:text-2xl'>
-												Participation
+												Sector-Specific Workshops
 											</h4>
 											<p class='text-sm md:text-base leading-snug  text-opacity-100'>
-												Participate online. The links for your registered events
-												will be sent to you via email and whatsapp groups. Use
-												those links and show your talent.
+												Gain in-depth knowledge in your chosen sector.
 											</p>
 										</div>
 									</div>
 									<div class='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
 										<div class='order-1 w-5/12'></div>
 										<div class='order-1 w-5/12 px-1 py-4 text-right'>
-											<p class='mb-3 text-base text-yellow-300'>
+											{/* <p class='mb-3 text-base text-yellow-300'>
 												{' '}
 												10 May, 2021
-											</p>
+											</p> */}
 											<h4 class='mb-3 font-bold text-lg md:text-2xl'>
-												Result Declaration
+												Mentorship and Networking
 											</h4>
 											<p class='text-sm md:text-base leading-snug  text-opacity-100'>
-												The ultimate genius will be revealed by our judging
-												panel on 10th May, 2021 and the resukts will be
-												announced on the whatsapp groups and will be mailed to
-												you.
+												Connect with industry experts and fellow entrepreneurs.
 											</p>
 										</div>
 									</div>
@@ -316,25 +411,267 @@ export const PreIncubationProgram = () => {
 										<div class='order-1 w-5/12'></div>
 
 										<div class='order-1  w-5/12 px-1 py-4'>
-											<p class='mb-3 text-base text-yellow-300'>12 May, 2021</p>
+											{/* <p class='mb-3 text-base text-yellow-300'>12 May, 2021</p> */}
 											<h4 class='mb-3 font-bold  text-lg md:text-2xl text-left'>
-												Prize Distribution
+												Pitch Deck Development
 											</h4>
 											<p class='text-sm md:text-base leading-snug  text-opacity-100'>
-												The winners will be contacted by our team for their
-												addresses and the winning goodies will be sent at their
-												addresses.
+												Craft a compelling presentation for investors
+											</p>
+										</div>
+									</div>
+									<div class='mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline'>
+										<div class='order-1 w-5/12'></div>
+										<div class='order-1 w-5/12 px-1 py-4 text-right'>
+											{/* <p class='mb-3 text-base text-yellow-300'>
+												{' '}
+												10 May, 2021
+											</p> */}
+											<h4 class='mb-3 font-bold text-lg md:text-2xl'>
+												Fundamentals of Funding
+											</h4>
+											<p class='text-sm md:text-base leading-snug  text-opacity-100'>
+												Learn how to secure financial support for your venture.
 											</p>
 										</div>
 									</div>
 								</div>
-								<img
+								{/* <img
 									class='mx-auto -mt-36 md:-mt-36'
 									src='https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png'
-								/>
+								/> */}
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class='bg-white dark:bg-gray-900'>
+				<div class='container px-6 py-10 mx-auto'>
+					<h1 class='text-2xl font-semibold text-gray-800 lg:text-3xl'>
+						Tech catalysts Progress Path
+					</h1>
+
+					<hr class='my-6 border-gray-200 dark:border-gray-700' />
+
+					<div>
+						{faq.map((f, i) => (
+							<FaqContent title={f.title} content={f.content} />
+						))}
+					</div>
+				</div>
+			</section>
+			<section className=''>
+				<div className='container mapy-12 mx-auto space-y-24 '>
+					{/* <div>
+			<h2 className="text-3xl font-bold tracki text-center sm:text-5xl">Aliquip definiebas ad est</h2>
+			<p className="max-w-3xl mx-auto mt-4 text-xl text-center ">Quando cetero his ne, eum admodum sapientem ut.</p>
+		</div> */}
+					<div className=''>
+						<div>
+							<h3 className='text-2xl font-bold tracki sm:text-3xl'>
+								Who are we looking for
+							</h3>
+							{/* <p className="mt-3 text-lg ">Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.</p> */}
+							<div className='flex flex-row-reverse'>
+								<div className='mt-12 space-y-3'>
+									<div className='flex'>
+										<div className='flex-shrink-0'>
+											<div className='flex items-center justify-center w-12 h-12 rounded-md '>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													stroke='currentColor'
+													className='w-7 h-7'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														strokeWidth='2'
+														d='M5 13l4 4L19 7'
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div className='ml-4'>
+											{/* <h4 className="text-lg font-medium leadi">Per ei quaeque sensibus</h4> */}
+											<p className='mt-2 '>
+												Startups with tech-oriented concepts or products related
+												to one of the specified sectors i.e., Deep Tech, Health
+												& Med Tech, Food Tech, Green Tech, Climate Tech and
+												Energy Tech.
+											</p>
+										</div>
+									</div>
+									<div className='flex'>
+										<div className='flex-shrink-0'>
+											<div className='flex items-center justify-center w-12 h-12 rounded-md '>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													stroke='currentColor'
+													className='w-7 h-7'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														strokeWidth='2'
+														d='M5 13l4 4L19 7'
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div className='ml-4'>
+											{/* <h4 className="text-lg font-medium leadi">Cu imperdiet posidonium sed</h4> */}
+											<p className='mt-2 '>
+												A clear and well-defined business idea or concept should
+												be in place, with evidence of initial validation such as
+												market research or a POC.
+											</p>
+										</div>
+									</div>
+									<div className='flex'>
+										<div className='flex-shrink-0'>
+											<div className='flex items-center justify-center w-12 h-12 rounded-md '>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													stroke='currentColor'
+													className='w-7 h-7'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														strokeWidth='2'
+														d='M5 13l4 4L19 7'
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div className='ml-4'>
+											{/* <h4 className="text-lg font-medium leadi">Nulla omittam sadipscing mel ne</h4> */}
+											<p className='mt-2 '>
+												A clear identification and understanding of the problem
+												the startup aims to solve within their chosen sector.
+											</p>
+										</div>
+									</div>
+									<div className='flex'>
+										<div className='flex-shrink-0'>
+											<div className='flex items-center justify-center w-12 h-12 rounded-md '>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													stroke='currentColor'
+													className='w-7 h-7'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														strokeWidth='2'
+														d='M5 13l4 4L19 7'
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div className='ml-4'>
+											{/* <h4 className="text-lg font-medium leadi">Cibo augue offendit has ad</h4> */}
+											<p className='mt-2 '>
+												Startups either in the early stages of development or
+												led by students from a recognized educational
+												institution
+											</p>
+										</div>
+									</div>
+									<div className='flex'>
+										<div className='flex-shrink-0'>
+											<div className='flex items-center justify-center w-12 h-12 rounded-md '>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													stroke='currentColor'
+													className='w-7 h-7'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														strokeWidth='2'
+														d='M5 13l4 4L19 7'
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div className='ml-4'>
+											{/* <h4 className="text-lg font-medium leadi">At eum ferri luptatum lobortis</h4> */}
+											<p className='mt-2 '>
+												For Green Tech, Climate Tech, and Energy Tech startups,
+												their potential to have a positive impact on society and
+												the environment may be an important criterion.
+											</p>
+										</div>
+									</div>
+									<div className='flex'>
+										<div className='flex-shrink-0'>
+											<div className='flex items-center justify-center w-12 h-12 rounded-md '>
+												<svg
+													xmlns='http://www.w3.org/2000/svg'
+													fill='none'
+													viewBox='0 0 24 24'
+													stroke='currentColor'
+													className='w-7 h-7'
+												>
+													<path
+														strokeLinecap='round'
+														strokeLinejoin='round'
+														strokeWidth='2'
+														d='M5 13l4 4L19 7'
+													></path>
+												</svg>
+											</div>
+										</div>
+										<div className='ml-4'>
+											<h4 className='text-lg font-medium leadi'>
+												Dicunt verterem evertitur eu sea
+											</h4>
+											<p className='mt-2 '>
+												The startup idea should have the potential for
+												scalability and growth.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div aria-hidden='true' className='mt-10 lg:mt-0'>
+									<img
+										src='https://source.unsplash.com/random/360x480'
+										alt=''
+										className='mx-auto rounded-lg shadow-lg '
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className='py-6 bg-gray-400 mt-4'>
+				<div className='text-white container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between'>
+					<div>
+						<h1 className='text-2xl font-semibold leading lg:text-left w-3/4 mb-3'>
+							Ready To Take Your Tech Idea To The Next Level? Apply For The AIC
+							Raise Pre-Incubation Program Today!
+						</h1>
+						<p>Last Date To Apply: 15.12.2023</p>
+						<p>For Inquiries: 8870784354 | 8668114243</p>
+						<p>Email : Chandrika@Aicraise.Com, Archana.Mrk@Aicraise.Com</p>
+					</div>
+					<Link to='/apply-now'>
+						<button className='px-8 py-3 text-lg font-semibold rounded bg-purple-600 w-fit'>
+							Apply Now
+						</button>
+					</Link>
 				</div>
 			</section>
 		</div>
@@ -366,5 +703,52 @@ const Card = ({ title }) => {
 				{title}
 			</span>
 		</div>
+	);
+};
+
+const FaqContent = ({ title, content }) => {
+	const [isOpen, setIsOpen] = useState(false);
+	return (
+		<>
+			<div>
+				<button
+					class='flex items-center focus:outline-none'
+					onClick={() => setIsOpen(!isOpen)}
+				>
+					<svg
+						class='flex-shrink-0 w-6 h-6 text-blue-500'
+						fill='none'
+						stroke='currentColor'
+						viewBox='0 0 24 24'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<path
+							stroke-linecap='round'
+							stroke-linejoin='round'
+							stroke-width='2'
+							d='M20 12H4'
+						></path>
+					</svg>
+
+					<h1 class='mx-4 text-xl text-gray-700'>{title}</h1>
+				</button>
+
+				<div
+					class={`flex md:mx-10 ${
+						!isOpen && 'h-0 overflow-hidden'
+					} transition-all`}
+				>
+					<span class='border border-blue-500'></span>
+
+					<ul class='max-w-3xl px-4 text-gray-500'>
+						{content.map((c, i) => (
+							<li key={i}>{c}</li>
+						))}
+					</ul>
+				</div>
+			</div>
+
+			<hr class='my-8 border-gray-200 dark:border-gray-700' />
+		</>
 	);
 };
