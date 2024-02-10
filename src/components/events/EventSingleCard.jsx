@@ -3,9 +3,7 @@ import React from "react"
 export const EventSingleCard = ({ image, title, description }) => {
 	return (
 		<div className="mx-2 my-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
-			<a href="#">
-			relative isolate overflow-hidden bg-white px-6 py-12 sm:py-32 lg:overflow-visible lg:px-0
-			</a>
+			<img src={image} alt="" />
 			<div className="p-5">
 				<a href="#">
 					<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">

@@ -54,7 +54,7 @@ export const Startups = () => {
             ))}
           </Row>
         </div>
-		<div className="row">
+        <div className="row">
           <div className="col-md-12 text-center pt-9">
             <h2 className="text-5xl font-semibold">StartUps</h2>
           </div>
@@ -67,7 +67,7 @@ export const Startups = () => {
             ))}
           </Row>
         </div>
-		{/* <div className="row">
+        {/* <div className="row">
           <div className="col-md-12 text-center pt-9">
             <h2 className="text-5xl font-semibold">StartUps</h2>
           </div>
@@ -80,11 +80,14 @@ export const Startups = () => {
             ))}
           </Row>
         </div> */}
-		<div className="col-md-12 text-center">
-            <button  className=" bg-indigo-600 py-3 px-5 rounded-lg lg:text-4xl text-3xl md:text-4xl font-semibold "><a href="#" className="no-underline text-white">Join Our StartUp Team</a></button>
-          </div>
+        <div className="col-md-12 text-center">
+          <button className=" bg-indigo-600 py-3 px-5 rounded-lg lg:text-4xl text-3xl md:text-4xl font-semibold ">
+            <a href="#" className="no-underline text-white">
+              Join Our StartUp Team
+            </a>
+          </button>
+        </div>
       </div>
-	  
     </section>
   );
 };
