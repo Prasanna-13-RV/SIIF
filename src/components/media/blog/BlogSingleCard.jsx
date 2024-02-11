@@ -8,7 +8,7 @@ export const BlogSingleCard = ({ image, title, description, link }) => {
 		// 		style={{
 		// 			backgroundImage: `url(${image})`,
 		// 		}}
-		// 		className="card"
+		// 		className="blogCard"
 		// 		href={link}>
 		// 		<div>
 		// 			<h1>{title}</h1>
@@ -16,7 +16,7 @@ export const BlogSingleCard = ({ image, title, description, link }) => {
 		// 		</div>
 		// 	</a>
 		// </div>
-		<article className="card">
+		<article className="blogCard">
 			<img
 				className="card__background"
 				src={image}

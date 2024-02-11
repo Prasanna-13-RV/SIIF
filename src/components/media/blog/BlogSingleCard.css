@@ -8,14 +8,14 @@
 	--font-text: "Lato", sans-serif;
 }
 
-.card h2 {
+.blogCard h2 {
 	font-size: 2.25rem;
 	font-family: var(--font-title);
 	color: var(--white);
 	line-height: 1.1;
 }
 
-.card p {
+.blogCard p {
 	font-family: var(--font-text);
 	font-size: 1rem;
 	line-height: 1.5;
@@ -28,7 +28,7 @@
 
 /* CARD COMPONENT */
 
-.card {
+.blogCard {
 	display: grid;
 	place-items: center;
 	width: 22rem;
@@ -40,7 +40,7 @@
 	margin: 20px;
 }
 
-.card > * {
+.blogCard > * {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 }
@@ -131,38 +131,38 @@
 		transition: transform 250ms ease-out, opacity 250ms ease-out;
 	}
 
-	.card:hover,
-	.card:focus-within {
+	.blogCard:hover,
+	.blogCard:focus-within {
 		transform: scale(1.05);
 		transition: transform 250ms ease-in;
 	}
 
-	.card:hover .card__content,
-	.card:focus-within .card__content {
+	.blogCard:hover .card__content,
+	.blogCard:focus-within .card__content {
 		transform: translateY(0);
 		transition: transform 250ms ease-in;
 	}
 
-	.card:focus-within .card__content {
+	.blogCard:focus-within .card__content {
 		transition-duration: 0ms;
 	}
 
-	.card:hover .card__background,
-	.card:focus-within .card__background {
+	.blogCard:hover .card__background,
+	.blogCard:focus-within .card__background {
 		transform: scale(1.3);
 	}
 
-	.card:hover .card__content--container > :not(.card__title),
-	.card:hover .card__button,
-	.card:focus-within .card__content--container > :not(.card__title),
-	.card:focus-within .card__button {
+	.blogCard:hover .card__content--container > :not(.card__title),
+	.blogCard:hover .card__button,
+	.blogCard:focus-within .card__content--container > :not(.card__title),
+	.blogCard:focus-within .card__button {
 		opacity: 1;
 		transition: opacity 250ms ease-in;
 		transition-delay: 500ms;
 	}
 
-	.card:hover .card__title::after,
-	.card:focus-within .card__title::after {
+	.blogCard:hover .card__title::after,
+	.blogCard:focus-within .card__title::after {
 		opacity: 1;
 		transform: scaleX(1);
 		transform-origin: left;
