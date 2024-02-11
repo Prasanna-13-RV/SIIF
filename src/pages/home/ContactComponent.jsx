@@ -50,8 +50,8 @@ const ContactComponent = () => {
 
 	return (
 		<section className="text-gray-100  mt-10 ">
-			<div className="  w-[70%]  flex justify-between py-5 mt-7 mx-auto text-gray-900 rounded-lg">
-				<div className="flex flex-col justify-between w-[45%]">
+			<div className="w-[90%]  lg:w-[70%]  flex flex-col lg:flex-row justify-between py-2 lg:py-5 mt-7 mx-auto text-gray-900 rounded-lg">
+				<div className="flex flex-col justify-between w-full mb-3 lg:mb-0 lg:w-[45%]">
 					<div>
 						<h2 className="text-3xl lg:text-3xl font-bold leading-tight">
 							We'd Love to Hear From You
@@ -80,7 +80,7 @@ const ContactComponent = () => {
 					</div>
 				</div>
 				<form
-				className="w-[45%]"
+				className="w-full lg:w-[45%]"
 					ref={form}
 					onSubmit={(e) => {
 						// handleSubmit(e)

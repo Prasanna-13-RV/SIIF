@@ -21,7 +21,7 @@ const CarouselHero = () => {
 		},
 	}
 	return (
-		<div className="h-screen w-full flex justify-center items-center">
+		<div className="h-[45vh] lg:h-screen w-full flex justify-center items-center">
 			<Carousel
 				className="h-[90%] w-[90%] mx-auto"
 				swipeable={false}

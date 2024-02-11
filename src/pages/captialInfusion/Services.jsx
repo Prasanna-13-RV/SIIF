@@ -2,8 +2,8 @@ import React from "react"
 
 export const Services = () => {
 	return <div className="w-full bg-[#1D293E] ">
-		<h1 className="py-16 font-bold text-3xl text-center text-white">Our Services</h1>
-		<div className=" grid  grid-cols-3 gap-5 pb-16 px-24">
+		<h1 className="py-10 lg:py-16 font-bold text-3xl text-center text-white">Our Services</h1>
+		<div className=" grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-5 pb-16  px-8 lg:px-24">
 		<div className="border-2 border-white p-10 rounded-sm"><h1 className="text-white font-bold mb-6">
 			Deal Sourcing and Screening</h1>
 			<p className="text-white">RAIN actively source and evaluate potential investment opportunities.

@@ -44,7 +44,7 @@ import { MediaPresence } from "./pages/media/MediaPresence"
 
 function App() {
 	return (
-		<div className='mt-36'>
+		<div className='mt-10 lg:mt-36'>
 
 			<Router>
 				<Navbar />
