@@ -6,7 +6,7 @@ import TextRevealOnScroll from "./TextAnimation";
 export const HomePage = () => {
   return (
     <div>
-      {/* <CarouselHero /> */}
+      <CarouselHero />
       <TextRevealOnScroll text="50+ Startups empowered by 2025" />
 
       {/* About us */}

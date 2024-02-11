@@ -46,9 +46,24 @@ const CarouselHero = () => {
 						src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					/>
 				</div>
-				<div>Item 2</div>
-				<div>Item 3</div>
-				<div>Item 4</div>
+				<div>
+					<img
+						className="w-full object-cover"
+						src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					/>
+				</div>
+				<div>
+					<img
+						className="w-full object-cover"
+						src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					/>
+				</div>
+				<div>
+					<img
+						className="w-full object-cover"
+						src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					/>
+				</div>
 			</Carousel>
 		</div>
 	)
