@@ -208,7 +208,7 @@ const Navbar = () => {
 	const navRef = useRef(null);
 	return (
 		<>
-			<nav class='flex px-4 border-b md:shadow-lg items-center fixed top-0 left-0 right-0 z-[1000] bg-white'>
+			<nav class='flex border-b md:shadow-lg items-center fixed top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
 				<Link
 					to=''
 					className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
@@ -216,7 +216,7 @@ const Navbar = () => {
 					<img className='w-24' src='../../logo.png' alt='' />
 				</Link>
 				<ul
-					class='md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0 md:visible hidden'
+					class='md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0 md:visible hidden '
 					ref={navRef}
 				>
 					{navItems.map((navItem, i) => (
@@ -293,7 +293,7 @@ const NavItem = ({ item }) => {
 				)}
 			</Link>
 			{item.subItems.length > 0 && (
-				<ul class='child w-full transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-200 z-[100] md:shadow-lg md:rounded-b '>
+				<ul class='child w-full transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-200 z-[100] md:shadow-lg md:rounded-b overflow-y-scroll'>
 					{item.subItems.map((si, i) => {
 						return <NavItem item={si} key={i} />;
 					})}
@@ -303,95 +303,95 @@ const NavItem = ({ item }) => {
 	);
 };
 
-const NavItemDropdown = ({ item }) => {
-	const [isHidden, setIsHidden] = useState(true);
+// const NavItemDropdown = ({ item }) => {
+// 	const [isHidden, setIsHidden] = useState(true);
 
-	return item.subItems.length <= 0 ? (
-		<li className='py-0 px-3 xl:p-6'>
-			<Link to={item.link}>
-				<span>{item.title}</span>
-			</Link>
-		</li>
-	) : (
-		<li
-			className='p-3 relative'
-			onMouseEnter={() => setIsHidden(false)}
-			onMouseLeave={() => setIsHidden(true)}
-		>
-			<span className='absolute flex items-center cursor-pointer'>
-				{item.title}{' '}
-				<svg
-					className='w-4 h-4 ml-1'
-					fill='currentColor'
-					viewBox='0 0 20 20'
-					xmlns='http://www.w3.org/2000/svg'
-				>
-					<path
-						fill-rule='evenodd'
-						d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-						clip-rule='evenodd'
-					></path>
-				</svg>
-			</span>
-			<div className='top-0 absolute'>
-				<button
-					id='dropdownNavbarLink'
-					data-dropdown-toggle='dropdownNavbar'
-					className='opacity-0 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto'
-				>
-					{item.title}
-					<svg
-						className='w-4 h-4 ml-1'
-						fill='currentColor'
-						viewBox='0 0 20 20'
-						xmlns='http://www.w3.org/2000/svg'
-					>
-						<path
-							fill-rule='evenodd'
-							d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-							clip-rule='evenodd'
-						></path>
-					</svg>
-				</button>
-				<div
-					id='dropdownNavbar'
-					className={`${
-						isHidden && 'hidden'
-					} bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 `}
-				>
-					<ul className='py-1' aria-labelledby='dropdownLargeButton'>
-						{item.subItems.map((item, i) => {
-							return (
-								<li key={i}>
-									<Link
-										to={item.link}
-										className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
-									>
-										{item.title}
-									</Link>
-									<div className='ml-6 border-l-2'>
-										{item.subItems.length > 0 &&
-											item.subItems.map((item, i) => (
-												<li key={i}>
-													<Link
-														to={item.link}
-														className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
-													>
-														{item.title}
-													</Link>
-												</li>
-												// <NavItemDropdown item={item}/>
-											))}
-									</div>
-								</li>
-								// <NavItemDropdown item={item}/>
-							);
-						})}
-					</ul>
-				</div>
-			</div>
-		</li>
-	);
-};
+// 	return item.subItems.length <= 0 ? (
+// 		<li className='py-0 px-3 xl:p-6'>
+// 			<Link to={item.link}>
+// 				<span>{item.title}</span>
+// 			</Link>
+// 		</li>
+// 	) : (
+// 		<li
+// 			className='p-3 relative'
+// 			onMouseEnter={() => setIsHidden(false)}
+// 			onMouseLeave={() => setIsHidden(true)}
+// 		>
+// 			<span className='absolute flex items-center cursor-pointer'>
+// 				{item.title}{' '}
+// 				<svg
+// 					className='w-4 h-4 ml-1'
+// 					fill='currentColor'
+// 					viewBox='0 0 20 20'
+// 					xmlns='http://www.w3.org/2000/svg'
+// 				>
+// 					<path
+// 						fill-rule='evenodd'
+// 						d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+// 						clip-rule='evenodd'
+// 					></path>
+// 				</svg>
+// 			</span>
+// 			<div className='top-0 absolute'>
+// 				<button
+// 					id='dropdownNavbarLink'
+// 					data-dropdown-toggle='dropdownNavbar'
+// 					className='opacity-0 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto'
+// 				>
+// 					{item.title}
+// 					<svg
+// 						className='w-4 h-4 ml-1'
+// 						fill='currentColor'
+// 						viewBox='0 0 20 20'
+// 						xmlns='http://www.w3.org/2000/svg'
+// 					>
+// 						<path
+// 							fill-rule='evenodd'
+// 							d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+// 							clip-rule='evenodd'
+// 						></path>
+// 					</svg>
+// 				</button>
+// 				<div
+// 					id='dropdownNavbar'
+// 					className={`${
+// 						isHidden && 'hidden'
+// 					} bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 `}
+// 				>
+// 					<ul className='py-1' aria-labelledby='dropdownLargeButton'>
+// 						{item.subItems.map((item, i) => {
+// 							return (
+// 								<li key={i}>
+// 									<Link
+// 										to={item.link}
+// 										className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
+// 									>
+// 										{item.title}
+// 									</Link>
+// 									<div className='ml-6 border-l-2'>
+// 										{item.subItems.length > 0 &&
+// 											item.subItems.map((item, i) => (
+// 												<li key={i}>
+// 													<Link
+// 														to={item.link}
+// 														className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
+// 													>
+// 														{item.title}
+// 													</Link>
+// 												</li>
+// 												// <NavItemDropdown item={item}/>
+// 											))}
+// 									</div>
+// 								</li>
+// 								// <NavItemDropdown item={item}/>
+// 							);
+// 						})}
+// 					</ul>
+// 				</div>
+// 			</div>
+// 		</li>
+// 	);
+// };
 
 export default Navbar;
