@@ -2,7 +2,7 @@ import React from "react"
 
 export const CentralSingleCardContent = ({ title, link }) => {
 	return (
-		<div className="max-w-sm w-1/2 p-6 h-[10rem] flex justify-center flex-col items-center bg-white border text-center border-gray-200 rounded-lg shadow m-2">
+		<div className="max-w-sm sm:w-1/2 w-full p-6 h-[10rem] flex justify-center flex-col items-center bg-white border text-center border-gray-200 rounded-lg shadow m-2">
 			<a href="#">
 				<h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
 					{title}

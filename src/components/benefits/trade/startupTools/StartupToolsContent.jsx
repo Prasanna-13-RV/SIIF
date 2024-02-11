@@ -29,7 +29,7 @@ export const StartupToolsContent = () => {
 							Startup Tools
 						</h1>
 					</div>
-					<div className="lg:mx-auto p-5 lg:w-full lg:max-w-7xl">
+					<div className="lg:mx-auto sm:p-5 lg:w-full lg:max-w-7xl">
 						<StartupToolsSingleCard
 							mainImage="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
 							mainTitle="domain"

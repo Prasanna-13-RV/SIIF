@@ -48,7 +48,7 @@ import Mentor from "./pages/apply/Mentor"
 
 function App() {
 	return (
-		<div className="mt-36">
+		<div className="mt-[94px]">
 			<Router>
 				<Navbar />
 				<Routes>

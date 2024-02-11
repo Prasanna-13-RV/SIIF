@@ -19,7 +19,7 @@ export const StateFundingContent = () => {
 							</div>
 						</div>
 						<div className="lg:mx-auto lg:w-full px-8 flex flex-row flex-wrap">
-							<div className="lg:mx-auto  lg:w-2/3 lg:max-w-7xl lg:gap-x-8 lg:px-8">
+							<div className="lg:mx-auto  lg:gap-x-8 lg:px-8">
 								<div className="text-base leading-7 text-gray-700 ">
 									<p className="pt-3">
 										The Entrepreneurship Development and
@@ -49,13 +49,13 @@ export const StateFundingContent = () => {
 									</ul>
 								</div>
 							</div>
-							<div className="w-1/3">
+							{/* <div className="flex items-center justify-center p-6 mt-8 lg:my-5 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 								<img
-									className="rounded-t-lg m-3"
+									className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
 									src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
 									alt=""
 								/>
-							</div>
+							</div> */}
 						</div>
 						<div className="lg:mx-auto  lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
 							<div className="lg:pr-4 w-full">
@@ -97,7 +97,7 @@ export const StateFundingContent = () => {
 				</div>
 			</div>
 			<StateFundingTable />
-			<div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8 my-3">
+			<div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8 my-3 px-5">
 				<h1 className="mt-2 text-base font-bold tracking-tight text-gray-900 sm:text-lg">
 					Eligibility Criteria
 				</h1>
