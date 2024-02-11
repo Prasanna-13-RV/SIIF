@@ -12,7 +12,7 @@ const Footer = () => {
 				/>
 			</svg> */}
 			<div className='pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl'>
-				<div className='flex gap-5'>
+				<div className='flex gap-5 md:flex-row flex-col'>
 					<div className='md:max-w-md lg:col-span-2'>
 						<a href='/' className='inline-flex items-center'>
 							<img src='../../../logo.png' className='w-28' alt='' />
@@ -29,7 +29,7 @@ const Footer = () => {
 							</p>
 						</div>
 					</div>
-					<div className='flex justify-between w-full'>
+					<div className='md:flex md:justify-between w-full grid grid-cols-2 text-center md:text-left space-y-5 md:space-y-0'>
 						<div className='flex flex-col space-y-3'>
 							<div className='space-y-2'>
 								<p className='font-semibold tracking-wide text-teal-accent-400'>
@@ -48,7 +48,7 @@ const Footer = () => {
 										Gallery
 									</a>
 								</p>
-						
+
 								<p className='font-semibold tracking-wide text-teal-accent-400 underline underline-offset-2'>
 									<a
 										href='/apply-now'
@@ -287,7 +287,6 @@ const Footer = () => {
 											Past Events
 										</a>
 									</li>
-								
 								</ul>
 							</div>
 						</div>
