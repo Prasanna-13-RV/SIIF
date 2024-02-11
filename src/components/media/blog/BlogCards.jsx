@@ -4,7 +4,7 @@ import { BlogSingleCard } from "./BlogSingleCard"
 
 export const BlogCards = () => {
 	return (
-		<section className="relative items-center justify-center w-full my-3 mx-auto max-w-screen-xl sm:px-6 lg:flex flex-row flex-wrap lg:items-center lg:px-8">
+		<section className="flex relative items-center justify-center w-full my-3 mx-auto max-w-screen-xl sm:px-6 lg:flex flex-row flex-wrap lg:items-center lg:px-8">
 			<BlogSingleCard
 				image={
 					"https://aicraise.com/wp-content/uploads/2024/01/Blog-768x384.png"

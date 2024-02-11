@@ -3,7 +3,8 @@ import { CentralSingleCardContent } from "./CentralSingleCardContent"
 
 export const CentralContent = () => {
 	return (
-		<div className="px-10 py-6 flex flex-row flex-wrap items-center justify-center">
+		<div className="p-2 md:px-10 md:py-6 flex flex-row flex-wrap items-center justify-center">
+		
 			<CentralSingleCardContent
 				title={"DEPARTMENT OF BIOTECHNOLOGY (DBT) BIRAC – BIONEST"}
 				link={""}

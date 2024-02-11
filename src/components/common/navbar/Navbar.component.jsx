@@ -143,17 +143,74 @@ const navItems = [
 					{
 						title: 'Capital',
 						link: '/benefits/capital',
-						subItems: []
+						subItems: [
+							{
+								title: 'Clinic',
+								link: '/benefits/clinic',
+								subItems: []
+							},
+							{
+								title: 'Connect',
+								link: '/benefits/connect',
+								subItems: []
+							}
+						]
 					},
 					{
 						title: 'Advisor',
 						link: '/benefits/advisor',
-						subItems: []
+						subItems: [
+							{
+								title: 'State Funding',
+								link: '/benefits/governmentfunding/state',
+								subItems: []
+							},
+							{
+								title: 'Central Funding',
+								link: '/benefits/governmentfunding/central',
+								subItems: []
+							}
+							,
+							{
+								title: 'Angel Investors',
+								link: '/benefits/governmentfunding/angelinvestors',
+								subItems: []
+							}
+							,
+							{
+								title: 'Venture Capitalist',
+								link: '/benefits/governmentfunding/venturecapitalist',
+								subItems: []
+							}
+						]
 					},
 					{
 						title: 'Trade',
 						link: '/benefits/trade',
-						subItems: []
+						subItems: [
+							{
+								title: 'Global Market Connect',
+								link: '/benefits/trade/globalconnect',
+								subItems: []
+							},
+							{
+								title: 'Demo day',
+								link: '/benefits/trade/demoday',
+								subItems: []
+							}
+							,
+							{
+								title: 'Launchpad',
+								link: '/benefits/trade/launchpad',
+								subItems: []
+							}
+							,
+							{
+								title: 'StartUp Tools',
+								link: '/benefits/trade/startuptools',
+								subItems: []
+							}
+						]
 					}
 				]
 			},
@@ -180,7 +237,7 @@ const navItems = [
 			},
 			{
 				title: 'Capital Infusion',
-				link: '',
+				link: '/infusion',
 				subItems: [
 					{
 						title: 'SAIN Investors',
@@ -205,7 +262,7 @@ const navItems = [
 
 const Navbar = () => {
 	return (
-		<header className='bg-white shadow-lg h-24 hidden md:flex relative z-10'>
+		<header className='bg-white shadow-lg h-24 hidden md:flex fixed top-0 left-0 right-0 z-50'>
 			<Link
 				to=''
 				className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
