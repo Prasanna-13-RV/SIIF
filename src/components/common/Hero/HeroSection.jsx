@@ -17,11 +17,11 @@ const HeroSection = ({ title, desc, image }) => {
 
       <div className="container mx-auto px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center sm:text-left">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-left">
+          <h1 className="text-3xl font-extrabold sm:text-5xl text-left text-black">
             {title}
           </h1>
 
-          <p className="mt-4 max-w-lg sm:text-xl/relaxed text-left">{desc}</p>
+          <p className="mt-4 max-w-lg sm:text-xl/relaxed text-left text-black">{desc}</p>
 
           <div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
             <button className="py-3 px-4  bg-black hover:bg">

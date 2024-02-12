@@ -75,13 +75,13 @@ export const IncubationAcceleration = () => {
               <h2 className="text-4xl font-bold">Key Components</h2>
               <div className="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 px-10 lg:px-14 xl:px-16">
                 {keywords.map((coll, idx) => (
-                  <div class="p-8" key={idx}>
+                  <div class="p-8 " key={idx}>
                     <ReactCardFlip
                       isFlipped={flippedCardIndex === idx}
                       flipDirection="vertical"
                     >
                       <div
-                        className="flex flex-col relative justify-center items-center"
+                        className="flex flex-col relative justify-center items-center bg-[#f7f7f7] p-4 rounded-md"
                         onClick={() => handleClick(idx)}
                       >
                         <p className="pb-2 text-black ">{coll.overview}</p>
@@ -90,7 +90,7 @@ export const IncubationAcceleration = () => {
                         </button>
                       </div>
 
-                      <div className="flex flex-col relative justify-center items-start">
+                      <div className="flex flex-col relative justify-center items-start bg-[#f7f7f7] p-4 rounded-md">
                         <li>{coll.services[0]}</li>
                         <li>{coll.services[1]}</li>
                         <li className="pb-3">{coll.services[2]}</li>
@@ -121,13 +121,13 @@ export const IncubationAcceleration = () => {
                 ))}
               </div>
             </div>
-			<div className="col-md-12 text-center p-5">
+            <div className="col-md-12 text-center p-5">
               <button className=" bg-indigo-600 p-3 px-5 rounded-lg lg:text-3xl text-xl md:text-2xl font-semibold ">
                 <Link to="#" className="no-underline text-white ">
-				Join us in shaping the future of innovation!
+                  Join us in shaping the future of innovation!
                 </Link>
               </button>
-			  <p className="section-subtitle text-center text-xl py-4 leading-8">
+              <p className="section-subtitle text-center text-xl py-4 leading-8">
                 Whether you're a budding entrepreneur, an established startup,
                 or a potential collaborator, Zero to Billion is the catalyst for
                 your success. Explore the endless possibilities on our
@@ -135,7 +135,6 @@ export const IncubationAcceleration = () => {
                 innovation and growth.{" "}
               </p>
             </div>
-            
           </div>
         </div>
       </section>

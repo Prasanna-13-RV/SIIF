@@ -105,16 +105,18 @@ export const IncubationCollaboration = () => {
               <h2 className="text-4xl font-bold">Why Collaborate with Us?</h2>
               <div class="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 px-10 lg:px-14 xl:px-16">
                 {collaborate.map((coll, idx) => (
-                  <div class="p-8" key={idx}>
-                    <h2 class="uppercase mt-6 text-2xl text-center text-indigo-500 font-bold mb-2">
-                      {coll.title}
-                    </h2>
+                  <div class="p-8 " key={idx}>
+                    <div className="bg-[#f7f7f7] p-4 rounded-md">
+                      <h2 class="uppercase mt-6 text-2xl text-center text-indigo-500 font-bold mb-2">
+                        {coll.title}
+                      </h2>
 
-                    <ul className="list-disc pl-6  mt-3">
-                      <li>{coll.description[0]}</li>
-                      <li>{coll.description[1]}</li>
-                      <li>{coll.description[2]}</li>
-                    </ul>
+                      <ul className="list-disc pl-6  mt-3">
+                        <li>{coll.description[0]}</li>
+                        <li>{coll.description[1]}</li>
+                        <li>{coll.description[2]}</li>
+                      </ul>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -123,9 +125,10 @@ export const IncubationCollaboration = () => {
               <h2 className="text-4xl font-bold">
                 How We Facilitate Collaboration
               </h2>
-			  <div class="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 px-10 lg:px-14 xl:px-16">
+              <div class="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 px-10 lg:px-14 xl:px-16">
                 {facilitate.map((coll, idx) => (
-					<div class="p-8" key={idx}>
+                  <div class="p-8" key={idx}>
+                  <div className="bg-[#f7f7f7] p-4 rounded-md">
                     <h2 class="uppercase mt-6 text-2xl text-center text-indigo-500 font-bold mb-2">
                       {coll.title}
                     </h2>
@@ -133,8 +136,8 @@ export const IncubationCollaboration = () => {
                     <ul className="list-disc pl-6  mt-3">
                       <li>{coll.description[0]}</li>
                       <li>{coll.description[1]}</li>
-
                     </ul>
+                    </div>
                   </div>
                 ))}
               </div>
