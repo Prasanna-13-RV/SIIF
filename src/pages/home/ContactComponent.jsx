@@ -53,10 +53,10 @@ const ContactComponent = () => {
 			<div className="w-[90%]  lg:w-[70%]  flex flex-col lg:flex-row justify-between py-2 lg:py-5 mt-7 mx-auto text-gray-900 rounded-lg">
 				<div className="flex flex-col justify-between w-full mb-3 lg:mb-0 lg:w-[45%]">
 					<div>
-						<h2 className="text-3xl lg:text-3xl font-bold leading-tight">
+						<h2 className="text-xl md:text-3xl lg:text-3xl font-bold leading-tight">
 							We'd Love to Hear From You
 						</h2>
-						<div className="text-gray-700 mt-8 w-3/4">
+						<div className="text-gray-700 mt-3 md:mt-8 w-full md:w-3/4">
 							We are always listening, and waiting to help you.
 							Write to us to collaborate, seek help or tell us
 							your feedbacks and we will reach out to you!

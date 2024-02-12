@@ -18,7 +18,7 @@
   
 background: #fff;
 
-line-height: 260px;
+line-height: 100px !important;
 text-align: center;
 text-transform: uppercase;
 color: #000;
@@ -26,7 +26,12 @@ color: #000;
 mix-blend-mode: screen;
 }
 
-
+@media (min-width: 768px) { 
+    .line {
+        line-height: 260px !important;
+    }
+   
+ }
 
 .navigate-btn {
     padding: 8px 15px;
