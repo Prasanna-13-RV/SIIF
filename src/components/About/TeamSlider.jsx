@@ -5,6 +5,8 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow"; // Import Swiper CSS
 import Swiper from "swiper";
 import "./Slider.css";
+import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const TeamSlider = ({ Teammembers }) => {
   useEffect(() => {
@@ -30,19 +32,19 @@ const TeamSlider = ({ Teammembers }) => {
           spaceBetween: 10,
         },
         400: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.3,
           spaceBetween: 20,
         },
         640: {
-          slidesPerView: 2,
+          slidesPerView: 2.1,
           spaceBetween: 40,
         },
         900: {
-          slidesPerView: 3,
+          slidesPerView: 3.3,
           spaceBetween: 40,
         },
         1150: {
-          slidesPerView: 4,
+          slidesPerView: 4.3,
           spaceBetween: 40,
         },
       },
@@ -63,17 +65,19 @@ const TeamSlider = ({ Teammembers }) => {
           </p>
         </div>
         <div className="responsive-container-block card-container">
-          <div className="btn">
-            <div className=" swiper-button-nexts">
+          <div className="btn flex ">
+            <div className="swiper-button-nexts">
               <img
                 className="arrow-right"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg"
+                alt="Next"
               />
             </div>
-            <div className=" swiper-button-prevs">
+            <div className="swiper-button-prevs">
               <img
                 className="arrow-left"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg"
+                alt="Previous"
               />
             </div>
           </div>
@@ -81,14 +85,24 @@ const TeamSlider = ({ Teammembers }) => {
             <div className="swiper-wrapper">
               {Teammembers.map((Teammember) => (
                 <div className="swiper-slide">
-                  <div className="card">
-                    <img className="team-member-image" src={Teammember.image} />
-                    <p className="text-blk name">{Teammember.name}</p>
-                    <p className="text-blk position">{Teammember.title}</p>
+                  <div className="pb-3 bg-gray-100 rounded-xl">
+                    <img className="team-member-image rounded-t-xl" src={Teammember.image} />
+                    <p className="text-black name pt-2 text-center ">
+                      {Teammember.name}
+                    </p>
+                    <p className="text-black position text-center">
+                      {Teammember.title}
+                    </p>
+
+                    <Link
+                      to={Teammember.linkedin}
+                      className="flex relative items-center justify-center"
+                    >
+                      <FaLinkedin className="w-8 h-8" />
+                    </Link>
                   </div>
                 </div>
               ))}
-              
             </div>
             <div class="swiper-pagination"></div>
           </div>

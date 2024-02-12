@@ -1,5 +1,5 @@
 import React from "react";
-import TeamSlider from "../../components/About.jsx/TeamSlider";
+import TeamSlider from "../../components/About/TeamSlider";
 
 export const Teams = () => {
   const Teammembers = [
@@ -17,6 +17,34 @@ export const Teams = () => {
         "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
       linkedin: "https://www.linkedin.com",
     },
+    {
+      name: "John Doe",
+      title: "CEO & Founder",
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
+    },
+    {
+      name: "John Doe",
+      title: "CEO & Founder",
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
+    },
+    {
+      name: "John Doe",
+      title: "CEO & Founder",
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
+    },
+    {
+      name: "John Doe",
+      title: "CEO & Founder",
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
+    }
   ];
   return (
     <>

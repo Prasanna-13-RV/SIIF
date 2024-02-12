@@ -1,9 +1,4 @@
 import React from "react";
-import Teamcard from "../../components/About.jsx/StartupCard";
-
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 
 export const AdvisoryBoard = () => {
   let message = `There are many variations of passages of Lorem Ipsum available but the \n majo`;
@@ -30,7 +25,7 @@ export const AdvisoryBoard = () => {
       name: "Jane Smith",
       title: "CTO, XYZ Corp.",
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+        "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
     },
     {
       name: "John Doe",
@@ -53,23 +48,22 @@ export const AdvisoryBoard = () => {
             <h2 className="text-4xl font-semibold">The Advisors Behind SIIF</h2>
             <p className="section-subtitle">{message}</p>
           </div>
-
-          <Row xs={1} md={2} lg={3} className="g-6 p-[2%]">
+          <div class="grid grid-cols-1 md:grid-cols-3 px-10 lg:px-14 xl:px-16">
             {advisors.map((advisor, idx) => (
-              <Col
-                key={idx}
-                className="p-6 transition duration-300 transform hover:scale-105"
-              >
-                <Card className="hover:border-neutral-400 hover:shadow-md">
-                  <Card.Img variant="top" src={advisor.image} />
-                  <Card.Body>
-                    <Card.Title>{advisor.name}</Card.Title>
-                    <Card.Text>{advisor.title}</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+              <div class="p-8">
+                <div class="flex justify-center items-center shadow-2xl">
+                  <img src={advisor.image} alt="" />
+                </div>
+                <h2 class="uppercase mt-6 text-xl text-center text-indigo-500 font-bold mb-2">
+                  {advisor.name}
+                </h2>
+                <p class="font-light text-base text-center text-black mb-3">
+                  {advisor.title}
+                </p>
+              </div>
             ))}
-          </Row>
+          </div>
+         
         </div>
       </div>
     </section>
