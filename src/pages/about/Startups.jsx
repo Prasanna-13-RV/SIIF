@@ -1,6 +1,7 @@
 import React from "react";
 import { EventSingleCard } from "../../components/events/EventSingleCard";
 import { Link } from "react-router-dom";
+import HeroSection from "../../components/common/Hero/HeroSection";
 
 export const Startups = () => {
   const startups = [
@@ -32,11 +33,13 @@ export const Startups = () => {
   ];
   return (
     <section className="mb-5">
-      <img
-        className="w-screen h-[80vh]"
-        src="https://img.freepik.com/premium-photo/startup-concept-with-icon-business-plan-working-virtual-interface-from-digital-tablet-man-write-tablet-closeup-man-use-pen-with-tablet_47274-130.jpg?w=1060"
-        alt=""
-      />
+    <HeroSection
+        title="Startups"
+        image="https://img.pikbest.com/wp/202405/3d-surround-startup-themed-rocket-surrounded-by-chairs-on-a-white-background-rendered-in_9856296.jpg!sw800"
+        desc="An incredible team that steers the entire unit with expertise and
+            great enthusiasm. "
+       />
+   
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center pt-9">
