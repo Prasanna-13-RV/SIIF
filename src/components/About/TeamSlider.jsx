@@ -91,9 +91,21 @@ const TeamSlider = ({ Teammembers }) => {
                       {Teammember.name}
                     </p>
                     <p className="text-black position text-center">
-                      {Teammember.title}
-                    </p>
+                      {Teammember.title1}
 
+                    </p>
+<p className="text-black position text-center">
+                      {Teammember.organization1}
+                      
+                    </p>
+                    <p className="text-black position text-center">
+                      {Teammember.title2}
+
+                    </p>
+<p className="text-black position text-center">
+                      {Teammember.organization2}
+                      
+                    </p>
                     <Link
                       to={Teammember.linkedin}
                       className="flex relative items-center justify-center"
