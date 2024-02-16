@@ -6,3 +6,7 @@
 .header-links li:hover {
 	color: rgb(29 78 216);
 }
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+  }
