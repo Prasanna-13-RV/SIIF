@@ -248,6 +248,7 @@ const navItems = [
 
 const Navbar = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
+	const [isApplyNowOpen, setIsApplyNowOpen] = useState(false);
 	const navRef = useRef(null);
 	return (
 		<>
@@ -354,51 +355,30 @@ const Navbar = () => {
 						></path>
 					</svg>
 				</Link> */}
-					<button
-						id='dropdownHoverButton'
-						data-dropdown-toggle='dropdownHover'
-						data-dropdown-trigger='hover'
-						className='bg-black hover:bg-gray-700 text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded text-center inline-flex items-center '
-						type='button'
-					>
-						Apply Now{' '}
-						<svg
-							class='w-2.5 h-2.5 ms-3'
-							aria-hidden='true'
-							xmlns='http://www.w3.org/2000/svg'
-							fill='none'
-							viewBox='0 0 10 6'
-						>
-							<path
-								stroke='currentColor'
-								stroke-linecap='round'
-								stroke-linejoin='round'
-								stroke-width='2'
-								d='m1 1 4 4 4-4'
-							/>
-						</svg>
-					</button>
-
-					<div
-						id='dropdownHover'
-						class='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'
-					>
-						<ul
-							class='py-2 text-sm text-gray-700 dark:text-gray-200'
-							aria-labelledby='dropdownHoverButton'
-						>
-							<li>
+					<div class='dropdown inline-block relative'>
+						<button class='bg-black text-white font-semibold py-2 px-4 rounded inline-flex items-center'>
+							<span class='mr-1'>Apply Now</span>
+							<svg
+								class='fill-current h-4 w-4'
+								xmlns='http://www.w3.org/2000/svg'
+								viewBox='0 0 20 20'
+							>
+								<path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z' />{' '}
+							</svg>
+						</button>
+						<ul class='dropdown-menu absolute hidden text-black pt-1'>
+							<li class=''>
 								<Link
+									class='rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
 									to='#'
-									class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
 								>
 									Apply for incubation
 								</Link>
 							</li>
-							<li>
+							<li class=''>
 								<Link
+									class='bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
 									to='#'
-									class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
 								>
 									Become a mentor
 								</Link>
