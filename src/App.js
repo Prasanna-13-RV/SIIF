@@ -45,6 +45,7 @@ import Student from "./pages/apply/Student"
 import Faculty from "./pages/apply/Faculty"
 import Technopreneur from "./pages/apply/Technopreneur"
 import Mentor from "./pages/apply/Mentor"
+import { Page404 } from "./components/common/extra/Page404"
 
 function App() {
 	return (
@@ -202,6 +203,7 @@ function App() {
 						element={<Technopreneur />}
 					/>
 					<Route path="/apply/mentor" element={<Mentor />} />
+					<Route path="*" element={<Page404 />} />
 				</Routes>
 				<Footer />
 			</Router>
