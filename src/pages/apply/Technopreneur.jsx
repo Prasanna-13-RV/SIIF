@@ -1,8 +1,12 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Technopreneur = () => {
   return (
     <div>
+            <Helmet>
+        <title>Apply | SIIF</title>
+      </Helmet>
       <div className='p-10 w-full bg-gray-900'>
         <h1 className='text-center font-bold text-3xl
             text-white'>Application form</h1>

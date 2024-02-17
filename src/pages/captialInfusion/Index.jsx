@@ -1,9 +1,14 @@
 import React from "react";
 import { Services } from "./Services";
+import { Helmet } from 'react-helmet'
 
 const Index = () => {
   return (
+
     <div>
+      <Helmet>
+        <title>Capital Infusion | SIIF</title>
+      </Helmet>
       <div className="flex flex-col justify-center items-center p-10 md:p-32 relative finance">
         <img
           className=" absolute w-full h-full top-0 left-0 object-cover "

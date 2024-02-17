@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet'
 
 export const SAINStartups = () => {
   const data = [
@@ -37,6 +38,9 @@ export const SAINStartups = () => {
   ];
   return (
     <div className="  mx-auto ">
+         <Helmet>
+        <title>Startups | SIIF</title>
+      </Helmet>
       <h1 className="py-16 font-bold text-3xl text-center ">SAIN Startups</h1>
       <div className=" w-[90%]  lg:w-[85%] xl:w-[80%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 grid-flow-dense justify-items-center mx-auto  pb-16">
         {data.map((i) => {
