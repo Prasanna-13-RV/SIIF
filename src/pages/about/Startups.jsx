@@ -64,7 +64,7 @@ export const Startups = () => {
           <button className="bg-gray-500 p-3 rounded-xl hover:bg-black">
             <Link
               className="lg:text-2xl text-xl md:text-2xl  font-medium text-white"
-              to="#"
+              to="/apply/technopreneur"
             >
               Click Here
             </Link>

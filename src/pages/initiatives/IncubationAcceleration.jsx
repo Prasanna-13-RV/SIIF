@@ -9,49 +9,49 @@ export const IncubationAcceleration = () => {
 		setFlippedCardIndex(index === flippedCardIndex ? null : index);
 	};
 
-	const applyContent = [
-		{
-			title: 'Apply for incubation or acceleration programs',
-			url: '/apply/technopreneur'
-		},
-		{
-			title: 'Explore partnership opportunities for collaborative initiatives.',
-			url: '/about/partners'
-		},
-		{
-			title: 'Attend upcoming events, workshops, and networking sessions.',
-			url: '/events/upcomingevents'
-		}
-	];
-	const keywords = [
-		{
-			overview:
-				'Dive into our incubation support, where we nurture and cultivate innovative ideas.',
-			services: [
-				'Access to co-working spaces.',
-				'Mentorship programs with seasoned industry experts.',
-				'Workshops and training sessions on entrepreneurial skills.'
-			]
-		},
-		{
-			overview:
-				"Accelerate your venture's growth with our tailored acceleration programs.",
-			services: [
-				'Structured accelerator programs with a focus on scalability.',
-				'Funding opportunities and investor connections.',
-				'Networking events for collaboration and exposure.'
-			]
-		},
-		{
-			overview: 'Explore the resources we offer to equip startups for success.',
-			services: [
-				'State-of-the-art facilities and laboratories.',
-				'Access to research and development support.',
-				'Technology transfer and licensing assistance.',
-				'Professional networking opportunities.'
-			]
-		}
-	];
+  const applyContent = [
+    {
+      title: "Apply for incubation or acceleration programs",
+      url: "/apply/technopreneur",
+    },
+    {
+      title: "Explore partnership opportunities for collaborative initiatives.",
+      url: "/about/partners",
+    },
+    {
+      title: "Attend upcoming events, workshops, and networking sessions.",
+      url: "/events/upcomingevents",
+    },
+  ];
+  const keywords = [
+    {
+      overview:
+        "Dive into our incubation support, where we nurture and cultivate innovative ideas.",
+      services: [
+        "Access to co-working spaces.",
+        "Mentorship programs with seasoned industry experts.",
+        "Workshops and tSAINing sessions on entrepreneurial skills.",
+      ],
+    },
+    {
+      overview:
+        "Accelerate your venture's growth with our tailored acceleration programs.",
+      services: [
+        "Structured accelerator programs with a focus on scalability.",
+        "Funding opportunities and investor connections.",
+        "Networking events for collaboration and exposure.",
+      ],
+    },
+    {
+      overview: "Explore the resources we offer to equip startups for success.",
+      services: [
+        "State-of-the-art facilities and laboratories.",
+        "Access to research and development support.",
+        "Technology transfer and licensing assistance.",
+        "Professional networking opportunities.",
+      ],
+    },
+  ];
 
 	return (
 		<>
