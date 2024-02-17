@@ -4,7 +4,7 @@ const Technopreneur = () => {
   return (
     <div>
       <div className='p-10 w-full bg-gray-900'>
-        <h1 className='ml-20 font-bold text-3xl
+        <h1 className='text-center font-bold text-3xl
             text-white'>Application form</h1>
       </div>
 
