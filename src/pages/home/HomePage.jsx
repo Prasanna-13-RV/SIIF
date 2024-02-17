@@ -16,15 +16,14 @@ export const HomePage = () => {
             About Us
           </h1>
           <p className="leading-[2rem] text-[#f6f6f6] text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.? Quodel
-            alias et. Iusto et temporibus natus deleniti corporis incidunt,
-            error quasi obcaecati dolore laudantium laboriosam fugit accusantium
-            dolorem dignissimos esse cupiditate. Quos porro amet atque ratione
-            minus cum dolorum, voluptatem voluptatibus? Aperiam, est nulla,
-            atque inventore impedit distinctio libero quas fugiat id sit
-            nesciunt quos accusantium in? Unde laboriosam mollitia iure
-            assumenda! Ipsa obcaecati doloremque, explicabo dolore ullam dicta
-            libero nemo soluta facere architecto.
+            We are an initiative dedicated to empowering startups and fostering
+            entrepreneurship. Located in a vibrant ecosystem, SIIF provides a
+            range of programs, resources, and support services to nurture the
+            growth of startups. With well-equipped co-working spaces,
+            mentorship, funding opportunities, and networking events, SIIF
+            creates an enabling environment where startups can thrive, connect
+            with industry experts, and transform their ideas into successful
+            ventures.
           </p>
         </div>
 
@@ -65,7 +64,27 @@ export const HomePage = () => {
           </p>
         </div>
       </div>
-
+      {/* vision& mission */}
+      <div className="w-[90%] lg:w-[70%] relative m-10  flex flex-col mx-auto items-start">
+        <h1 className="font-bold  mb-2 lg:mb-5 text-3xl text-black text-left">
+          Vision
+        </h1>
+        <p className="leading-[2rem] text-black text-justify">
+          Our vision is to assist budding entrepreneurs to develop their
+          business ideas to commercialization through a feasible one-stop
+          center.
+        </p>
+      </div>
+      <div className="w-[90%] lg:w-[70%] relative m-10  flex flex-col mx-auto items-start">
+        <h1 className="font-bold  mb-2 lg:mb-5 text-3xl text-black text-left">
+          Mission
+        </h1>
+        <p className="leading-[2rem] text-black text-justify">
+          Our mission is to provide a nurturing environment where
+          entrepreneurial spirits can flourish, and groundbreaking concepts can
+          take root, transforming into impactful and enduring ventures.
+        </p>
+      </div>
       {/* Events */}
 
       <div className="w-[90%] lg:w-[70%] h-fit relative   mb-10 flex lg:flex-row flex-col-reverse items-center mx-auto ">
@@ -80,13 +99,13 @@ export const HomePage = () => {
         <div className="w-full lg:w-[70%] flex flex-col justify-items-center items-start mb-3 lg:mb-0  lg:p-10  z-10">
           <h1 className="font-bold mb-2 lg:mb-5 text-xl md:text-3xl">Events</h1>
           <p className="leading-[2rem] ">
-            Lorem ipsum dolor sit amro o et tem laboriosam fugit accusantium
-            dolorem dignissimos esse cupiditate. Quos porro amet atque ratione
-            minus cum dolorum, voluptatem voluptatibus? Aperiam, est nulla,
-            atque inventore impedit distinctio libero quas fugiat id sit
-            nesciunt quos accusantium in? Unde laboriosam mollitia iure
-            assumenda! Ipsa obcaecati doloremque, explicabo dolore ullam dicta
-            libero nemo soluta facere architecto.
+            Join us for an unforgettable experience at our upcoming event! Get
+            ready to immerse yourself in a day filled with excitement,
+            inspiration, and networking opportunities. From captivating keynote
+            speakers to engaging workshops, there's something for everyone.
+            Don't miss out on this chance to connect with like-minded
+            individuals and gain valuable insights. Mark your calendars and
+            secure your spot today.
           </p>
 
           <a href="#" className="navigate-btn">

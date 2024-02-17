@@ -30,7 +30,7 @@ export const IncubationAcceleration = () => {
       services: [
         "Access to co-working spaces.",
         "Mentorship programs with seasoned industry experts.",
-        "Workshops and training sessions on entrepreneurial skills.",
+        "Workshops and tSAINing sessions on entrepreneurial skills.",
       ],
     },
     {
