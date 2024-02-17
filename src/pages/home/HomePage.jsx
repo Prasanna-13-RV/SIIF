@@ -6,164 +6,137 @@ import LogoVision from "../../img/image.png"
 import { Helmet } from "react-helmet"
 import { SocailMediaIcons } from "../../components/common/socailmedia/SocailMediaIcons"
 export const HomePage = () => {
-	return (
-		<div>
-			<Helmet>
-				<title>Home | SIIF</title>
-			</Helmet>
+  return (
+    <div>
+      <Helmet>
+        <title>Home | SIIF</title>
+      </Helmet>
 
-			<CarouselHero />
-			<TextRevealOnScroll text="50+ Startups empowered by 2025" />
+      <CarouselHero />
+      <TextRevealOnScroll text="50+ Startups empowered by 2025" />
 
-			{/* About us */}
-			<div className="w-[90%] lg:w-[80%] my-10 h-fit relative flex flex-col lg:flex-row mx-auto items-center justify-center bg-gray-900 rounded-md">
-				<div className="w-[90%] lg:w-[45%] lg:py-[5rem] py-[1.5rem] lg:mr-16">
-					<h1 className="font-bold  mb-2 lg:mb-5  text-xl md:text-3xl text-[#f6f6f6]">
-						About Us
-					</h1>
-					<p className="leading-[2rem] text-[#f6f6f6] text-justify">
-						We are an initiative dedicated to empowering startups
-						and fostering entrepreneurship. Located in a vibrant
-						ecosystem, SIIF provides a range of programs, resources,
-						and support services to nurture the growth of startups.
-						With well-equipped co-working spaces, mentorship,
-						funding opportunities, and networking events, SIIF
-						creates an enabling environment where startups can
-						thrive, connect with industry experts, and transform
-						their ideas into successful ventures.
-					</p>
-				</div>
+      {/* About us */}
+      <div className="w-[90%] lg:w-[80%] my-10 h-fit relative flex flex-col lg:flex-row mx-auto items-center justify-center bg-gray-900 rounded-md">
+        <div className="w-[90%] lg:w-[45%] lg:py-[5rem] py-[1.5rem] lg:mr-16">
+          <h1 className="font-bold  mb-2 lg:mb-5  text-xl md:text-3xl text-[#f6f6f6]">
+            About Us
+          </h1>
+          <p className="leading-[2rem] text-[#f6f6f6] text-justify">
+            We are an initiative dedicated to empowering startups and fostering
+            entrepreneurship. Located in a vibrant ecosystem, SIIF provides a
+            range of programs, resources, and support services to nurture the
+            growth of startups. With well-equipped co-working spaces,
+            mentorship, funding opportunities, and networking events, SIIF
+            creates an enabling environment where startups can thrive, connect
+            with industry experts, and transform their ideas into successful
+            ventures.
+          </p>
+        </div>
 
-				<img
-					className="w-[90%] lg:w-[35%]  lg:my-[5rem] my-[3rem]"
-					style={{ borderRadius: "3%" }}
-					src="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-					alt=""
-				/>
-			</div>
-			<div className="bg-black  py-[5rem] md:py-[10rem] flex justify-center items-center relative my-20">
-				<img
-					className="absolute w-full h-full left-0 top-0 z-0 "
-					src="https://images.unsplash.com/photo-1614851099511-773084f6911d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxhY2slMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D"
-					alt=""
-				/>
-				<div className="w-[80%] flex md:flex-row flex-col  z-10 justify-evenly">
-					<div className="w-[100%] md:w-[40%] p-4  flex flex-col">
-						<img
-							className="mb-3 w-1/6"
-							src="data:image/png;base64,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"
-						/>
-						<h1 className="mb-4 text-white font-bold text-xl md:text-3xl">
-							Our Vision
-						</h1>
-						<p className=" text-white leading-[2rem] text-justify">
-							Our vision is to assist budding entrepreneurs to
-							develop their business ideas to commercialization
-							through a feasible one-stop center.
-						</p>
-					</div>
-					<div className="w-[100%] md:w-[40%] p-4 flex flex-col">
-						<img
-							className="mb-3 w-1/6"
-							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEq0lEQVR4nO2c228VVRTGJwIiRAkXHxTrJaX0UaOiGI0vGrBEY7kqAd+MBomGB0RNBE28xIK+GPUFJTFqBIrEGBHUf8B71CeprT6KGLCUYkAp/ZmVLmItnj3TOd+czhz3L2lyMp3ub8139uy915o9TZJIJBKJRCKRSCQSiUQikaoBzABuBR4EngZeA94Auv3ndeBV4CngAT93RvJ/BbgS2ODm9ALDjJ9h/9tub+uKpJkBrgKeAL7KaVgWQ78EHrcvKGkWgGuAt4DTNI4zwIfAjUlVARYAnzLxfAJcn1QFYCbwMjBEeTjjd8HFSZkB1gC/UV4OA6uTsgFc4L2uKlhvnJ6UAaAd+J7q8R3QNtHm3VDyWzaNo8DNE2XencAf4gsaAPYBXcBDPqau8c9d/js7R8kg0NFo85YJ13WngZ3AImBSBu3JwB3ALuFM/xdwd6PMsws9JQp8D9BaRyzzgL2iWE4Ct2vdOjfgm4ATorGnU3xH/C66nReq4hob5OXAr4Ige+vpdYH42oA+QXyHgBZ1cNOBb0TmXSIN7t9xXioy0Qoe05SBvSm6bVtlQYV7Yr8g3h2qgFajoTOD1vnAvcC7wEEfb0/4Zzt2j52ToZ0VophXKcY9xbe5J+NF/5ShLbtFl2do731B3P11jYfAe6J1XmtAYxLwUo52XwTOC7Q7X7RO7M5rXgcadqbo5DHvLNtS2t4tuobFeaorNmMqWFTwWLW0AZ3gR2DqeAzcIhI+Vis98wkjy5iXRm+ticXTvuNo2JzVvDlC0X0BHZttKXq2BPaLNMyT2VkMfB4dLwR0rICg4p2AzjahzrNp5s0Sl4vWBbR6hDoHAzrrhTo2JM0KGfgYWtYGtCxxVzEY0LkPLZtCBm6qqIEDDTRwY9otbN1UxbomvIVn1jTQBZ8TCnYFdCy3VfF2QMcyFhXPBM1zwdnCZcxHAR0rDKhYGdA5INIYyLSMcdHNQtHJgYV0n2ghPaWGxhRhZ3gyk3kuPNXTl0LzSGB5kWUyYAkaesaVyrn4YpH4rhSdesaorSlt297BQvP5pAEBDIV2AFhJKme2sDWlnNUuKmftzmWeB9EiKqjuzaC1NGMFqDdjdfsDQdz2pG9ubgPFs+WyDFo26K+y3Bb4wRfbg/7Zjq2sNWGMacfaULCiLvNGBbRD9G22SQIKx9ouSga2K4OaBnwtCKrPHj3KAjs3zrnAz4I4v7Cisjq4Fn/orDCxraCepzDvF+AydXxng1woKgL0y8aXf8Y8xW07WPjGdNuA4xtxFNijx/l19jrFbItf021at2oH3ulbwhQM+dOzjlpp33/M1Et8jara3vYncFdDzBt1IR3imh6et+73hbWVodb6z3o/dqAgzXyZhuhdkMNUlyO2ZW9CzBuzmedbqoftNpuXlAFGqjdVe81Bt31NBSNpn2ITZlEcChVfSwHlftVrTlIVgOuAjwt6tTUrwz5zX5tUFeBq//ZV68bxvO66IGkWGNmsac+dPy/whevPgEflm8RLauYjnoH0eI/J08t6/IWbh5vetBDARcAtwP2+te4Vq8eN+qcT2/3YFj/Hzr0w2GgkEolEIpFIJBKJRCKRSFJC/gYcOVEZfQhgUQAAAABJRU5ErkJggg=="
-						/>
-						<h1 className="mb-4  text-white font-bold text-xl md:text-3xl">
-							Our Mission
-						</h1>
-						<p className=" text-white leading-[2rem] text-justify">
-							Our mission is to provide a nurturing environment
-							where entrepreneurial spirits can flourish, and
-							groundbreaking concepts can take root, transforming
-							into impactful and enduring ventures.
-						</p>
-					</div>
-				</div>
-			</div>
+        <img
+          className="w-[90%] lg:w-[35%]  lg:my-[5rem] my-[3rem]"
+          style={{ borderRadius: "3%" }}
+          src="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+      {/* https://images.unsplash.com/photo-1614851099511-773084f6911d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxhY2slMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D */}
+      <div className="bg-black  py-[5rem] md:py-[8rem] flex justify-center items-center relative my-20">
+        <img
+          className="absolute w-full h-full left-0 top-0 z-0 "
+          src="https://www.joshwcomeau.com/_next/image/?url=%2Fimages%2Fshadow-palette%2Fslopes.png&w=3840&q=75"
+          alt=""
+        />
+        <div className="w-[80%] flex md:flex-row flex-col  z-10 justify-evenly">
+          <div className="w-[100%] md:w-[40%] p-4  flex flex-col">
+            <img
+              className="mb-3 w-1/6"
+              src="data:image/png;base64,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"
+            />
+            <h1 className="mb-4 text-white font-bold text-xl md:text-3xl">
+              Our Vision
+            </h1>
+            <p className=" text-white leading-[2rem] text-justify">
+              Our vision is to assist budding entrepreneurs to develop their
+              business ideas to commercialization through a feasible one-stop
+              center.
+            </p>
+          </div>
+          <div className="w-[100%] md:w-[40%] p-4 flex flex-col">
+            <img
+              className="mb-3 w-1/6"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEq0lEQVR4nO2c228VVRTGJwIiRAkXHxTrJaX0UaOiGI0vGrBEY7kqAd+MBomGB0RNBE28xIK+GPUFJTFqBIrEGBHUf8B71CeprT6KGLCUYkAp/ZmVLmItnj3TOd+czhz3L2lyMp3ub8139uy915o9TZJIJBKJRCKRSCQSiUQikaoBzABuBR4EngZeA94Auv3ndeBV4CngAT93RvJ/BbgS2ODm9ALDjJ9h/9tub+uKpJkBrgKeAL7KaVgWQ78EHrcvKGkWgGuAt4DTNI4zwIfAjUlVARYAnzLxfAJcn1QFYCbwMjBEeTjjd8HFSZkB1gC/UV4OA6uTsgFc4L2uKlhvnJ6UAaAd+J7q8R3QNtHm3VDyWzaNo8DNE2XencAf4gsaAPYBXcBDPqau8c9d/js7R8kg0NFo85YJ13WngZ3AImBSBu3JwB3ALuFM/xdwd6PMsws9JQp8D9BaRyzzgL2iWE4Ct2vdOjfgm4ATorGnU3xH/C66nReq4hob5OXAr4Ige+vpdYH42oA+QXyHgBZ1cNOBb0TmXSIN7t9xXioy0Qoe05SBvSm6bVtlQYV7Yr8g3h2qgFajoTOD1vnAvcC7wEEfb0/4Zzt2j52ToZ0VophXKcY9xbe5J+NF/5ShLbtFl2do731B3P11jYfAe6J1XmtAYxLwUo52XwTOC7Q7X7RO7M5rXgcadqbo5DHvLNtS2t4tuobFeaorNmMqWFTwWLW0AZ3gR2DqeAzcIhI+Vis98wkjy5iXRm+ticXTvuNo2JzVvDlC0X0BHZttKXq2BPaLNMyT2VkMfB4dLwR0rICg4p2AzjahzrNp5s0Sl4vWBbR6hDoHAzrrhTo2JM0KGfgYWtYGtCxxVzEY0LkPLZtCBm6qqIEDDTRwY9otbN1UxbomvIVn1jTQBZ8TCnYFdCy3VfF2QMcyFhXPBM1zwdnCZcxHAR0rDKhYGdA5INIYyLSMcdHNQtHJgYV0n2ghPaWGxhRhZ3gyk3kuPNXTl0LzSGB5kWUyYAkaesaVyrn4YpH4rhSdesaorSlt297BQvP5pAEBDIV2AFhJKme2sDWlnNUuKmftzmWeB9EiKqjuzaC1NGMFqDdjdfsDQdz2pG9ubgPFs+WyDFo26K+y3Bb4wRfbg/7Zjq2sNWGMacfaULCiLvNGBbRD9G22SQIKx9ouSga2K4OaBnwtCKrPHj3KAjs3zrnAz4I4v7Cisjq4Fn/orDCxraCepzDvF+AydXxng1woKgL0y8aXf8Y8xW07WPjGdNuA4xtxFNijx/l19jrFbItf021at2oH3ulbwhQM+dOzjlpp33/M1Et8jara3vYncFdDzBt1IR3imh6et+73hbWVodb6z3o/dqAgzXyZhuhdkMNUlyO2ZW9CzBuzmedbqoftNpuXlAFGqjdVe81Bt31NBSNpn2ITZlEcChVfSwHlftVrTlIVgOuAjwt6tTUrwz5zX5tUFeBq//ZV68bxvO66IGkWGNmsac+dPy/whevPgEflm8RLauYjnoH0eI/J08t6/IWbh5vetBDARcAtwP2+te4Vq8eN+qcT2/3YFj/Hzr0w2GgkEolEIpFIJBKJRCKRSFJC/gYcOVEZfQhgUQAAAABJRU5ErkJggg=="
+            />
+            <h1 className="mb-4  text-white font-bold text-xl md:text-3xl">
+              Our Mission
+            </h1>
+            <p className=" text-white leading-[2rem] text-justify">
+              Our mission is to provide a nurturing environment where
+              entrepreneurial spirits can flourish, and groundbreaking concepts
+              can take root, transforming into impactful and enduring ventures.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<div className=" w-[90%] lg:w-[80%] relative m-10  flex flex-col lg:flex-row mx-auto items-center">
-				<img
-					className="absolute w-full h-full top-0 left-0 object-cover"
-					src="https://img.freepik.com/free-vector/minimalist-white-abstract-background_23-2148816315.jpg?w=1380&t=st=1706348269~exp=1706348869~hmac=ae61f2daa5ad5b200c6b8d2a65d39feb690e746ef4e1ede65d5fee104185e2b7"
-					alt=""
-				/>
-				<div className="w-full lg:w-2/6 flex-col flex items-center  justify-items-start p-10 md:p-14 z-10">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADh0lEQVR4nO2ZbWiOYRTHfxSNeStjm5JiPnipbV+0SBRTlIRSopS8hhQpX8SoIT6I+aCJ8EGR+DKSt5mpKUbmPYm85GVpzbzt5Xl0dB7dPT3Pdd27r3tPj7r/db7s+l/nnP/ua+c61xlEiBAhggP6APOBauAu0Az8Bsbwn6AXsAJ4D8RT2GEghyxHDnAujQCvxYBGYDFZ+iXO+xCRbBVkGZYEECHWBZRnOtnewAzgKHAfeAfk6s+fBBQiVqv+B2hheAN8B8p6QsRE4E5SAld0bZKDiMTfzEj19czz8zpgNVAQlghJtC1FAlW6vspRiNhc9XUmxVoLsNBVxBDgU5rg25SzKwQhG9TXwTTrP4BxLkIqDMF3K2dLiEIOGDhHXIQ0GRwfU87SEIQsUl8nDJy3Lm1Gp8GxVCrBcAvPTwkepb4eWIpCv6CXXMzg+KtyBI8chDR44rVZuFLuA+G1welp5ZSHcLSkMgquGjjSeAZGlcFxovyuD0HIAvV11sA57iKkweBYeivBzBCEjFZfjQbODRchrQbHcr/0VXvqICLRIeQDHQbeBxchNy1JrPRUrnsBRFzTS1dQaeHWuAgp0/qdzrl8sckON/w63TsbaDfwpOiU4IidlmQuK6+0myI6Pc2i7WvuIAQUW4J06NESXO+GEHlNCsb64BYTEmosgeSroY1ds4/EPnsGEekaxbjaBUJEgSWYPITGK3efDyH7lVui0xUTtzBMIbk+ktuk3EM+uPIVBJt9cAvCFFLoI+Ba5Vb74AoH3WPjloYlQjrOk5ZgMS2hglM+khMOusfUmMa1gCTumsBzquXAK0ug58A8j2gbP66cxKBOJpIvLPyPwEZgaHcE5OvLMN0TN/GGuKi/UZmioCX4kg8RCZNKOEz3io856rPLsOeXvutnmQTIb3M78M3gqEUrTpFnX38961+6IcJbhtckPZiKNEaLZa9Mdaak+gqmTrddq1GeZ4/cA3t83hs2Ex97k4bceRqz3dIdyHDwX2l9bCA3ee4IwTQ9QqYjENRi6ltiJDDBkt9P7Q7YaiDV6QQQJdu64TCt1nOEBwL1Bq5M+f+OP1MtvgQGqaNlPt7TPWFtGlsw2FARZUKZNsGpnnGPrdb3pMU0B8F0Q4vErRQLcoQEIyxVLFPWqrmgxz15/TYW2F5tmbRKHPAwCwTEPdUzMPz8Ky1TVu8iJEKECBEi0BP4A9KuT41znQPmAAAAAElFTkSuQmCC" />
-					<h1 className="font-bold">Who We Are</h1>
-					<p className="text-center">
-						India’s first United Nation sustainable development
-						Goals Incubator supported by Atal Innovation Mission,
-						NITI Aayog, Govt of India & UN SDSN
-					</p>
-				</div>
-				<div className="w-full lg:w-2/6 flex-col flex items-center  justify-items-start p-10 md:p-14 z-10">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrUlEQVR4nO2au2sUQRjAf2cUjJ4BtRQRy+ADxJQ+sBNbTQ5sxD8gxIj4AFERRZOoSHqjpRamU89HJ0ELRQsREdJIChONFgaNEVwZ+IRxyN7Otzuz3sH94INwO4/vtzszezMXaNOmTQg2A3XgJlAlPlXp66H0HQzTYCIx0KBcB7ALuAo8A6aBBYlp+ewKsFPKpjFo9fcgpMiY1XDvItc7gZPAjFUuK4zYcanrUrPK3Qj9qI+IRMW51gdMKQTc+AAccNqsSF8DZQxl09k54HcBib9h2rgMLKFkTId3Agi4cbtsmUuK5O4pZS6UJdGnSMqsVt05htn+2BKdMjl9k7ou9bRDbApYEVPklCKZL8DanCKJLM1R6FC+J/qtunlEPma8NHOzW5HEW2BZQZEE2BFD5Joigb1O3bwiIzFEniuWWwKJTORNtkvuwrD8bTOjWG5delNi3GOe+Ob3D8NWI0POtZ8eIqP4swaYzWhvXpFfMJFZSc6XUY8bM59XpEsKmFilHFrjDYaQS7cMwyTH0BpKyc+biQKT1uW+Z72nROBiIJF9inrnY4j0BBBZCrxR1NsWayP1vqBIv6LOu0V2o8E4WEBkNfBZUadGRMzu7VVOEZ/lNpF4WcZOcRPwQyniu9wm8u7YSkkcU4r4LrcJcJQSqchBQRI47sac4I22vS8CSrwGVsZOuirHmDXnjm0EPgWQMF9/NljtVuSQYzD0Ad0tq1PTgc0e4FcBiQXZfdrYR6bmMLu0Q2zNoYQbJzIOsesxflYYS3nUZs1/nEOinvK+qMqTqMtyXyrrgTmFxHdnXjQVZxQip2liljfYXLlhyrZpo8B3aDU9iWc0PXMeEt9oAZ54iDyiBdgCfM343SToPwHEZB1wFpi0BCblM3Ot5ThsiRyixekBtv/vJGgV/gDgcwfekiTAiAAAAABJRU5ErkJggg==" />{" "}
-					<h1 className="font-bold">What We Do</h1>
-					<p className="text-center">
-						We work on accelerating the impact
-					</p>
-				</div>
-				<div className="w-full lg:w-2/6 flex-col flex items-center  justify-items-start p-10 md:p-14 z-10">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADdUlEQVR4nO2ZW4hNURjHf+6SkcklaXKZxAxDZCaRa0hDXnhweVTCyK1c4kG5pMnTSFEeeONFyaQ8mCQ80Mikxii55DjGXBgyGDJms/SdWq325Zy913bOqfOvr2b2+vZe67fX96317XWgoILyRl2AY8GyrpHAMeBLvoFskVm4B6zUrk8D2vIFZAjwzRjAXWC2tG/KF5CBwCeXQbzSwiwvQJQWA4+NQbz71wJFuQoyE3gNvAcOAsPkej9gHdAkEOpvpbURQCbECXLV6EwB7ZZcMTUCeBYBZEecIJc8Ok0AW4FBmu+1iMtvU5wgYwTml0fnL4AV4rsmIogDzCFmqT3iCvDbpXMbie6I1dke+CzgBnAOmGQkvwqhPq3zl9JWbAGkwwjXyGrWHv4TOA+UaO2VQD3QCCy0sBk6mlXbBPno0kEPcAYY5+Kvls52SyC1NkE2Ah88OlIlyjbxGwzskpBw81WzeQIol9ArkwLT7UU5YnewLLUvHPUoST6Lz1ifASmIRR7PVgvDEY+XlSp3rKtY3qpepqvcUJrsA3JcfCYCDXL/LSMHioDDBtBXWwOvlrJETfFy7fpo4CRwESiVawd8QKaKT4NL2wNgtQGkcqNX2q3ordHpWQ+/+cB3H5Dh4meW/bo9NICWyczFAtKtJbaqhzYAF3x2+5SpTRSZ2aCV6qbMONpyHlkLgCdaJ9flenmGy6jKq1SONKbhnwCmYFn9gfXATi1E6jIE+QEskXsHAHtldv3ueepRWYeSeoNDtf/Vt8d2oyxJ19QSvF++LFMbZ33APftsgbQArVJnnQYehQBwK9GrtD42+/i+0cAjKWFh4G7Wa1S3fr6pkIykVbKPqHidK7uzTaB0QGqJQVVZAGmwDVHhUxCGDa/UAuLnl7QNYZbm7RHD7b48uyTAryduCHU9bLgltBrtUIBvp80l2AsiTLgltV17XkCN5gC3bYEkfCAyDbdWrRKu9Pi+cQyrsQWiL8EVEcKtTWo05Kgnnd9SuuUbKBaVySmj3mGHnKr4tVdopzKdaYbhqbgggmbCrV2HzCSnuoBRcYH4Jf6MAAi3dj/bQ4xK/CeIZtuHc+kk/nSXn9miQPQBS8mCWixCOMBlsqSkx+oUBqIbGJ8tkGo5pHgeEcKJc7kNozLZwZ0QVkqOqCaDzc7NckZhAXIOpKCC/r6BP70hvz71ThLzAAAAAElFTkSuQmCC" />
-					<h1 className="font-bold">Whom We Support</h1>
-					<p className="text-center">
-						From early stage social enterprise, purpose-driven
-						companies, to NGOs, innovators, change makers
-					</p>
-				</div>
-			</div>
-			{/* vision& mission */}
-			<div className="w-[90%] lg:w-[70%] relative m-10  flex flex-col mx-auto items-start">
-				<h1 className="font-bold  mb-2 lg:mb-5 text-3xl text-black text-left">
-					Vision
-				</h1>
-				<p className="leading-[2rem] text-black text-justify">
-					Our vision is to assist budding entrepreneurs to develop
-					their business ideas to commercialization through a feasible
-					one-stop center.
-				</p>
-			</div>
-			<div className="w-[90%] lg:w-[70%] relative m-10  flex flex-col mx-auto items-start">
-				<h1 className="font-bold  mb-2 lg:mb-5 text-3xl text-black text-left">
-					Mission
-				</h1>
-				<p className="leading-[2rem] text-black text-justify">
-					Our mission is to provide a nurturing environment where
-					entrepreneurial spirits can flourish, and groundbreaking
-					concepts can take root, transforming into impactful and
-					enduring ventures.
-				</p>
-			</div>
-			{/* Events */}
+      <div className=" w-[90%] lg:w-[80%] relative m-10  flex flex-col lg:flex-row mx-auto items-center">
+        <img
+          className="absolute w-full h-full top-0 left-0 object-cover"
+          src="https://img.freepik.com/free-vector/minimalist-white-abstract-background_23-2148816315.jpg?w=1380&t=st=1706348269~exp=1706348869~hmac=ae61f2daa5ad5b200c6b8d2a65d39feb690e746ef4e1ede65d5fee104185e2b7"
+          alt=""
+        />
+        <div className="w-full lg:w-2/6 flex-col flex items-center  justify-items-start p-10 md:p-14 z-10">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADh0lEQVR4nO2ZbWiOYRTHfxSNeStjm5JiPnipbV+0SBRTlIRSopS8hhQpX8SoIT6I+aCJ8EGR+DKSt5mpKUbmPYm85GVpzbzt5Xl0dB7dPT3Pdd27r3tPj7r/db7s+l/nnP/ua+c61xlEiBAhggP6APOBauAu0Az8Bsbwn6AXsAJ4D8RT2GEghyxHDnAujQCvxYBGYDFZ+iXO+xCRbBVkGZYEECHWBZRnOtnewAzgKHAfeAfk6s+fBBQiVqv+B2hheAN8B8p6QsRE4E5SAld0bZKDiMTfzEj19czz8zpgNVAQlghJtC1FAlW6vspRiNhc9XUmxVoLsNBVxBDgU5rg25SzKwQhG9TXwTTrP4BxLkIqDMF3K2dLiEIOGDhHXIQ0GRwfU87SEIQsUl8nDJy3Lm1Gp8GxVCrBcAvPTwkepb4eWIpCv6CXXMzg+KtyBI8chDR44rVZuFLuA+G1welp5ZSHcLSkMgquGjjSeAZGlcFxovyuD0HIAvV11sA57iKkweBYeivBzBCEjFZfjQbODRchrQbHcr/0VXvqICLRIeQDHQbeBxchNy1JrPRUrnsBRFzTS1dQaeHWuAgp0/qdzrl8sckON/w63TsbaDfwpOiU4IidlmQuK6+0myI6Pc2i7WvuIAQUW4J06NESXO+GEHlNCsb64BYTEmosgeSroY1ds4/EPnsGEekaxbjaBUJEgSWYPITGK3efDyH7lVui0xUTtzBMIbk+ktuk3EM+uPIVBJt9cAvCFFLoI+Ba5Vb74AoH3WPjloYlQjrOk5ZgMS2hglM+khMOusfUmMa1gCTumsBzquXAK0ug58A8j2gbP66cxKBOJpIvLPyPwEZgaHcE5OvLMN0TN/GGuKi/UZmioCX4kg8RCZNKOEz3io856rPLsOeXvutnmQTIb3M78M3gqEUrTpFnX38961+6IcJbhtckPZiKNEaLZa9Mdaak+gqmTrddq1GeZ4/cA3t83hs2Ex97k4bceRqz3dIdyHDwX2l9bCA3ee4IwTQ9QqYjENRi6ltiJDDBkt9P7Q7YaiDV6QQQJdu64TCt1nOEBwL1Bq5M+f+OP1MtvgQGqaNlPt7TPWFtGlsw2FARZUKZNsGpnnGPrdb3pMU0B8F0Q4vErRQLcoQEIyxVLFPWqrmgxz15/TYW2F5tmbRKHPAwCwTEPdUzMPz8Ky1TVu8iJEKECBEi0BP4A9KuT41znQPmAAAAAElFTkSuQmCC" />
+          <h1 className="font-bold">Who We Are</h1>
+          <p className="text-center">
+            India’s first United Nation sustainable development Goals Incubator
+            supported by Atal Innovation Mission, NITI Aayog, Govt of India & UN
+            SDSN
+          </p>
+        </div>
+        <div className="w-full lg:w-2/6 flex-col flex items-center  justify-items-start p-10 md:p-14 z-10">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrUlEQVR4nO2au2sUQRjAf2cUjJ4BtRQRy+ADxJQ+sBNbTQ5sxD8gxIj4AFERRZOoSHqjpRamU89HJ0ELRQsREdJIChONFgaNEVwZ+IRxyN7Otzuz3sH94INwO4/vtzszezMXaNOmTQg2A3XgJlAlPlXp66H0HQzTYCIx0KBcB7ALuAo8A6aBBYlp+ewKsFPKpjFo9fcgpMiY1XDvItc7gZPAjFUuK4zYcanrUrPK3Qj9qI+IRMW51gdMKQTc+AAccNqsSF8DZQxl09k54HcBib9h2rgMLKFkTId3Agi4cbtsmUuK5O4pZS6UJdGnSMqsVt05htn+2BKdMjl9k7ou9bRDbApYEVPklCKZL8DanCKJLM1R6FC+J/qtunlEPma8NHOzW5HEW2BZQZEE2BFD5Joigb1O3bwiIzFEniuWWwKJTORNtkvuwrD8bTOjWG5delNi3GOe+Ob3D8NWI0POtZ8eIqP4swaYzWhvXpFfMJFZSc6XUY8bM59XpEsKmFilHFrjDYaQS7cMwyTH0BpKyc+biQKT1uW+Z72nROBiIJF9inrnY4j0BBBZCrxR1NsWayP1vqBIv6LOu0V2o8E4WEBkNfBZUadGRMzu7VVOEZ/lNpF4WcZOcRPwQyniu9wm8u7YSkkcU4r4LrcJcJQSqchBQRI47sac4I22vS8CSrwGVsZOuirHmDXnjm0EPgWQMF9/NljtVuSQYzD0Ad0tq1PTgc0e4FcBiQXZfdrYR6bmMLu0Q2zNoYQbJzIOsesxflYYS3nUZs1/nEOinvK+qMqTqMtyXyrrgTmFxHdnXjQVZxQip2liljfYXLlhyrZpo8B3aDU9iWc0PXMeEt9oAZ54iDyiBdgCfM343SToPwHEZB1wFpi0BCblM3Ot5ThsiRyixekBtv/vJGgV/gDgcwfekiTAiAAAAABJRU5ErkJggg==" />{" "}
+          <h1 className="font-bold">What We Do</h1>
+          <p className="text-center">We work on accelerating the impact</p>
+        </div>
+        <div className="w-full lg:w-2/6 flex-col flex items-center  justify-items-start p-10 md:p-14 z-10">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADdUlEQVR4nO2ZW4hNURjHf+6SkcklaXKZxAxDZCaRa0hDXnhweVTCyK1c4kG5pMnTSFEeeONFyaQ8mCQ80Mikxii55DjGXBgyGDJms/SdWq325Zy913bOqfOvr2b2+vZe67fX96317XWgoILyRl2AY8GyrpHAMeBLvoFskVm4B6zUrk8D2vIFZAjwzRjAXWC2tG/KF5CBwCeXQbzSwiwvQJQWA4+NQbz71wJFuQoyE3gNvAcOAsPkej9gHdAkEOpvpbURQCbECXLV6EwB7ZZcMTUCeBYBZEecIJc8Ok0AW4FBmu+1iMtvU5wgYwTml0fnL4AV4rsmIogDzCFmqT3iCvDbpXMbie6I1dke+CzgBnAOmGQkvwqhPq3zl9JWbAGkwwjXyGrWHv4TOA+UaO2VQD3QCCy0sBk6mlXbBPno0kEPcAYY5+Kvls52SyC1NkE2Ah88OlIlyjbxGwzskpBw81WzeQIol9ArkwLT7UU5YnewLLUvHPUoST6Lz1ifASmIRR7PVgvDEY+XlSp3rKtY3qpepqvcUJrsA3JcfCYCDXL/LSMHioDDBtBXWwOvlrJETfFy7fpo4CRwESiVawd8QKaKT4NL2wNgtQGkcqNX2q3ordHpWQ+/+cB3H5Dh4meW/bo9NICWyczFAtKtJbaqhzYAF3x2+5SpTRSZ2aCV6qbMONpyHlkLgCdaJ9flenmGy6jKq1SONKbhnwCmYFn9gfXATi1E6jIE+QEskXsHAHtldv3ueepRWYeSeoNDtf/Vt8d2oyxJ19QSvF++LFMbZ33APftsgbQArVJnnQYehQBwK9GrtD42+/i+0cAjKWFh4G7Wa1S3fr6pkIykVbKPqHidK7uzTaB0QGqJQVVZAGmwDVHhUxCGDa/UAuLnl7QNYZbm7RHD7b48uyTAryduCHU9bLgltBrtUIBvp80l2AsiTLgltV17XkCN5gC3bYEkfCAyDbdWrRKu9Pi+cQyrsQWiL8EVEcKtTWo05Kgnnd9SuuUbKBaVySmj3mGHnKr4tVdopzKdaYbhqbgggmbCrV2HzCSnuoBRcYH4Jf6MAAi3dj/bQ4xK/CeIZtuHc+kk/nSXn9miQPQBS8mCWixCOMBlsqSkx+oUBqIbGJ8tkGo5pHgeEcKJc7kNozLZwZ0QVkqOqCaDzc7NckZhAXIOpKCC/r6BP70hvz71ThLzAAAAAElFTkSuQmCC" />
+          <h1 className="font-bold">Whom We Support</h1>
+          <p className="text-center">
+            From early stage social enterprise, purpose-driven companies, to
+            NGOs, innovators, change makers
+          </p>
+        </div>
+      </div>
 
-			<div className="w-[90%] lg:w-[80%] h-fit relative   mb-10 flex lg:flex-row flex-col-reverse items-center mx-auto ">
-				<div className="w-full lg:w-[30%] h-[300px] bg-zinc-600">
-					<img
-						className="w-full object-cover h-full "
-						src="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-						alt=""
-					/>
-				</div>
+      {/* Events */}
 
-				<div className="w-full lg:w-[80%] flex flex-col justify-items-center items-start mb-3 lg:mb-0  lg:p-10  z-10">
-					<h1 className="font-bold mb-2 lg:mb-5 text-xl md:text-3xl">
-						Events
-					</h1>
-					<p className="leading-[2rem] ">
-						Join us for an unforgettable experience at our upcoming
-						event! Get ready to immerse yourself in a day filled
-						with excitement, inspiration, and networking
-						opportunities. From captivating keynote speakers to
-						engaging workshops, there's something for everyone.
-						Don't miss out on this chance to connect with
-						like-minded individuals and gain valuable insights. Mark
-						your calendars and secure your spot today.
-					</p>
+      <div className="w-[90%] lg:w-[80%] h-fit relative   mb-10 flex lg:flex-row flex-col-reverse items-center mx-auto ">
+        <div className="w-full lg:w-[30%] h-[300px] bg-zinc-600">
+          <img
+            className="w-full object-cover h-full "
+            src="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
 
-					{/* <a href="#" className="navigate-btn">
+        <div className="w-full lg:w-[80%] flex flex-col justify-items-center items-start mb-3 lg:mb-0  lg:p-10  z-10">
+          <h1 className="font-bold mb-2 lg:mb-5 text-xl md:text-3xl">Events</h1>
+          <p className="leading-[2rem] ">
+            Join us for an unforgettable experience at our upcoming event! Get
+            ready to immerse yourself in a day filled with excitement,
+            inspiration, and networking opportunities. From captivating keynote
+            speakers to engaging workshops, there's something for everyone.
+            Don't miss out on this chance to connect with like-minded
+            individuals and gain valuable insights. Mark your calendars and
+            secure your spot today.
+          </p>
+
+          {/* <a href="#" className="navigate-btn">
             Read More
           </a> */}
-				</div>
-			</div>
+        </div>
+      </div>
 
 			<ContactComponent />
 			<SocailMediaIcons />

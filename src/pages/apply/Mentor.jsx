@@ -6,7 +6,7 @@ const Mentor = () => {
     return (
         <div>
             <div className='p-10 w-full bg-gray-900'>
-                <h1 className='ml-20 font-bold text-3xl
+                <h1 className='text-center font-bold text-3xl
             text-white'>Mentors</h1>
             </div>
             <div className='w-[80%] lg:w-[50%] my-10 mx-auto'>

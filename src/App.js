@@ -152,7 +152,7 @@ function App() {
 						path="/infusion/startups"
 						element={<SAINStartups />}
 					/>
-					<Route path="/infusion/services" element={<Services />} />
+					{/* <Route path="/infusion/services" element={<Services />} /> */}
 
 					{/* Benefits Captial */}
 					<Route path="/benefits/clinic" element={<Clinic />} />
