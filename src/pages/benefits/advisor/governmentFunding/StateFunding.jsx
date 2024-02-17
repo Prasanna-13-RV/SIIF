@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { StateFundingHero } from "../../../../components/benefits/advisor/governmentFunding/stateFunding/StateFundingHero"
 import { StartupTNContent } from "../../../../components/benefits/advisor/governmentFunding/stateFunding/StartupTNContent"
 import { StateFundingContent } from "../../../../components/benefits/advisor/governmentFunding/stateFunding/StateFundingContent"
+import { Helmet } from "react-helmet"
 
 export const StateFunding = () => {
 	const handleClick = (text) => {
@@ -13,6 +14,7 @@ export const StateFunding = () => {
 
 	return (
 		<>
+			<Helmet title="State Funding | SIIF" />
 			<StateFundingHero />
 			<nav className="bg-white">
 				<div className="container flex flex-col items-center p-6 mx-auto">
