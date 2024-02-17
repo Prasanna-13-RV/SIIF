@@ -397,6 +397,6 @@ const data = [
   {
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnO-v5vKBqcZr5qj6WxEiYk1GLmeCTGu8AA&usqp=CAU",
     description:
-      "Training workshops: You will get a chance to hear from more experienced entrepreneurs and gain experience and insights in various domains from marketing to finance and strategies.",
+      "TSAINing workshops: You will get a chance to hear from more experienced entrepreneurs and gain experience and insights in various domains from marketing to finance and strategies.",
   },
 ];
