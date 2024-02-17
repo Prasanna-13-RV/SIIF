@@ -50,13 +50,13 @@ const ContactComponent = () => {
 
 	return (
 		<section className="text-gray-100  mt-10 ">
-			<div className="w-[90%]  lg:w-[70%]  flex flex-col lg:flex-row justify-between py-2 lg:py-5 mt-7 mx-auto text-gray-900 rounded-lg">
-				<div className="flex flex-col justify-between w-full mb-3 lg:mb-0 lg:w-[45%]">
+			<div className="w-[90%]  lg:w-[80%]  flex flex-col justify-between py-2 lg:py-5 mt-7 mx-auto text-gray-900 rounded-lg">
+				<div className="flex flex-col justify-between w-full mb-3 lg:mb-0 ">
 					<div>
 						<h2 className="text-xl md:text-3xl lg:text-3xl font-bold leading-tight">
 							We'd Love to Hear From You
 						</h2>
-						<div className="text-gray-700 mt-3 md:mt-8 w-full md:w-3/4">
+						<div className="text-gray-700 my-3 md:mt-8 w-full md:w-3/4">
 							We are always listening, and waiting to help you.
 							Write to us to collaborate, seek help or tell us
 							your feedbacks and we will reach out to you!
@@ -65,8 +65,8 @@ const ContactComponent = () => {
 							<div className="google-map-code">
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.161518906454!2d80.2532004!3d13.088948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265900495dcd3%3A0xb979159f99fd2231!2sAndhaadhi%20Rehab!5e0!3m2!1sen!2sin!4v1704895456352!5m2!1sen!2sin"
-									width="600"
-									height="355"
+									width={window.innerWidth}
+									height={window.innerHeight - 150}
 									style={{
 										border: 0,
 										width: "100%",
@@ -80,7 +80,7 @@ const ContactComponent = () => {
 					</div>
 				</div>
 				<form
-				className="w-full lg:w-[45%]"
+				className="w-full lg:w-[45%] mx-auto"
 					ref={form}
 					onSubmit={(e) => {
 						// handleSubmit(e)
