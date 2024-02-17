@@ -2,7 +2,7 @@ import React from "react";
 import { EventSingleCard } from "../../components/events/EventSingleCard";
 import { Link } from "react-router-dom";
 import HeroSection from "../../components/common/Hero/HeroSection";
-
+import { Helmet } from "react-helmet"
 export const Startups = () => {
   const startups = [
     {
@@ -33,6 +33,9 @@ export const Startups = () => {
   ];
   return (
     <section className="mb-5">
+    <Helmet>
+				<title>About | Startups</title>
+			</Helmet>
     <HeroSection
         title="Startups"
         image="https://img.pikbest.com/wp/202405/3d-surround-startup-themed-rocket-surrounded-by-chairs-on-a-white-background-rendered-in_9856296.jpg!sw800"

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Helmet } from "react-helmet"
 export const Partners = () => {
   const partners = [
     {
@@ -61,6 +61,9 @@ export const Partners = () => {
   ];
   return (
     <>
+    <Helmet>
+				<title>About | Partners</title>
+			</Helmet>
       <section className="bg-[#f7f7f7]">
         <div className="container pt-5">
           <div className="row ">

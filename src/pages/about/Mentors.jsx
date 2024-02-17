@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet"
 
 export const Mentors = () => {
   const Mentors = [
@@ -78,6 +78,9 @@ export const Mentors = () => {
   ];
   return (
     <>
+     <Helmet>
+				<title>About | Mentors</title>
+			</Helmet>
       <section className="bg-[#f7f7f7]">
         <div className="container pt-5">
           <div className="row ">
