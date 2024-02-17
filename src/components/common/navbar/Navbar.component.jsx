@@ -223,23 +223,23 @@ const navItems = [
 			},
 			{
 				title: 'Capital Infusion',
-				link: '',
+				link: '/infusion',
 				subItems: [
-					{
-						title: 'SAIN Investors',
-						link: '/infusion/investors',
-						subItems: []
-					},
-					{
-						title: 'SAIN Startups',
-						link: '/infusion/startups',
-						subItems: []
-					},
-					{
-						title: 'Services',
-						link: '/infusion/services',
-						subItems: []
-					}
+					// {
+					// 	title: 'SAIN Investors',
+					// 	link: '/infusion/investors',
+					// 	subItems: []
+					// },
+					// {
+					// 	title: 'SAIN Startups',
+					// 	link: '/infusion/startups',
+					// 	subItems: []
+					// },
+					// {
+					// 	title: 'Services',
+					// 	link: '/infusion/services',
+					// 	subItems: []
+					// }
 				]
 			}
 		]
@@ -513,12 +513,12 @@ const NavItemDropdown = ({ item }) => {
 						{item.subItems.map((item, i) => {
 							return (
 								<li key={i}>
-									<Link
+									{/* <Link
 										to={item.link}
 										className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
 									>
 										{item.title}
-									</Link>
+									</Link> */}
 									<div className='ml-6 border-l-2'>
 										{item.subItems.length > 0 &&
 											item.subItems.map((item, i) => (
