@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../../components/common/Hero/HeroSection";
+import { Helmet } from "react-helmet"
 
 export const AdvisoryBoard = () => {
   let message = `There are many variations of passages of Lorem Ipsum available but the \n majo`;
@@ -31,7 +32,11 @@ export const AdvisoryBoard = () => {
   ];
 
   return (
+   
     <section className="bg-white">
+     <Helmet>
+				<title>About | AdvisoryBoard</title>
+			</Helmet>
     <HeroSection
         title="Meet Our Advisory Board"
         image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"

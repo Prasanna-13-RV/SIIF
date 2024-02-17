@@ -1,7 +1,7 @@
 import React from "react";
 import TeamSlider from "../../components/About/TeamSlider";
 import HeroSection from "../../components/common/Hero/HeroSection";
-
+import { Helmet } from "react-helmet"
 export const Teams = () => {
   const Teammembers = [
     {
@@ -52,6 +52,9 @@ export const Teams = () => {
 
   return (
     <>
+    <Helmet>
+				<title>About | Teams</title>
+			</Helmet>
       <section className="bg-white">
        <HeroSection
         title="Meet Our Team"
