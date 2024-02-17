@@ -91,7 +91,7 @@ export const Mentors = () => {
               {Mentors.map((mentor, index) => (
                 <div
                   key={index}
-                  className="transition duration-300 transform hover:scale-105 hover:border-stone-600 hover:shadow-md "
+                  className="transition duration-300 transform hover:scale-105 hover:border-stone-600 hover:shadow-lg bg-white shadow-md"
                 >
                   <img src={mentor.image} alt="" />
                   <h2 class="uppercase mt-6 text-xl text-center text-indigo-500 font-bold mb-2">
@@ -101,7 +101,7 @@ export const Mentors = () => {
                     {mentor.title}
                   </p>
 
-                  <Link to={mentor.linkedin} className="flex relative items-center justify-center">
+                  <Link to={mentor.linkedin} className="flex relative items-center justify-center pb-4">
                     <FaLinkedin className="w-8 h-8" />
                   </Link>
                 </div>
