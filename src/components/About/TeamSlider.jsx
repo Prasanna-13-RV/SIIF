@@ -65,7 +65,7 @@ const TeamSlider = ({ Teammembers }) => {
           </p>
         </div>
         <div className="responsive-container-block card-container">
-          <div className="btn flex ">
+          {/* <div className="btn flex ">
             <div className="swiper-button-nexts">
               <img
                 className="arrow-right"
@@ -80,8 +80,8 @@ const TeamSlider = ({ Teammembers }) => {
                 alt="Previous"
               />
             </div>
-          </div>
-          <div className="swiper-container team-swiper">
+          </div> */}
+          <div className="swiper-container team-swiper pt-2">
             <div className="swiper-wrapper">
               {Teammembers.map((Teammember) => (
                 <div className="swiper-slide">
