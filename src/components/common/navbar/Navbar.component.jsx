@@ -398,7 +398,6 @@ const Navbar = () => {
 								>
 									Become a Technopreneur
 								</Link>
-								
 							</li>
 						</ul>
 					</div>
@@ -412,7 +411,7 @@ const Navbar = () => {
 					<img className='w-24' src='../../logo.png' alt='' />
 				</Link>
 				<ul
-					class='md:px-2 ml-auto visible bg-white z-[1000] md:hidden md:space-x-2 absolute md:relative top-full left-0 right-0 '
+					class='md:px-2 ml-auto visible bg-white z-[1000] hidden md:hidden md:space-x-2 absolute md:relative top-full left-0 right-0 '
 					ref={navRef}
 				>
 					{navItems.map((navItem, i) => (
@@ -530,12 +529,12 @@ const NavItemDropdown = ({ item }) => {
 						{item.subItems.map((item, i) => {
 							return (
 								<li key={i}>
-									{/* <Link
+									<span
 										to={item.link}
-										className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
+										className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 cursor-pointer'
 									>
 										{item.title}
-									</Link> */}
+									</span>
 									<div className='ml-6 border-l-2'>
 										{item.subItems.length > 0 &&
 											item.subItems.map((item, i) => (

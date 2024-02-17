@@ -20,12 +20,12 @@ export const CoworkingSpace = () => {
 						</p>
 
 						<div class='mt-8 flex flex-wrap justify-center gap-4'>
-							<a
+							<Link
 								class='block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto'
-								href='/get-started'
+								href='/apply/technopreneur'
 							>
 								Let's Cowork
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -86,7 +86,7 @@ export const CoworkingSpace = () => {
 							provides top tier facilities.
 						</p>
 					</div>
-					<Link to='/apply-now'>
+					<Link to='/apply/technopreneur'>
 						<button className='px-8 py-3 text-lg font-semibold rounded bg-purple-600 w-fit'>
 							Let's Cowork
 						</button>
