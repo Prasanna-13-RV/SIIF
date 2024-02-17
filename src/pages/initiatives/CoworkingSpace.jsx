@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HeroSection from '../../components/common/Hero/HeroSection';
 
 export const CoworkingSpace = () => {
 	return (
 		<>
-			<section class='bg-gray-50'>
+			<HeroSection
+				title='Workspaces with more than just free wifi'
+				desc='We know you need more than just free wifi and workdesks to build
+				your startup and business. We are here to deliver on that.'
+				image='https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg'
+			/>
+			{/* <section class='bg-gray-50'>
 				<div class='mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center'>
 					<div class='mx-auto max-w-xl text-center'>
 						<h1 class='text-3xl font-extrabold sm:text-4xl'>
@@ -29,7 +36,7 @@ export const CoworkingSpace = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<section className='px-10 lg:px-14 xl:px-16 text-center'>
 				<h1 class='text-3xl font-extrabold sm:text-4xl'>
 					Co-working offerings{' '}

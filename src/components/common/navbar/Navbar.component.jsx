@@ -403,7 +403,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</header>
-			<nav class='min-h-20 flex border-b md:shadow-lg items-center md:hidden  fixed top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
+			<nav class='min-h-20 flex border-b md:shadow-lg items-center md:hidden  top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
 				<Link
 					to=''
 					className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
@@ -529,22 +529,31 @@ const NavItemDropdown = ({ item }) => {
 						{item.subItems.map((item, i) => {
 							return (
 								<li key={i}>
-									<span
-										to={item.link}
-										className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 cursor-pointer'
-									>
-										{item.title}
-									</span>
+									{item.link.length !== 0 ? (
+										<Link
+											to={item.link}
+											className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 cursor-pointer'
+										>
+											{item.title}
+										</Link>
+									) : (
+										<span
+											to={item.link}
+											className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 cursor-pointer'
+										>
+											{item.title}
+										</span>
+									)}
 									<div className='ml-6 border-l-2'>
 										{item.subItems.length > 0 &&
 											item.subItems.map((item, i) => (
 												<li key={i}>
-													<Link
+													<span
 														to={item.link}
 														className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
 													>
 														{item.title}
-													</Link>
+													</span>
 													<div className='ml-6 border-l-2'>
 														{item.subItems.length > 0 &&
 															item.subItems.map((item, i) => (

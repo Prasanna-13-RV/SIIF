@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import HeroSection from '../../components/common/Hero/HeroSection';
 
 const faq = [
   {
@@ -97,7 +98,18 @@ const faq = [
 export const PreIncubationProgram = () => {
   return (
     <div className="px-10 lg:px-14 xl:px-16">
-      <div class="">
+      <HeroSection
+				title='Program In Brieforama'
+				desc={`'At "Program In Brieforama," we're committed to making it easy for you
+        to explore our programs and find the right opportunities to support
+        your entrepreneurial journey. Whether you're a budding startup
+        founder, a seasoned entrepreneur, or someone with a passion for
+        innovation, there's a program for you. Dive into "Program In
+        Brieforama" today and take the first step towards realizing your
+        entrepreneurial dreams!'`}
+				image='https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg'
+			/>
+      {/* <div class="">
         <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
           Program In Brieforama
         </h1>
@@ -110,7 +122,7 @@ export const PreIncubationProgram = () => {
           Brieforama" today and take the first step towards realizing your
           entrepreneurial dreams!
         </p>
-      </div>
+      </div> */}
       <div class="px-10 lg:px-14 xl:px-16">
         <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
           Sector Spotlight

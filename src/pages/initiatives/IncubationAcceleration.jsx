@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { Link } from 'react-router-dom';
+import HeroSection from '../../components/common/Hero/HeroSection';
 
 export const IncubationAcceleration = () => {
 	const [flippedCardIndex, setFlippedCardIndex] = useState(null);
@@ -9,58 +10,63 @@ export const IncubationAcceleration = () => {
 		setFlippedCardIndex(index === flippedCardIndex ? null : index);
 	};
 
-  const applyContent = [
-    {
-      title: "Apply for incubation or acceleration programs",
-      url: "/apply/technopreneur",
-    },
-    {
-      title: "Explore partnership opportunities for collaborative initiatives.",
-      url: "/about/partners",
-    },
-    {
-      title: "Attend upcoming events, workshops, and networking sessions.",
-      url: "/events/upcomingevents",
-    },
-  ];
-  const keywords = [
-    {
-      overview:
-        "Dive into our incubation support, where we nurture and cultivate innovative ideas.",
-      services: [
-        "Access to co-working spaces.",
-        "Mentorship programs with seasoned industry experts.",
-        "Workshops and tSAINing sessions on entrepreneurial skills.",
-      ],
-    },
-    {
-      overview:
-        "Accelerate your venture's growth with our tailored acceleration programs.",
-      services: [
-        "Structured accelerator programs with a focus on scalability.",
-        "Funding opportunities and investor connections.",
-        "Networking events for collaboration and exposure.",
-      ],
-    },
-    {
-      overview: "Explore the resources we offer to equip startups for success.",
-      services: [
-        "State-of-the-art facilities and laboratories.",
-        "Access to research and development support.",
-        "Technology transfer and licensing assistance.",
-        "Professional networking opportunities.",
-      ],
-    },
-  ];
+	const applyContent = [
+		{
+			title: 'Apply for incubation or acceleration programs',
+			url: '/apply/technopreneur'
+		},
+		{
+			title: 'Explore partnership opportunities for collaborative initiatives.',
+			url: '/about/partners'
+		},
+		{
+			title: 'Attend upcoming events, workshops, and networking sessions.',
+			url: '/events/upcomingevents'
+		}
+	];
+	const keywords = [
+		{
+			overview:
+				'Dive into our incubation support, where we nurture and cultivate innovative ideas.',
+			services: [
+				'Access to co-working spaces.',
+				'Mentorship programs with seasoned industry experts.',
+				'Workshops and tSAINing sessions on entrepreneurial skills.'
+			]
+		},
+		{
+			overview:
+				"Accelerate your venture's growth with our tailored acceleration programs.",
+			services: [
+				'Structured accelerator programs with a focus on scalability.',
+				'Funding opportunities and investor connections.',
+				'Networking events for collaboration and exposure.'
+			]
+		},
+		{
+			overview: 'Explore the resources we offer to equip startups for success.',
+			services: [
+				'State-of-the-art facilities and laboratories.',
+				'Access to research and development support.',
+				'Technology transfer and licensing assistance.',
+				'Professional networking opportunities.'
+			]
+		}
+	];
 
 	return (
 		<>
+			<HeroSection
+				title='Welcome to Zero to Billion, where innovation meets industry!'
+				// desc='We know you need more than just free wifi and workdesks to build
+				// your startup and business. We are here to deliver on that.'
+				image='https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg'
+			/>
 			<section className='w-full h-full flex relative justify-center items-center p-3'>
 				<div className='container'>
 					<div className='row'>
-						<div className=' text-3xl'>
-							Welcome to Zero to Billion, where innovation meets industry!
-						</div>
+						{/* <div className=' text-3xl'>
+						</div> */}
 						<div className='col-md-12 text-left pt-7'>
 							<h2 className='text-4xl font-bold'>Our Vision</h2>
 							<p className='section-subtitle text-xl py-4 leading-8'>
