@@ -1,7 +1,7 @@
 import React from "react";
 import TeamSlider from "../../components/About/TeamSlider";
 import HeroSection from "../../components/common/Hero/HeroSection";
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 export const Teams = () => {
   const Teammembers = [
     {
@@ -10,8 +10,9 @@ export const Teams = () => {
       organization1: "MSAJCE",
       title2: "Board of Director, Founder,",
       organization2: "SIIF",
-      image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com"
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
     },
     {
       name: "Janab. P.R.L. Hamid Ibrahim",
@@ -19,8 +20,9 @@ export const Teams = () => {
       organization1: "Mohamed Sathak Trust",
       title2: "Board of Director,",
       organization2: "SIIF",
-      image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com"
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
     },
     {
       name: "Mr. Prakadesh Subramanian",
@@ -28,8 +30,9 @@ export const Teams = () => {
       organization1: "Zero2Billion",
       title2: "Strategic Partner,",
       organization2: "SIIF",
-      image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com"
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com/in/prakadesh-subramanian-37475b48",
     },
     {
       name: "Miss. Akshita K",
@@ -37,34 +40,37 @@ export const Teams = () => {
       organization1: "SIIF",
       title2: "",
       organization2: "",
-      image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com"
-    }, {
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com/in/akshita-kancharla-aa9766187/",
+    },
+    {
       name: "Miss. Akshita K",
       title1: "Incubation Lead,",
       organization1: "SIIF",
       title2: "",
       organization2: "",
-      image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com"
-    }
+      image:
+        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+      linkedin: "https://www.linkedin.com",
+    },
   ];
 
   return (
     <>
-    <Helmet>
-				<title>About | Teams</title>
-			</Helmet>
+      <Helmet>
+        <title>About | Teams</title>
+      </Helmet>
       <section className="bg-white">
-       <HeroSection
-        title="Meet Our Team"
-        image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
-        desc="An incredible team that steers the entire unit with expertise and
+        <HeroSection
+          title="Meet Our Team"
+          image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
+          desc="An incredible team that steers the entire unit with expertise and
             great enthusiasm. "
-       />
+        />
         <div className="container pt-5">
           <div className="row ">
-              <TeamSlider Teammembers={Teammembers} />
+            <TeamSlider Teammembers={Teammembers} />
           </div>
         </div>
       </section>

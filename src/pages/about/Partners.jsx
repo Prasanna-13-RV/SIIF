@@ -4,6 +4,10 @@ export const Partners = () => {
   const partners = [
     {
       image:
+        "https://static.vecteezy.com/system/resources/previews/020/190/424/non_2x/hdfc-logo-hdfc-icon-free-free-vector.jpg",
+    },
+    {
+      image:
         "https://i0.wp.com/www.crazytips.org/wp-content/uploads/2021/02/Logo-Design-professional.jpg?ssl=1",
     },
     {
