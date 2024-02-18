@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet"
+
 import HeroSection from '../../components/common/Hero/HeroSection';
 
 export const CoworkingSpace = () => {
 	return (
 		<>
+		 <Helmet>
+        <title>Coworking Space | SIIF</title>
+      </Helmet>
 			<HeroSection
 				title='Workspaces with more than just free wifi'
 				desc='We know you need more than just free wifi and workdesks to build
