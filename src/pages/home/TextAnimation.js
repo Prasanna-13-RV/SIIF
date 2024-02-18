@@ -22,7 +22,7 @@ const TextRevealOnScroll = ({ text }) => {
   };
 
   return (
-    <div className="w-full  h-[100px] md:h-[260px] relative flex items-center justify-center">
+    <div className="w-full  h-[100px] md:h-[200px] relative flex items-center justify-center">
       <motion.div
         ref={ref}
         initial="hidden"
