@@ -17,7 +17,7 @@ export const IncubationProgram = () => {
       />
       <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
         <img
-          src="https://source.unsplash.com/640x480/?1"
+          src="https://assets.entrepreneur.com/content/3x2/2000/20170219101601-shutterstock-524387770.jpeg"
           alt=""
           className="h-80 aspect-video"
         />
@@ -26,10 +26,10 @@ export const IncubationProgram = () => {
           <h3 className="text-3xl font-bold">Our Incubation Program</h3>
           <p className="my-6 ">
             Startups and first-time entrepreneurs are at the centre of our
-            incubation program. Entrepreneurs joining AIC RAISE are provided
-            with the best opportunities and knowledge to refine their idea,
-            launch their enterprises, grow it into profitable business and
-            finally deliver high-impact solutions.
+            incubation program. Entrepreneurs joining SIIF are provided with the
+            best opportunities and knowledge to refine their idea, launch their
+            enterprises, grow it into profitable business and finally deliver
+            high-impact solutions.
           </p>
           {/* <button type='button' className='self-start'>
 								Action
@@ -212,7 +212,7 @@ export const IncubationProgram = () => {
           </div>
         </div>
       </section>
-      <section className="">
+      {/* <section className="">
         <div className="container max-w-5xl px-4 py-12 mx-auto">
           <div className="grid gap-4 mx-4 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
@@ -220,18 +220,18 @@ export const IncubationProgram = () => {
                 <h3 className="text-3xl font-semibold">
                   Our Selection Process
                 </h3>
-                {/* <span className='text-sm font-bold tracki uppercase dark:text-gray-400'>
+                <span className='text-sm font-bold tracki uppercase dark:text-gray-400'>
 									Vestibulum diam nunc
-								</span> */}
+								</span>
               </div>
             </div>
             <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
               <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:-translate-x-2 before:bg-violet-400">
                   <h3 className="text-xl font-semibold tracki">Personality </h3>
-                  {/* <time className='text-xs tracki uppercase dark:text-gray-400'>
+                  <time className='text-xs tracki uppercase dark:text-gray-400'>
 										Dec 2020
-									</time> */}
+									</time>
                   <p className="mt-3">
                     We look out for individuals who are passionate about
                     entrepreneurship. They should show unwavering commitment to
@@ -244,9 +244,9 @@ export const IncubationProgram = () => {
                   <h3 className="text-xl font-semibold tracki">
                     Willingness to Learn
                   </h3>
-                  {/* <time className='text-xs tracki uppercase dark:text-gray-400'>
+                  <time className='text-xs tracki uppercase dark:text-gray-400'>
 										Jul 2019
-									</time> */}
+									</time>
                   <p className="mt-3">
                     We are out on the lookout for individuals who are open to
                     learning and gaining new ideas. Individuals who will take
@@ -256,9 +256,9 @@ export const IncubationProgram = () => {
                 </div>
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:-translate-x-2 before:bg-violet-400">
                   <h3 className="text-xl font-semibold tracki">Incubation </h3>
-                  {/* <time className='text-xs tracki uppercase dark:text-gray-400'>
+                  <time className='text-xs tracki uppercase dark:text-gray-400'>
 										Jan 2016
-									</time> */}
+									</time>
                   <p className="mt-3">
                     We look for individuals who are open to feedback and can
                     gain from our non-financial support.
@@ -268,9 +268,9 @@ export const IncubationProgram = () => {
                   <h3 className="text-xl font-semibold tracki">
                     Strength and workability{" "}
                   </h3>
-                  {/* <time className='text-xs tracki uppercase dark:text-gray-400'>
+                  <time className='text-xs tracki uppercase dark:text-gray-400'>
 										Jan 2016
-									</time> */}
+									</time>
                   <p className="mt-3">
                     The idea you present on the table should be workable and
                     executable. It should be focused on solving a particular
@@ -282,12 +282,12 @@ export const IncubationProgram = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
         <div class="text-center mb-20">
           <h1 class=" title-font  mb-4 text-3xl font-extrabold leading-10 tracking-tight sm:leading-none">
-            What Is Life Like At AIC RAISE Incubation Centre?
+            What Is Life Like At SIIF Incubation Centre?
           </h1>
           <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             Our incubation programs are structured to give an all-round growth
@@ -310,7 +310,7 @@ export const IncubationProgram = () => {
             );
           })}
         </div>
-      </section>
+      </section> */}
       <section className="py-6 bg-gray-400 mt-4 mx-10 lg:mx-14 xl:mx-16">
         <div className="text-white container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between">
           <div>
