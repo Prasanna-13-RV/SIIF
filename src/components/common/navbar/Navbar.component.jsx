@@ -175,7 +175,7 @@ const navItems = [
 								title: 'Unveiling Expo',
 								link: '/benefits/trade/unveilingexpo',
 								subItems: []
-							},
+							}
 						]
 					}
 				]
@@ -200,7 +200,7 @@ const navItems = [
 						subItems: []
 					}
 				]
-			},
+			}
 			// {
 			// 	title: 'Capital Infusion',
 			// 	link: '/infusion',
@@ -368,7 +368,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</header>
-			<nav class='min-h-20 flex border-b md:shadow-lg items-center md:hidden fixed  top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
+			<nav class='min-h-20 flex border-b md:shadow-lg items-center md:hidden relative  top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
 				<Link
 					to=''
 					className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
@@ -557,10 +557,16 @@ const NavItemDropdown = ({ item }) => {
 	);
 };
 const NavItemMob = ({ item }) => {
+	const [isNavItemClicked, setIsNavItemClicked] = useState(false);
 	return (
-		<li className={`relative  ${item.subItems.length > 0 && 'parent'}`}>
+		<li
+			className={`relative  ${item.subItems.length > 0 && 'parent'} ${
+				isNavItemClicked && 'clicked'
+			}`}
+		>
 			<Link
 				to={item.link}
+				onClick={() => setIsNavItemClicked(!isNavItemClicked)}
 				class={`flex justify-between md:inline-flex px-4 py-2 w-full items-center bg-white hover:bg-gray-50 space-x-2 `}
 			>
 				{item.title}
@@ -576,7 +582,7 @@ const NavItemMob = ({ item }) => {
 				)}
 			</Link>
 			{item.subItems.length > 0 && (
-				<ul class='child w-full transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-200 z-[100] md:shadow-lg md:rounded-b overflow-y-scroll'>
+				<ul class='child w-full transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-200 z-[100] md:shadow-lg md:rounded-b '>
 					{item.subItems.map((si, i) => {
 						return <NavItemMob item={si} key={i} />;
 					})}
