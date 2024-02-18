@@ -2,7 +2,7 @@ import React from "react"
 
 export const CentralHero = () => {
 	return (
-		<section className="relative bg-[url(https://www.ibrasiagroup.com/wp-content/uploads/2023/07/stock-photo-audience-at-the-conference-hall-business-conference-and-presentation-728227891-transformed-1.jpeg)] bg-cover bg-center bg-no-repeat">
+		<section className="relative bg-[url(https://cdn.pixabay.com/photo/2015/09/15/15/53/bank-notes-941246_640.jpg)] bg-cover bg-center bg-no-repeat">
 			<div className="absolute inset-0 sm:bg-transparent sm:from-white/55 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l lg:bg-gradient-to-r"></div>
 
 			<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">

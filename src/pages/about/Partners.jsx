@@ -4,60 +4,8 @@ export const Partners = () => {
   const partners = [
     {
       image:
-        "https://i0.wp.com/www.crazytips.org/wp-content/uploads/2021/02/Logo-Design-professional.jpg?ssl=1",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706601600&semt=sph",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
-    {
-      image:
-        "https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg",
-    },
+        "https://static.vecteezy.com/system/resources/previews/020/190/424/non_2x/hdfc-logo-hdfc-icon-free-free-vector.jpg",
+    }
   ];
   return (
     <>

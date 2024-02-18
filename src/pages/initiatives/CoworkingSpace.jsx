@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet"
+
 import HeroSection from '../../components/common/Hero/HeroSection';
 
 export const CoworkingSpace = () => {
 	return (
 		<>
+		 <Helmet>
+        <title>Coworking Space | SIIF</title>
+      </Helmet>
 			<HeroSection
 				title='Workspaces with more than just free wifi'
 				desc='We know you need more than just free wifi and workdesks to build
@@ -83,7 +88,7 @@ export const CoworkingSpace = () => {
 			</section>
 
 			<section className='py-6 bg-gray-400 mt-4 mx-10 lg:mx-14 xl:mx-16'>
-				<div className='text-white container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between'>
+				<div className='text-white mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between'>
 					<div>
 						<h1 className='text-2xl font-semibold leading lg:text-left'>
 							Coworking Space

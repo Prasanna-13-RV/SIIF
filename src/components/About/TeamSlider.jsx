@@ -108,6 +108,7 @@ const TeamSlider = ({ Teammembers }) => {
                     </p>
                     <Link
                       to={Teammember.linkedin}
+                      target="_blank"
                       className="flex relative items-center justify-center"
                     >
                       <FaLinkedin className="w-8 h-8" />

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = () => {
+const Card = ({gallery}) => {
 	return (
 		<div class='w-full bg-white border border-gray-200 rounded-lg shadow '>
 			<img
 				class='rounded-t-lg w-full'
-				src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnO-v5vKBqcZr5qj6WxEiYk1GLmeCTGu8AA&usqp=CAU'
+				src={gallery.image}
 				alt=''
 			/>
 			<div class='p-5'>

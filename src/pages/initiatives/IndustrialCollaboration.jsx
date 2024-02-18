@@ -2,6 +2,8 @@ import React from "react";
 
 import { PiStrategy } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"
+
 import HeroSection from '../../components/common/Hero/HeroSection';
 
 export const IncubationCollaboration = () => {
@@ -82,13 +84,16 @@ export const IncubationCollaboration = () => {
 
   return (
     <>
-      <section className="w-full h-full flex relative justify-center items-center p-3 ">
+     <Helmet>
+        <title>Industrial Collaboration | SIIF</title>
+      </Helmet>
       <HeroSection
 				title='Welcome to Zero to Billion, where innovation meets industry!'
 				// desc='We know you need more than just free wifi and workdesks to build
 				// your startup and business. We are here to deliver on that.'
 				image='https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg'
 			/>
+      <section className="w-full h-full flex relative justify-center items-center p-3 ">
         <div className="container">
           <div className="row">
             {/* <div className=" text-3xl pt-5">

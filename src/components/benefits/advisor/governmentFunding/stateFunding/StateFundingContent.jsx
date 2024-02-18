@@ -96,7 +96,7 @@ export const StateFundingContent = () => {
 					</div>
 				</div>
 			</div>
-			<StateFundingTable />
+			{/* <StateFundingTable /> */}
 			<div className="lg:mx-auto lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8 my-3 px-5">
 				<h1 className="mt-2 text-base font-bold tracking-tight text-gray-900 sm:text-lg">
 					Eligibility Criteria

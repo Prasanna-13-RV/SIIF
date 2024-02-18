@@ -1,29 +1,34 @@
 import React from "react";
+import { Helmet } from "react-helmet"
+
 import HeroSection from '../../components/common/Hero/HeroSection'
 
 export const IpSupport = () => {
+  <Helmet>
+  <title>IP Support | SIIF</title>
+</Helmet>
   return (
     <>
-      <div class="px-10 lg:px-14 xl:px-16">
-        <HeroSection title="Innovation & Patent Cell" desc=" At SIIF, we recognize that innovation is the lifeblood of
-          entrepreneurship. Our Innovation & Patent Cell is dedicated to
-          supporting startups in protecting and maximizing the value of their
-          intellectual property (IP) assets. We understand the critical role
-          that patents play in safeguarding innovations and providing a
-          competitive edge in the marketplace."
-          image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
-          />
-        {/* <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
+      <HeroSection
+        title="Innovation & Patent Cell"
+        desc=""
+        image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
+      />
+      {/* <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
           Innovation & Patent Cell
         </h1> */}
-        {/* <p class="text-center mt-6 text-lg font-light text-gray-500">
+      {/* <p class="text-center mt-6 text-lg font-light text-gray-500">
+          
+        </p> */}
+      <div className="px-10 lg:px-14 xl:px-16">
+        <p class="text-center mt-6 text-xl font-medium 0">
           At SIIF, we recognize that innovation is the lifeblood of
           entrepreneurship. Our Innovation & Patent Cell is dedicated to
           supporting startups in protecting and maximizing the value of their
           intellectual property (IP) assets. We understand the critical role
           that patents play in safeguarding innovations and providing a
           competitive edge in the marketplace.
-        </p> */}
+        </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 px-10 lg:px-14 xl:px-16">
         <div class="p-8">

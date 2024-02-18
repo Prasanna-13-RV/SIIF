@@ -2,47 +2,62 @@ import React from "react";
 import { EventSingleCard } from "../../components/events/EventSingleCard";
 import { Link } from "react-router-dom";
 import HeroSection from "../../components/common/Hero/HeroSection";
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 export const Startups = () => {
   const startups = [
     {
-      name: "Startup 1",
+      name: "Quazr Ventures Pvt. Ltd.",
       logo: "https://img.freepik.com/premium-vector/startup-success-arrow-cursor-up-right-direction-overlap-overlapping-colorful-vector-logo-design_216988-1189.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "Aero knotz Drone India Pvt. Ltd.",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: " Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "Mechimed Technologie",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "eDigiM Research Pvt. Ltd.",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "IK Digital",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
+    },
+    {
+      name: "Harvtech LLP",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "",
+    },
+    {
+      name: "ZeQube Technologies Private Limited",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "",
+    },
+    {
+      name: "LazyCrew",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "",
     },
   ];
   return (
     <section className="mb-5">
-    <Helmet>
-				<title>About | Startups</title>
-			</Helmet>
-    <HeroSection
+      <Helmet>
+        <title>About | Startups</title>
+      </Helmet>
+      <HeroSection
         title="Startups"
         image="https://img.pikbest.com/wp/202405/3d-surround-startup-themed-rocket-surrounded-by-chairs-on-a-white-background-rendered-in_9856296.jpg!sw800"
         desc="An incredible team that steers the entire unit with expertise and
             great enthusiasm. "
-       />
-   
+      />
+
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center pt-9">
@@ -60,19 +75,24 @@ export const Startups = () => {
           </section>
         </div>
 
-        <div className="col-md-12 text-center">
-          <h1 className="lg:text-6xl text-5xl md:text-5xl font-semibold pb-4">
-            Join Our StartUp Team
-          </h1>
-          <button className="bg-gray-500 p-3 rounded-xl hover:bg-black">
-            <Link
-              className="lg:text-2xl text-xl md:text-2xl  font-medium text-white"
-              to="/apply/technopreneur"
-            >
-              Click Here
+        <section className="py-6 bg-gray-400 mt-4">
+          <div className="text-white container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between">
+            <div>
+              <h1 className="text-2xl font-semibold leading lg:text-left w-3/4 mb-3">
+                Ready To Take Your Tech Idea To The Next Level? Apply For The
+                SIIF Pre-Incubation Program Today!
+              </h1>
+              <p>Last Date To Apply: 15.12.2023</p>
+              <p>For Inquiries: 89257 45338</p>
+              <p>Email : akshitakofficial@gmail.com</p>
+            </div>
+            <Link to="/apply/technopreneur">
+              <button className="px-8 py-3 text-lg font-semibold rounded bg-purple-600 w-fit">
+                Apply Now
+              </button>
             </Link>
-          </button>
-        </div>
+          </div>
+        </section>
       </div>
     </section>
   );

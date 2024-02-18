@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"
+
 import HeroSection from '../../components/common/Hero/HeroSection';
 
 const faq = [
@@ -97,23 +99,17 @@ const faq = [
 
 export const PreIncubationProgram = () => {
   return (
-    <div className="px-10 lg:px-14 xl:px-16">
+    <div>
+    <Helmet>
+        <title>Pre-Incubation Program | SIIF</title>
+      </Helmet>
       <HeroSection
-				title='Program In Brieforama'
-				desc={`'At "Program In Brieforama," we're committed to making it easy for you
-        to explore our programs and find the right opportunities to support
-        your entrepreneurial journey. Whether you're a budding startup
-        founder, a seasoned entrepreneur, or someone with a passion for
-        innovation, there's a program for you. Dive into "Program In
-        Brieforama" today and take the first step towards realizing your
-        entrepreneurial dreams!'`}
-				image='https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg'
-			/>
-      {/* <div class="">
-        <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
-          Program In Brieforama
-        </h1>
-        <p class="text-center mt-6 text-lg font-light 0">
+        title="Program In Brieforama"
+        desc={``}
+        image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
+      />
+      <div className="px-10 lg:px-14 xl:px-16">
+        <p class="text-center mt-6 text-xl font-medium 0">
           At "Program In Brieforama," we're committed to making it easy for you
           to explore our programs and find the right opportunities to support
           your entrepreneurial journey. Whether you're a budding startup
@@ -122,18 +118,18 @@ export const PreIncubationProgram = () => {
           Brieforama" today and take the first step towards realizing your
           entrepreneurial dreams!
         </p>
-      </div> */}
+      </div>
       <div class="px-10 lg:px-14 xl:px-16">
         <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
           Sector Spotlight
         </h1>
         <div class="p-8 grid grid-cols-3 gap-5 place-items-center">
-          <Card title="Deep Tech" />
-          <Card title="Health & Med Tech" />
-          <Card title="Food Tech" />
-          <Card title="Green Tech" />
-          <Card title="Climate Tech" />
-          <Card title="Energy Tech" />
+          <Card title="Industry 4.0 "/>
+          <Card title="Life sciences" />
+          <Card title="Mobility and Transportation" />
+          <Card title="Energy and Environment" />
+          <Card title="Food tech" />
+          <Card title="Climate tech" />
         </div>
       </div>
       <section className="">
@@ -451,7 +447,7 @@ export const PreIncubationProgram = () => {
           </div>
         </div>
       </section>
-      <section class="bg-white dark:bg-gray-900">
+      {/* <section class="bg-white dark:bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
           <h1 class="text-2xl font-semibold text-gray-800 lg:text-3xl">
             Tech catalysts Progress Path
@@ -465,19 +461,19 @@ export const PreIncubationProgram = () => {
             ))}
           </div>
         </div>
-      </section>
-      <section className="">
+      </section> */}
+      {/* <section className="">
         <div className="container mapy-12 mx-auto space-y-24 ">
-          {/* <div>
+          <div>
 			<h2 className="text-3xl font-bold tracki text-center sm:text-5xl">Aliquip definiebas ad est</h2>
 			<p className="max-w-3xl mx-auto mt-4 text-xl text-center ">Quando cetero his ne, eum admodum sapientem ut.</p>
-		</div> */}
+		</div>
           <div className="">
             <div>
               <h3 className="text-2xl font-bold tracki sm:text-3xl">
                 Who are we looking for
               </h3>
-              {/* <p className="mt-3 text-lg ">Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.</p> */}
+              <p className="mt-3 text-lg ">Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.</p>
               <div className="flex flex-row-reverse">
                 <div className="mt-12 space-y-3">
                   <div className="flex">
@@ -500,7 +496,7 @@ export const PreIncubationProgram = () => {
                       </div>
                     </div>
                     <div className="ml-4">
-                      {/* <h4 className="text-lg font-medium leadi">Per ei quaeque sensibus</h4> */}
+                      <h4 className="text-lg font-medium leadi">Per ei quaeque sensibus</h4>
                       <p className="mt-2 ">
                         Startups with tech-oriented concepts or products related
                         to one of the specified sectors i.e., Deep Tech, Health
@@ -529,7 +525,7 @@ export const PreIncubationProgram = () => {
                       </div>
                     </div>
                     <div className="ml-4">
-                      {/* <h4 className="text-lg font-medium leadi">Cu imperdiet posidonium sed</h4> */}
+                      <h4 className="text-lg font-medium leadi">Cu imperdiet posidonium sed</h4>
                       <p className="mt-2 ">
                         A clear and well-defined business idea or concept should
                         be in place, with evidence of initial validation such as
@@ -557,7 +553,7 @@ export const PreIncubationProgram = () => {
                       </div>
                     </div>
                     <div className="ml-4">
-                      {/* <h4 className="text-lg font-medium leadi">Nulla omittam sadipscing mel ne</h4> */}
+                      <h4 className="text-lg font-medium leadi">Nulla omittam sadipscing mel ne</h4>
                       <p className="mt-2 ">
                         A clear identification and understanding of the problem
                         the startup aims to solve within their chosen sector.
@@ -584,7 +580,7 @@ export const PreIncubationProgram = () => {
                       </div>
                     </div>
                     <div className="ml-4">
-                      {/* <h4 className="text-lg font-medium leadi">Cibo augue offendit has ad</h4> */}
+                      <h4 className="text-lg font-medium leadi">Cibo augue offendit has ad</h4>
                       <p className="mt-2 ">
                         Startups either in the early stages of development or
                         led by students from a recognized educational
@@ -612,7 +608,7 @@ export const PreIncubationProgram = () => {
                       </div>
                     </div>
                     <div className="ml-4">
-                      {/* <h4 className="text-lg font-medium leadi">At eum ferri luptatum lobortis</h4> */}
+                      <h4 className="text-lg font-medium leadi">At eum ferri luptatum lobortis</h4>
                       <p className="mt-2 ">
                         For Green Tech, Climate Tech, and Energy Tech startups,
                         their potential to have a positive impact on society and
@@ -661,7 +657,7 @@ export const PreIncubationProgram = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="py-6 bg-gray-400 mt-4">
         <div className="text-white container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between">
           <div>
@@ -670,10 +666,10 @@ export const PreIncubationProgram = () => {
               Raise Pre-Incubation Program Today!
             </h1>
             <p>Last Date To Apply: 15.12.2023</p>
-            <p>For Inquiries: 8870784354 | 8668114243</p>
-            <p>Email : Chandrika@Aicraise.Com, Archana.Mrk@Aicraise.Com</p>
+            <p>For Inquiries: 89257 45338</p>
+            <p>Email : akshitakofficial@gmail.com</p>
           </div>
-          <Link to="/apply-now">
+          <Link to="/apply/technopreneur">
             <button className="px-8 py-3 text-lg font-semibold rounded bg-purple-600 w-fit">
               Apply Now
             </button>
@@ -705,6 +701,7 @@ const Card = ({ title }) => {
           <path d="m64.6 152c33 4.8 48.8-47 31.5-71.4-8.39-11.9-16.8-16.3-22-19-5.24-2.65-5.95-8.19-6.54-8.03-6.11-16.8-17.4-29.7-36.7-25.4" />
         </g>
       </svg>
+      
       <span class="mt-6 text-sm ?leading-5 font-semibold text-center">
         {title}
       </span>
