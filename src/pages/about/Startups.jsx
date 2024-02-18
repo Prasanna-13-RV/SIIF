@@ -6,30 +6,45 @@ import { Helmet } from "react-helmet"
 export const Startups = () => {
   const startups = [
     {
-      name: "Startup 1",
+      name: "Quazr Ventures Pvt. Ltd.",
       logo: "https://img.freepik.com/premium-vector/startup-success-arrow-cursor-up-right-direction-overlap-overlapping-colorful-vector-logo-design_216988-1189.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "Aero knotz Drone India Pvt. Ltd.",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: " Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "Mechimed Technologie",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "eDigiM Research Pvt. Ltd.",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
     {
-      name: "Startup 1",
+      name: "IK Digital",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "Doloremque nam inventore voluptatum, quaerat amet tempore impedit minima exercitationem ut, labore nobis obcaecati. Suscipit natus vero quod recusandae voluptates ea obcaecati?",
+      desc: "",
     },
+    {
+      name: "Harvtech LLP",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "",
+    },
+    {
+      name: "ZeQube Technologies Private Limited",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "",
+    },
+    {
+      name: "LazyCrew",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "",
+    }
   ];
   return (
     <section className="mb-5">
