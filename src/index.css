@@ -28,7 +28,7 @@ mix-blend-mode: screen;
 
 @media (min-width: 768px) { 
     .line {
-        line-height: 260px !important;
+        line-height: 200px !important;
     }
    
  }

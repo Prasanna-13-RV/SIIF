@@ -52,7 +52,7 @@ const ContactComponent = () => {
     <section className="text-gray-100  mt-10 ">
       <div className="google-map-code w-[90%] mx-auto lg:w-[80%] mb-5">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.161518906454!2d80.2532004!3d13.088948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265900495dcd3%3A0xb979159f99fd2231!2sAndhaadhi%20Rehab!5e0!3m2!1sen!2sin!4v1704895456352!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.12086329995!2d80.2188767!3d12.8354656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a5fd8e7ee73%3A0x1049fe79b9ee1733!2sSATHAK%20INNOVATION%20%26%20INCUBATION%20FOUNDATION!5e0!3m2!1sen!2sin!4v1708245657225!5m2!1sen!2sin"
           width={window.innerWidth}
           height={window.innerHeight - 150}
           style={{

@@ -10,8 +10,7 @@ export const IncubationProgram = () => {
         <title>Incubation Program | SIIF</title>
       </Helmet>
       <HeroSection
-        image="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg
-"
+        image="https://miro.medium.com/v2/resize:fit:1400/1*qLx0ZFV--yL_lOJZ5J1gqQ.jpeg"
         title="Incubation Program"
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Nesciunt illo tenetur fuga ducimus numquam ea!"
