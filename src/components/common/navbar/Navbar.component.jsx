@@ -145,22 +145,6 @@ const navItems = [
 						link: '',
 						subItems: [
 							{
-								title: 'Clinic',
-								link: '/benefits/clinic',
-								subItems: []
-							},
-							{
-								title: 'Connect',
-								link: '/benefits/connect',
-								subItems: []
-							}
-						]
-					},
-					{
-						title: 'Advisor',
-						link: '/benefits/advisor',
-						subItems: [
-							{
 								title: 'State',
 								link: '/benefits/governmentfunding/state',
 								subItems: []
@@ -173,29 +157,25 @@ const navItems = [
 						]
 					},
 					{
+						title: 'Advisor',
+						link: '',
+						subItems: [
+							{
+								title: 'Mentor Dhaba',
+								link: '/benefits/advisior/mentordhaba',
+								subItems: []
+							}
+						]
+					},
+					{
 						title: 'Trade',
 						link: '/benefits/trade',
 						subItems: [
 							{
-								title: 'Global Connect',
-								link: '/benefits/trade/globalconnect',
+								title: 'Unveiling Expo',
+								link: '/benefits/trade/unveilingexpo',
 								subItems: []
 							},
-							{
-								title: 'Demoday',
-								link: '/benefits/trade/demoday',
-								subItems: []
-							},
-							{
-								title: 'Launchpad',
-								link: '/benefits/trade/launchpad',
-								subItems: []
-							},
-							{
-								title: 'Startup Tools',
-								link: '/benefits/trade/startuptools',
-								subItems: []
-							}
 						]
 					}
 				]
@@ -221,27 +201,12 @@ const navItems = [
 					}
 				]
 			},
-			{
-				title: 'Capital Infusion',
-				link: '/infusion',
-				subItems: [
-					// {
-					// 	title: 'SAIN Investors',
-					// 	link: '/infusion/investors',
-					// 	subItems: []
-					// },
-					// {
-					// 	title: 'SAIN Startups',
-					// 	link: '/infusion/startups',
-					// 	subItems: []
-					// },
-					// {
-					// 	title: 'Services',
-					// 	link: '/infusion/services',
-					// 	subItems: []
-					// }
-				]
-			}
+			// {
+			// 	title: 'Capital Infusion',
+			// 	link: '/infusion',
+			// 	subItems: [
+			// 	]
+			// }
 		]
 	}
 ];
