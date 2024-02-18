@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet"
 
 import HeroSection from "../../components/common/Hero/HeroSection";
+import { ComingSoon } from "../../components/common/extra/ComingSoon";
 
 export const Entrepreneurship = () => {
   return (
@@ -15,7 +16,8 @@ export const Entrepreneurship = () => {
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Nesciunt illo tenetur fuga ducimus numquam ea!"
       />
-      <div className="lg:mx-auto lg:w-full px-8">
+      <ComingSoon />
+      {/* <div className="lg:mx-auto lg:w-full px-8">
         <div className="lg:mx-auto  lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
           <div className="text-base leading-7 text-gray-700 ">
             <p className="pt-3">
@@ -35,7 +37,7 @@ export const Entrepreneurship = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

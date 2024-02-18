@@ -81,7 +81,8 @@ export const Mentors = () => {
      <Helmet>
 				<title>About | Mentors</title>
 			</Helmet>
-      <section className="bg-[#f7f7f7]">
+      {/* <HeroSection /> */}
+      {/* <section className="bg-[#f7f7f7]">
         <div className="container pt-5">
           <div className="row ">
             <div className="col-md-12 text-left pt-9">
@@ -112,7 +113,7 @@ export const Mentors = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
