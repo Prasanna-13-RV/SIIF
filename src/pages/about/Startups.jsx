@@ -67,7 +67,7 @@ export const Startups = () => {
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-14 xl:px-16 gap-6 mb-5">
             {startups.map((startup, idx) => (
               <EventSingleCard
-                image={startup.logo}
+                // image={startup.logo}
                 title={startup.name}
                 description={startup.desc}
               />
@@ -82,7 +82,6 @@ export const Startups = () => {
                 Ready To Take Your Tech Idea To The Next Level? Apply For The
                 SIIF Pre-Incubation Program Today!
               </h1>
-              <p>Last Date To Apply: 15.12.2023</p>
               <p>For Inquiries: 89257 45338</p>
               <p>Email : akshitakofficial@gmail.com</p>
             </div>

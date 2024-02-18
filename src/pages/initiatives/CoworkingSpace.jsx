@@ -15,7 +15,7 @@ export const CoworkingSpace = () => {
 				title="Workspaces with more than just free wifi"
 				desc="We know you need more than just free wifi and workdesks to build
 				your startup and business. We are here to deliver on that."
-				image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
+				image="https://cdn.pixabay.com/photo/2018/03/10/18/03/laptop-3214756_1280.png"
 			/>
 			<ComingSoon />
 			{/* <section class='bg-gray-50'>

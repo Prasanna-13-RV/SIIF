@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet"
 
 import HeroSection from '../../components/common/Hero/HeroSection';
+import { ComingSoon } from "../../components/common/extra/ComingSoon";
 
 export const IncubationCollaboration = () => {
   const collaborate = [
@@ -91,14 +92,12 @@ export const IncubationCollaboration = () => {
 				title='Welcome to Zero to Billion, where innovation meets industry!'
 				// desc='We know you need more than just free wifi and workdesks to build
 				// your startup and business. We are here to deliver on that.'
-				image='https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg'
+				image='https://cdn.pixabay.com/photo/2014/12/08/21/25/business-561387_640.jpg'
 			/>
-      <section className="w-full h-full flex relative justify-center items-center p-3 ">
+      <ComingSoon />
+      {/* <section className="w-full h-full flex relative justify-center items-center p-3 ">
         <div className="container">
           <div className="row">
-            {/* <div className=" text-3xl pt-5">
-              Welcome to Zero to Billion, where innovation meets industry!
-            </div> */}
             <div className="col-md-12 text-left pt-7">
               <h2 className="text-4xl font-bold">Our Vision</h2>
               <p className="section-subtitle text-xl py-4 leading-8">
@@ -163,7 +162,7 @@ export const IncubationCollaboration = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

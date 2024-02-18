@@ -10,7 +10,7 @@ export const MobilityTransportation = () => {
 				<title>Mobility Transportation | SIIF</title>
 			</Helmet>
 			<HeroSection
-				image='https://blog.xoxoday.com/content/images/2022/01/Your-Complete-Guide-to-Maximizing-Conversions-from-On-Ground-Events.jpg'
+				image='https://cdn.pixabay.com/photo/2018/09/17/23/16/transportation-3685043_1280.png'
 				title='Mobility Transportation'
 				desc='Lorem ipsum dolor sit amet consectetur, adipisicing
 						  elit. Nesciunt illo tenetur fuga ducimus numquam ea!'

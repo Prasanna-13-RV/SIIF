@@ -1,88 +1,85 @@
-import React from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import React from "react"
+import { FaLinkedin } from "react-icons/fa"
+import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
+import HeroSection from "../../components/common/Hero/HeroSection"
 
 export const Mentors = () => {
-  const Mentors = [
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-    {
-      name: "John Doe",
-      title: "CEO & Founder",
-      image:
-        "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
-      linkedin: "https://www.linkedin.com",
-    },
-  ];
-  return (
-    <>
-     <Helmet>
+	const Mentors = [
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+		{
+			name: "John Doe",
+			title: "CEO & Founder",
+			image: "https://img.freepik.com/free-photo/portrait-handsome-man-with-dark-hairstyle-bristle-toothy-smile-dressed-white-sweatshirt-feels-very-glad-poses-indoor-pleased-european-guy-being-good-mood-smiles-positively-emotions-concept_273609-61405.jpg",
+			linkedin: "https://www.linkedin.com",
+		},
+	]
+	return (
+		<>
+			<Helmet>
 				<title>About | Mentors</title>
 			</Helmet>
-      {/* <HeroSection /> */}
-      {/* <section className="bg-[#f7f7f7]">
+			<HeroSection
+				title="Mentors"
+				image="https://cdn.pixabay.com/photo/2023/05/19/18/03/mentor-8005088_1280.png"
+				desc="An incredible team that steers the entire unit with expertise and
+            great enthusiasm. "
+			/>
+			{/* <HeroSection /> */}
+			{/* <section className="bg-[#f7f7f7]">
         <div className="container pt-5">
           <div className="row ">
             <div className="col-md-12 text-left pt-9">
@@ -114,6 +111,6 @@ export const Mentors = () => {
           </div>
         </div>
       </section> */}
-    </>
-  );
-};
+		</>
+	)
+}

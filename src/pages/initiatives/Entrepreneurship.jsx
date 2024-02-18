@@ -11,7 +11,7 @@ export const Entrepreneurship = () => {
         <title>Entrepreneurship | SIIF</title>
       </Helmet>
       <HeroSection
-        image="https://blog.xoxoday.com/content/images/2022/01/Your-Complete-Guide-to-Maximizing-Conversions-from-On-Ground-Events.jpg"
+        image="https://cdn.pixabay.com/photo/2018/03/21/08/10/entrepreneur-3245868_640.jpg"
         title="Entrepreneurship"
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Nesciunt illo tenetur fuga ducimus numquam ea!"

@@ -10,7 +10,7 @@ export const RenewableEnergy = () => {
 				<title>Renewable Energy | SIIF</title>
 			</Helmet>
 			<HeroSection
-				image='https://blog.xoxoday.com/content/images/2022/01/Your-Complete-Guide-to-Maximizing-Conversions-from-On-Ground-Events.jpg'
+				image='https://cdn.pixabay.com/photo/2021/05/22/01/29/renewable-energy-6272343_1280.png'
 				title='Renewable Energy'
 				desc='Lorem ipsum dolor sit amet consectetur, adipisicing
 						  elit. Nesciunt illo tenetur fuga ducimus numquam ea!'
