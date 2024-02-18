@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import HeroSection from "../../components/common/Hero/HeroSection";
-=======
 import { Helmet } from "react-helmet"
 
 import HeroSection from '../../components/common/Hero/HeroSection';
->>>>>>> 120ba7dc03481e04260e890df218bd49bcbbe903
 
 const faq = [
   {
