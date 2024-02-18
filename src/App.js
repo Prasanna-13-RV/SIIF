@@ -46,6 +46,9 @@ import Faculty from "./pages/apply/Faculty"
 import Technopreneur from "./pages/apply/Technopreneur"
 import Mentor from "./pages/apply/Mentor"
 import { Page404 } from "./components/common/extra/Page404"
+import { ComingSoon } from "./components/common/extra/ComingSoon"
+import { MentorDhaba } from "./pages/benefits/advisor/mentorDhaba/MentorDhaba"
+import { UnveilingExpo } from "./pages/benefits/trade/UnveilingExpo"
 
 function App() {
 	return (
@@ -177,7 +180,16 @@ function App() {
 						element={<VentureCapitalist />}
 					/>
 
+					<Route
+						path="/benefits/advisior/mentordhaba"
+						element={<MentorDhaba />}
+					/>
+
 					{/* Benefits Global Market Connect */}
+					<Route
+						path="/benefits/trade/unveilingexpo"
+						element={<UnveilingExpo />}
+					/>
 					<Route
 						path="/benefits/trade/globalconnect"
 						element={<GlobalMarketConnect />}

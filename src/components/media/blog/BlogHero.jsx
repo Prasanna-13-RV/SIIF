@@ -2,7 +2,7 @@ import React from "react"
 
 export const BlogHero = () => {
 	return (
-		<section className="relative bg-[url(https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg)] bg-cover bg-center bg-no-repeat">
+		<section className="relative bg-[url(https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg)] bg-cover bg-center bg-no-repeat">
 			<div className="absolute inset-0 sm:bg-transparent sm:from-white/55 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l lg:bg-gradient-to-r"></div>
 
 			<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
