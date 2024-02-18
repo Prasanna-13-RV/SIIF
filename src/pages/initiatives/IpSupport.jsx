@@ -1,7 +1,12 @@
 import React from "react";
-import HeroSection from "../../components/common/Hero/HeroSection";
+import { Helmet } from "react-helmet"
+
+import HeroSection from '../../components/common/Hero/HeroSection'
 
 export const IpSupport = () => {
+  <Helmet>
+  <title>IP Support | SIIF</title>
+</Helmet>
   return (
     <>
       <HeroSection

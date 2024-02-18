@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet"
+
 import HeroSection from "../../components/common/Hero/HeroSection";
 
 export const YoungMinds = () => {
   return (
     <>
+     <Helmet>
+        <title>Young Minds | SIIF</title>
+      </Helmet>
       <HeroSection
         image="https://blog.xoxoday.com/content/images/2022/01/Your-Complete-Guide-to-Maximizing-Conversions-from-On-Ground-Events.jpg"
         title="Igniting Young Minds"

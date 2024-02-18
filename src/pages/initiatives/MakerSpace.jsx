@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from "react-helmet"
+
 import HeroSection from '../../components/common/Hero/HeroSection';
 export const MakerSpace = () => {
 	return (
 		<>
+		 <Helmet>
+        <title>Maker Space | SIIF</title>
+      </Helmet>
 			 <HeroSection
         image="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg"
         title="MarkerSpace"

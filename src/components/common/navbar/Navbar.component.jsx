@@ -145,22 +145,6 @@ const navItems = [
 						link: '',
 						subItems: [
 							{
-								title: 'Clinic',
-								link: '/benefits/clinic',
-								subItems: []
-							},
-							{
-								title: 'Connect',
-								link: '/benefits/connect',
-								subItems: []
-							}
-						]
-					},
-					{
-						title: 'Advisor',
-						link: '/benefits/advisor',
-						subItems: [
-							{
 								title: 'State',
 								link: '/benefits/governmentfunding/state',
 								subItems: []
@@ -173,29 +157,25 @@ const navItems = [
 						]
 					},
 					{
+						title: 'Advisor',
+						link: '',
+						subItems: [
+							{
+								title: 'Mentor Dhaba',
+								link: '/benefits/advisior/mentordhaba',
+								subItems: []
+							}
+						]
+					},
+					{
 						title: 'Trade',
 						link: '/benefits/trade',
 						subItems: [
 							{
-								title: 'Global Connect',
-								link: '/benefits/trade/globalconnect',
+								title: 'Unveiling Expo',
+								link: '/benefits/trade/unveilingexpo',
 								subItems: []
 							},
-							{
-								title: 'Demoday',
-								link: '/benefits/trade/demoday',
-								subItems: []
-							},
-							{
-								title: 'Launchpad',
-								link: '/benefits/trade/launchpad',
-								subItems: []
-							},
-							{
-								title: 'Startup Tools',
-								link: '/benefits/trade/startuptools',
-								subItems: []
-							}
 						]
 					}
 				]
@@ -221,27 +201,12 @@ const navItems = [
 					}
 				]
 			},
-			{
-				title: 'Capital Infusion',
-				link: '/infusion',
-				subItems: [
-					// {
-					// 	title: 'SAIN Investors',
-					// 	link: '/infusion/investors',
-					// 	subItems: []
-					// },
-					// {
-					// 	title: 'SAIN Startups',
-					// 	link: '/infusion/startups',
-					// 	subItems: []
-					// },
-					// {
-					// 	title: 'Services',
-					// 	link: '/infusion/services',
-					// 	subItems: []
-					// }
-				]
-			}
+			// {
+			// 	title: 'Capital Infusion',
+			// 	link: '/infusion',
+			// 	subItems: [
+			// 	]
+			// }
 		]
 	}
 ];
@@ -252,7 +217,7 @@ const Navbar = () => {
 	const navRef = useRef(null);
 	return (
 		<>
-			<header className='bg-white shadow-lg h-24 hidden md:flex relative z-10'>
+			<header className='bg-white shadow-lg h-24 hidden md:flex relative z-[10000]'>
 				<Link
 					to=''
 					className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
@@ -403,7 +368,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</header>
-			<nav class='min-h-20 flex border-b md:shadow-lg items-center md:hidden  top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
+			<nav class='min-h-20 flex border-b md:shadow-lg items-center md:hidden fixed  top-0 left-0 right-0 z-[1000] bg-white px-10 lg:px-14 xl:px-16'>
 				<Link
 					to=''
 					className='flex-shrink-0 flex items-center justify-center pl-10 lg:pl-14 xl:pl-16'
@@ -548,12 +513,21 @@ const NavItemDropdown = ({ item }) => {
 										{item.subItems.length > 0 &&
 											item.subItems.map((item, i) => (
 												<li key={i}>
-													<span
-														to={item.link}
-														className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
-													>
-														{item.title}
-													</span>
+													{item.link.length <= 0 ? (
+														<span
+															to={item.link}
+															className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
+														>
+															{item.title}
+														</span>
+													) : (
+														<Link
+															to={item.link}
+															className='text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2'
+														>
+															{item.title}
+														</Link>
+													)}
 													<div className='ml-6 border-l-2'>
 														{item.subItems.length > 0 &&
 															item.subItems.map((item, i) => (
