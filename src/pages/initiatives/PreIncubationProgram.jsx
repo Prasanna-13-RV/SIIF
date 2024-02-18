@@ -124,7 +124,7 @@ export const PreIncubationProgram = () => {
           Sector Spotlight
         </h1>
         <div class="p-8 grid grid-cols-3 gap-5 place-items-center">
-          <Card title="Industry 4.0 " />
+          <Card title="Industry 4.0 "/>
           <Card title="Life sciences" />
           <Card title="Mobility and Transportation" />
           <Card title="Energy and Environment" />
@@ -701,6 +701,7 @@ const Card = ({ title }) => {
           <path d="m64.6 152c33 4.8 48.8-47 31.5-71.4-8.39-11.9-16.8-16.3-22-19-5.24-2.65-5.95-8.19-6.54-8.03-6.11-16.8-17.4-29.7-36.7-25.4" />
         </g>
       </svg>
+      
       <span class="mt-6 text-sm ?leading-5 font-semibold text-center">
         {title}
       </span>
