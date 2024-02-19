@@ -21,45 +21,41 @@ const Mentor = () => {
                     SASTRA TBI requests experts from all fields, allied sectors on technical side and Business experts on hand-holding side to register and be part of our Mentor Network and help first-time entrepreneurs get their chance to make a positive impact in the universe.</p>
             </div>
 
-            <form className="m-16 w-[80%] lg:w-[50%] mx-auto flex flex-wrap justify-between items-start">
+            <form action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkVK0lWtR7pzMRHG8lZOi-lTB6SCfPESmGIY660UVbv0ivcg/formResponse' method='POST' className="m-16 w-[80%] lg:w-[50%] mx-auto flex flex-wrap justify-between items-start">
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
 
 
                     <label className="w-full block mb-2 text-sm font-medium text-gray-900 ">
 
                         Full Name*</label>
-                    <input type="text" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
+                    <input name="entry.1318104399" type="text" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
                 </div>
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
                     <label className="w-full block mb-2 text-sm font-medium text-gray-900 ">Email Id*
                     </label>
-                    <input type="email" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
+                    <input name="entry.281972853" type="email" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
                 </div>
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
                     <label className="w-full block mb-2 text-sm font-medium text-gray-900 ">Mobile no*
                     </label>
-                    <input type="tel" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="" required />
+                    <input name="entry.2145606991" type="tel" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="" required />
                 </div>
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
                     <label className="w-full block mb-2 text-sm font-medium text-gray-900 ">Domain*
                     </label>
 
-                    <select id="years" size="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-                        <option>2016</option>
-                        <option>2017</option>
-                        <option>2018</option>
-                        <option>2019</option>
-                    </select>  </div>
+                    <input name="entry.864111014" type="text" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
+ </div>
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
                     <label className="w-full block mb-2 text-sm font-medium text-gray-900 ">LinkedIn Profile*</label>
-                    <input type="text" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
+                    <input name="entry.1823808210" type="text" className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="" required />
                 </div>
 
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
                     <label className="w-full block mb-2 text-sm font-medium text-gray-900 ">Why are you interested*
 
                     </label>
-                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder=""></textarea>  </div>
+                    <textarea name="entry.627162991" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder=""></textarea>  </div>
 
 
                 <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
