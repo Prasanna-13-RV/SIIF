@@ -89,7 +89,9 @@
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    width: 270px;
+    width: 100%; /* Ensures the image fills its container */
+  height: 200px; /* Adjust the height as needed to ensure uniformity */
+  object-fit: cover;
   }
   
   .card {

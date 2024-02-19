@@ -7,43 +7,43 @@ export const Startups = () => {
   const startups = [
     {
       name: "Quazr Ventures Pvt. Ltd.",
-      logo: "https://img.freepik.com/premium-vector/startup-success-arrow-cursor-up-right-direction-overlap-overlapping-colorful-vector-logo-design_216988-1189.jpg",
-      desc: "",
+      logo: "https://res.cloudinary.com/difpe3hca/image/upload/v1708354535/SIIF/Quartz_bpojgv.jpg",
+      desc: "We redefine the future. We think and work on required impossible aspects of riding DNA. We intend to deliver the world class best performance economically sustainable vehicles to eminence driving experience.",
     },
     {
       name: "Aero knotz Drone India Pvt. Ltd.",
-      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
-    },
-    {
-      name: "Mechimed Technologie",
-      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
-    },
-    {
-      name: "eDigiM Research Pvt. Ltd.",
-      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
+      logo: "https://res.cloudinary.com/difpe3hca/image/upload/v1708354520/SIIF/Aero_euund0.jpg",
+      desc: "Aero knots is initiated by a group of passionate Aeronautical engineers working in the field for 5 years with an aim to achieve the heights of excellence in research and development in aerospace & aviation industry. Aero Knots is a drone training firm which provides an immersive and interactive drone training workshop experience. Our unique syllabus structure and kits provide students with a hands-on holistic approach. Our mission is to motivate the youth by educating & introducing them into the world of DRONES.",
     },
     {
       name: "IK Digital",
-      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
+      logo: "https://res.cloudinary.com/difpe3hca/image/upload/v1708354533/SIIF/IkD_gtbspl.jpg",
+      desc: "IK Digital , founded in 2018, is a full service branding, digital marketing & ad film agency based in Chennai, India, with excellent team. We're youngsters who are creative, vision, skill, focused, friendly who help organization passionate about achieving prospering results. We offer custom fit solutions based on the need of our clients.",
     },
     {
-      name: "Harvtech LLP",
-      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
-    },
-    {
-      name: "ZeQube Technologies Private Limited",
-      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
+      name: "Mechimed Technologie",
+      logo: "https://res.cloudinary.com/difpe3hca/image/upload/v1708354456/SIIF/MT_eu42ub.jpg",
+      desc: "Mechimed Technologies established in 2021, is a healthcare focused company driven by the goal of reducing the cost of medical equiment to make it affordable for everyone.",
     },
     {
       name: "LazyCrew",
       logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
-      desc: "",
+      desc: "LazyCrew's OneBuk is a groundbreaking innovation in education technology, proudly claiming the title of India's very first offline textbook-based tablet. It stands as a beacon of progress, pioneering futuristic approaches to learning. OneBuk's mission is clear: to simplify, democratize, and invigorate the learning experience. It achieves this through its ingenious in-built e-learning platform, which is thoughtfully customized to cater to the unique needs of students. By embracing offline capabilities, it ensures that learning remains accessible even in areas with limited internet connectivity. OneBuk is not just a tablet; it's a transformative tool, making education simple, affordable, and highly interactive for the aspiring minds of India.",
+    },
+    {
+      name: "Harvtech LLP",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "HarvTech is an AgriTech Startup focusing on modernization of the Agritech 4.0 Industry by Designing and Manufacturing of a 50 HP SMART ELECTRIC TRACTOR to help farmers to meet the market demand in terms of quantitative and qualitative productivity and also convert all existing traditional Tractors to Electric by custom Electric Kitsets.",
+    },
+    {
+      name: "eDigiM Research Pvt. Ltd.",
+      logo: "https://res.cloudinary.com/difpe3hca/image/upload/v1708354552/SIIF/edigital_oeofj2.jpg",
+      desc: "*eDigiM Brief Overview* About EdigiM: A group of VLSI technology enthusiasts founded eDigiM Research Private Limited. Technological innovation has accelerated at an unprecedented pace in recent years and so have the disruptions in the sector of silicon engineering – complex IC development, increasing failures, and inadequate facilities for design, development, and testing. At eDigiM, we address these disruptions, helping semiconductor product companies in Semiconductor IC Design, creating and providing comprehensive hardware and software solutions that cater to various industries and business sectors, spanning across multiple domains.",
+    },
+    {
+      name: "ZeQube Technologies Private Limited",
+      logo: "https://img.freepik.com/premium-vector/abstract-business-logo-blue-orange-geometric-double-arrow-origami-initial-letter-s_740796-796.jpg",
+      desc: "ZeQube is a digital manufacturing offering end-to-end manufacturing support services l driving innovative product development (IPD), implementing SaaS-powered quality control mechanisms to streamline production, and accelerating the adoption of digital manufacturing systems to meet Industry 4.0 standards. Our vision is to accelerate the product development seamlessly with our advanced capabilities through our completely digital delivery and optimisation system.",
     },
   ];
   return (
