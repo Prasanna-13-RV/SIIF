@@ -85,7 +85,7 @@ const TeamSlider = ({ Teammembers }) => {
             <div className="swiper-wrapper">
               {Teammembers.map((Teammember) => (
                 <div className="swiper-slide">
-                  <div className="pb-3 bg-gray-100 rounded-xl">
+                  <div className="pb-3 bg-gray-100 rounded-xl ">
                     <img className="team-member-image rounded-t-xl" src={Teammember.image} />
                     <p className="text-black name pt-2 text-center ">
                       {Teammember.name}

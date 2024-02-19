@@ -10,6 +10,7 @@ const ContactComponent = () => {
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState();
   const [click, setclick] = useState(false);
+  const [alert, setalert] = useState(false);
 
   const form = useRef();
 
@@ -77,11 +78,16 @@ const ContactComponent = () => {
           </div>
         </div>
         <form
+          onSubmit={() => {
+            setalert(true);
+
+            window.location.href = "https://siif.ventures/";
+          }}
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdVp5sxiuivy1MqePc1106FkU90oXWUdUidwMrgaKZVu92Bcg/formResponse"
+          method="POST"
+          target="__blank"
           className="w-full lg:w-[50%] mx-auto"
-          ref={form}
-          onSubmit={(e) => {
-            // handleSubmit(e)
-          }}>
+          ref={form}>
           <div>
             <span className="uppercase text-sm text-gray-600 font-bold">
               Full Name
@@ -92,7 +98,7 @@ const ContactComponent = () => {
               placeholder=""
               required
               onChange={(e) => setFullname(e.target.value)}
-              name="user_name"
+              name="entry.174024822"
             />
           </div>
           <div className="mt-8">
@@ -104,7 +110,7 @@ const ContactComponent = () => {
               required
               type="email"
               onChange={(e) => setEmail(e.target.value)}
-              name="user_email"
+              name="entry.1328436172"
             />
           </div>
           <div className="mt-8">
@@ -114,9 +120,11 @@ const ContactComponent = () => {
             <input
               className="rounded-lg outline-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5"
               required
+              minLength={10}
+              maxLength={10}
               type="phone"
               onChange={(e) => setPhone(e.target.value)}
-              name="user_phone"
+              name="entry.1904841294"
             />
           </div>
           <div className="mt-8">
@@ -127,7 +135,7 @@ const ContactComponent = () => {
               style={{ resize: "none" }}
               className="rounded-lg outline-none bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5 h-32"
               required
-              name="message"
+              name="entry.134714864"
               onChange={(e) => setMessage(e.target.value)}></textarea>
           </div>
           <div className="mt-8">
@@ -139,6 +147,14 @@ const ContactComponent = () => {
           </div>
         </form>
       </div>
+      {alert && (
+        <div
+          class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+          role="alert">
+          <span class="font-medium">Congratulations! </span> Your Input Has Been
+          Received!
+        </div>
+      )}
     </section>
   );
 };

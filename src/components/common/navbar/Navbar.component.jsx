@@ -337,7 +337,7 @@ const Navbar = () => {
 									class='rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
 									to='apply/student'
 								>
-									As Student
+									For Incubation
 								</Link>
 							</li>
 							<li class=''>
@@ -348,7 +348,7 @@ const Navbar = () => {
 									As Mentor
 								</Link>
 							</li>
-							<li class=''>
+							{/* <li class=''>
 								<Link
 									class='rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
 									to='apply/faculty'
@@ -363,7 +363,7 @@ const Navbar = () => {
 								>
 									Become a Technopreneur
 								</Link>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>

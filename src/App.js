@@ -209,11 +209,11 @@ function App() {
 
 					{/* apply */}
 					<Route path="/apply/student" element={<Student />} />
-					<Route path="/apply/faculty" element={<Faculty />} />
+					{/* <Route path="/apply/faculty" element={<Faculty />} />
 					<Route
 						path="/apply/technopreneur"
 						element={<Technopreneur />}
-					/>
+					/> */}
 					<Route path="/apply/mentor" element={<Mentor />} />
 					<Route path="*" element={<Page404 />} />
 				</Routes>
