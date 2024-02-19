@@ -1,21 +1,23 @@
-import React from "react";
+import React from "react"
 import { Helmet } from "react-helmet"
 
-import HeroSection from "../../components/common/Hero/HeroSection";
+import HeroSection from "../../components/common/Hero/HeroSection"
+import { ComingSoon } from "../../components/common/extra/ComingSoon"
 
 export const YoungMinds = () => {
-  return (
-    <>
-     <Helmet>
-        <title>Young Minds | SIIF</title>
-      </Helmet>
-      <HeroSection
-        image="https://blog.xoxoday.com/content/images/2022/01/Your-Complete-Guide-to-Maximizing-Conversions-from-On-Ground-Events.jpg"
-        title="Igniting Young Minds"
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing
+	return (
+		<>
+			<Helmet>
+				<title>Young Minds | SIIF</title>
+			</Helmet>
+			<HeroSection
+				image="https://cdn.pixabay.com/photo/2018/02/09/09/49/brain-3141247_960_720.jpg"
+				title="Igniting Young Minds"
+				desc="Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Nesciunt illo tenetur fuga ducimus numquam ea!"
-      />
-      <div className="lg:mx-auto lg:w-full px-8">
+			/>
+			<ComingSoon />
+			{/* <div className="lg:mx-auto lg:w-full px-8">
         <div className="lg:mx-auto  lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
           <div className="text-base leading-7 text-gray-700 ">
             <p className="pt-3">
@@ -35,7 +37,7 @@ export const YoungMinds = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </>
-  );
-};
+      </div> */}
+		</>
+	)
+}

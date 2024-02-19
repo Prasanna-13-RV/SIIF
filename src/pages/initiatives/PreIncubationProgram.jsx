@@ -106,7 +106,7 @@ export const PreIncubationProgram = () => {
       <HeroSection
         title="Program In Brieforama"
         desc={``}
-        image="https://t4.ftcdn.net/jpg/03/54/00/91/240_F_354009182_Cc6DzlgU402u1bXAGyvXAbmp5EgYAV9D.jpg"
+        image="https://cdn.pixabay.com/photo/2019/06/17/19/48/source-4280758_640.jpg"
       />
       <div className="px-10 lg:px-14 xl:px-16">
         <p class="text-center mt-6 text-xl font-medium 0">
@@ -665,7 +665,6 @@ export const PreIncubationProgram = () => {
               Ready To Take Your Tech Idea To The Next Level? Apply For The AIC
               Raise Pre-Incubation Program Today!
             </h1>
-            <p>Last Date To Apply: 15.12.2023</p>
             <p>For Inquiries: 89257 45338</p>
             <p>Email : akshitakofficial@gmail.com</p>
           </div>

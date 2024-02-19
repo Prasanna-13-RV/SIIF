@@ -8,10 +8,9 @@ export const UpcomingEvents = () => {
 		<>
 			<Helmet title="Upcoming Events | SIIF" />
 			<HeroSection
-				image="https://blog.xoxoday.com/content/images/2022/01/Your-Complete-Guide-to-Maximizing-Conversions-from-On-Ground-Events.jpg"
+				image="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_640.jpg"
 				title="Upcoming Events"
-				desc="Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Nesciunt illo tenetur fuga ducimus numquam ea!"
+				desc=""
 			/>
 			<UpcomingEventCards />
 		</>

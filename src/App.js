@@ -74,7 +74,7 @@ function App() {
 
 					{/* initiatives */}
 					<Route
-						path="/initiatives/ipsupport"
+						path="/initiatives/ipsupport"	
 						element={<IpSupport />}
 					/>
 					<Route
