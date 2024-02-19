@@ -1,7 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 const Student = () => {
+  const [alert, setalert] = useState(false);
   return (
     <div>
       <Helmet>
@@ -14,9 +15,23 @@ const Student = () => {
           Application form
         </h1>
       </div>
+      {alert && (
+        <div
+          class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+          role="alert">
+          <span class="font-medium">Congratulations! </span>  Your Input Has Been Received!
+        </div>
+      )}
 
       <form
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXQv8axRxcStMFi2tLqJnc_MAdLPAclKYKxawtaM0k1dvAig/formResponse"
+        target="__blank"
+        onSubmit={() => {
+            setalert(true);
+          
+            window.location.href ="https://siif.ventures/";
+        
+        }}
         method="POST"
         className="m-16 w-[80%] lg:w-[50%] mx-auto flex flex-wrap justify-between items-start">
         <div className="mb-3 lg:mb-5 w-full lg:w-[45%]">
@@ -72,8 +87,8 @@ const Student = () => {
             Mobile no*
           </label>
           <input
-          maxLength={10}
-           minLength={10}
+            maxLength={10}
+            minLength={10}
             name="entry.1618165648"
             type="tel"
             className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
@@ -112,7 +127,7 @@ const Student = () => {
             Why You Want To Start a Startup?*
           </label>
           <input
-          name="entry.2134334370"
+            name="entry.2134334370"
             type="text"
             className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
             placeholder=""
@@ -125,6 +140,7 @@ const Student = () => {
           Apply
         </button>
       </form>
+      
     </div>
   );
 };
