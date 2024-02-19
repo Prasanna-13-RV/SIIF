@@ -67,7 +67,7 @@ export const Startups = () => {
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-14 xl:px-16 gap-6 mb-5">
             {startups.map((startup, idx) => (
               <EventSingleCard
-                // image={startup.logo}
+                image={startup.logo}
                 title={startup.name}
                 description={startup.desc}
               />

@@ -49,38 +49,74 @@ const CarouselHero = () => {
 				autoplay={true}
 				keyboard={true}
 				modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-				className="h-[90%]   w-[90%] mx-auto">
+				className="h-[90%] w-[90%] mx-auto">
+				<SwiperSlide>
+					<video autoPlay controls>
+						<source
+							src="https://res.cloudinary.com/difpe3hca/video/upload/v1708363391/SIIF/Startup_Maanadu_2024_Montage_Vid_1_1_bmqxil.mp4"
+							type="video/mp4"
+						/>
+					</video>
+				</SwiperSlide>
 				<SwiperSlide>
 					<img
-						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708253644/SIIF/IMG_20230614_163203_327_clivig.webp"
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354622/SIIF/image_2_espsv1.jpg"
+						alt=""
+						className="object-contain"
+					/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<img
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354590/SIIF/image_10_uaf7do.jpg"
 						alt=""
 						className="object-contain "
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
-						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708254305/SIIF/IMG_1420_pftawz.jpg"
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354590/SIIF/image_9_umnuby.jpg"
 						alt=""
 						className="object-contain "
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
-						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708254160/SIIF/IMG_20230721_140642_rtsal0.jpg"
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354590/SIIF/image_8_tfuk55.jpg"
 						alt=""
 						className="object-contain "
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
-						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708254196/SIIF/IMG_20231031_104932_yqe4kt.jpg"
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354587/SIIF/image_6_r2fdya.jpg"
 						alt=""
 						className="object-contain "
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
-						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708254182/SIIF/IMG_20230721_141728_hessyh.jpg"
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354586/SIIF/image_4_hka28k.jpg"
+						alt=""
+						className="object-contain "
+					/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<img
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354582/SIIF/image_1_h39xrn.jpg"
+						alt=""
+						className="object-contain "
+					/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<img
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354560/SIIF/image_5_c055df.jpg"
+						alt=""
+						className="object-contain "
+					/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<img
+						src="https://res.cloudinary.com/difpe3hca/image/upload/v1708354542/SIIF/image_3_cqdfnd.jpg"
 						alt=""
 						className="object-contain "
 					/>
