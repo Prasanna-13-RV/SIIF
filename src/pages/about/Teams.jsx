@@ -12,7 +12,7 @@ export const Teams = () => {
       organization2: "SIIF",
       image:
         "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "",
     },
     {
       name: "Janab. P.R.L. Hamid Ibrahim",
@@ -22,7 +22,7 @@ export const Teams = () => {
       organization2: "SIIF",
       image:
         "https://res.cloudinary.com/difpe3hca/image/upload/c_pad,w_816,h_742/v1708354437/SIIF/Janab_ED_nxsmqg.jpg",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "",
     },
     {
       name: "Mr. Prakadesh Subramanian",
@@ -42,7 +42,7 @@ export const Teams = () => {
       organization2: "",
       image:
         "https://res.cloudinary.com/difpe3hca/image/upload/c_pad,w_816,h_742/v1708354447/SIIF/akshitha_dmbxya.jpg",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "https://www.linkedin.com/in/akshita-kancharla-aa9766187/",
     },
   ];
 
