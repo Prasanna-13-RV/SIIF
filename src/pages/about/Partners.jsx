@@ -5,7 +5,11 @@ export const Partners = () => {
     {
       image:
         "https://static.vecteezy.com/system/resources/previews/020/190/424/non_2x/hdfc-logo-hdfc-icon-free-free-vector.jpg",
+    },{
+      image:
+        "https://presentations.gov.in/wp-content/uploads/2020/06/Startup-India_Preview.png?x93559",
     }
+    
   ];
   return (
     <>

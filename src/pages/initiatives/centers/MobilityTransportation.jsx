@@ -41,7 +41,7 @@ export const MobilityTransportation = () => {
       <div className="w-[90%]  lg:w-[80%]  flex flex-col lg:flex-row justify-between  py-2 lg:py-5 mt-7 mx-auto text-gray-900 rounded-lg">
         <div className="flex flex-col w-full lg:w-[50%] px-[5%] mx-auto  mb-3 lg:mb-0 ">
           <h2 className="text-xl md:text-3xl lg:text-3xl font-bold leading-tight">
-            Facilities
+            Amenities
           </h2>
           <div className="text-gray-700 my-3 md:mt-8 w-full md:w-3/4">
             <ul className="mt-4 space-y-1 text-gray-600 list-disc pl-4">
@@ -75,7 +75,7 @@ export const MobilityTransportation = () => {
         </div>
         <div className="w-full lg:w-[50%] mx-auto">
           <h2 className="text-xl md:text-3xl lg:text-3xl font-bold leading-tight">
-            Offerings
+            Services
           </h2>
           <div className="text-gray-700 my-3 md:mt-8 w-full md:w-3/4">
             <ul className="mt-4 space-y-1 text-gray-600 list-disc pl-4">

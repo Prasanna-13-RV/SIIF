@@ -64,7 +64,7 @@ export const IncubationAcceleration = () => {
 				<title>Incubation Acceleration | SIIF</title>
 			</Helmet>
 			<HeroSection
-				title="Welcome to Zero to Billion, where innovation meets industry!"
+				title="Incubation Acceleration"
 				// desc='We know you need more than just free wifi and workdesks to build
 				// your startup and business. We are here to deliver on that.'
 				image="https://cdn.pixabay.com/photo/2017/09/15/19/41/businessman-2753324_640.jpg"

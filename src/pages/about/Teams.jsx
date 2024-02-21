@@ -12,7 +12,7 @@ export const Teams = () => {
       organization2: "SIIF",
       image:
         "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "",
     },
     {
       name: "Janab. P.R.L. Hamid Ibrahim",
@@ -21,8 +21,8 @@ export const Teams = () => {
       title2: "Board of Director,",
       organization2: "SIIF",
       image:
-        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com",
+        "https://res.cloudinary.com/difpe3hca/image/upload/c_pad,w_816,h_742/v1708354437/SIIF/Janab_ED_nxsmqg.jpg",
+      linkedin: "",
     },
     {
       name: "Mr. Prakadesh Subramanian",
@@ -31,7 +31,7 @@ export const Teams = () => {
       title2: "Strategic Partner,",
       organization2: "SIIF",
       image:
-        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+        "https://res.cloudinary.com/difpe3hca/image/upload/c_pad,w_816,h_742/v1708354451/SIIF/pragadeesh_g132gc.jpg",
       linkedin: "https://www.linkedin.com/in/prakadesh-subramanian-37475b48",
     },
     {
@@ -41,18 +41,8 @@ export const Teams = () => {
       title2: "",
       organization2: "",
       image:
-        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
+        "https://res.cloudinary.com/difpe3hca/image/upload/c_pad,w_816,h_742/v1708354447/SIIF/akshitha_dmbxya.jpg",
       linkedin: "https://www.linkedin.com/in/akshita-kancharla-aa9766187/",
-    },
-    {
-      name: "Miss. Akshita K",
-      title1: "Incubation Lead,",
-      organization1: "SIIF",
-      title2: "",
-      organization2: "",
-      image:
-        "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg",
-      linkedin: "https://www.linkedin.com",
     },
   ];
 
