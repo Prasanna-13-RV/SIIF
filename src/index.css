@@ -119,3 +119,12 @@ mix-blend-mode: screen;
     left: 0%;
     z-index: 5;
 }
+
+#eapps-instagram-feed-1.a elfsight-app-b31bdbf0-42b0-48fd-bb5d-0171fa681bd9.a eapps-instagram-feed.a es-widget.a eapps-widget.a eapps-widget-show-toolbar.a {
+    display: none !important;
+    visibility: hidden !important;
+    background-color: #000000;
+    margin: 60rem !important;
+
+
+}
