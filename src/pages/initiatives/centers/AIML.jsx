@@ -10,8 +10,8 @@ const AIML = () => {
       </Helmet>
       <HeroSection
         image="https://www.saveetha.ac.in/images/sec/2023/AIML/AIML.jpg"
-        title="Artificial Intelligence and Machine Learning Center"
-        desc="Welcome to the Artificial Intelligence and Machine Learning Center, where we explore the frontiers of AI and ML technologies."
+        title="Artificial Intelligence and Machine Learning"
+        desc="Welcome to the Artificial Intelligence and Machine Learning, where we explore the frontiers of AI and ML technologies."
       />
       <div className="w-[90%] lg:w-[80%] my-10 h-fit relative flex flex-col lg:flex-row mx-auto items-center justify-center bg-[#8e8484] rounded-md">
         <div className="w-[90%] lg:w-[45%] lg:py-[5rem] py-[1.5rem] lg:mr-16">

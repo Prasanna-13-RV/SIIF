@@ -167,7 +167,7 @@ const navItems = [
       },
       {
         title: "Blockchain Technology",
-        link: "/center/renewableenergy",
+        link: "/center/blockchain",
         subItems: [],
       },
 

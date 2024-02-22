@@ -133,7 +133,7 @@ function App() {
           <Route path="/center/ar&vr" element={<ArVr />} />
           <Route path="/center/ai&ml" element={<AIML />} />
           <Route
-            path="/center/renewableenergy"
+            path="/center/blockchain"
             element={<BlockchainTechnology />}
           />
           <Route
