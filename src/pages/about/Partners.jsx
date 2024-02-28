@@ -8,6 +8,8 @@ export const Partners = () => {
     },{
       image:
         "https://presentations.gov.in/wp-content/uploads/2020/06/Startup-India_Preview.png?x93559",
+    },{
+      image:"../Images/kyn_logo.jpg"
     }
     
   ];
